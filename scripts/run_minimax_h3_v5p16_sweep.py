@@ -158,12 +158,14 @@ def main() -> None:
     parser.add_argument("--nodepool", default="tpu-v5p-16-pool")
     parser.add_argument("--checkpoint-dir", default="/models/models/MiniMaxAI/MiniMax-H3/transformer")
     parser.add_argument("--results-root", default="/models/minimax-h3-results")
+    parser.add_argument("--pass-name", default="pass2")
     args = parser.parse_args()
 
     node_rank = int(os.environ.get("JOB_COMPLETION_INDEX", os.environ.get("NODE_RANK", "0")))
     master_addr = os.environ.get("MASTER_ADDR", "127.0.0.1")
     base_port = int(os.environ.get("MASTER_PORT", "29500"))
     num_chips = args.nnodes * args.nproc_per_node
+    phys_chips = num_chips // 2 if args.accel == "v7x" else num_chips
     peak_tflops = PEAK_BF16_TFLOPS_PER_CHIP[args.accel]
 
     # Stage minimax_h3_torchtitan.py into /torchtitan-native so `python -m minimax_h3_torchtitan` resolves cleanly
@@ -208,12 +210,12 @@ def main() -> None:
     compiled_opt_flags = probe_compile_opt_args(str(workdir))
 
     ts = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d_%H%M%S")
-    out_dir = Path(args.results_root) / f"{args.accel}-16-{args.topology}_minimax_h3_pass1"
+    out_dir = Path(args.results_root) / f"{args.accel}-{phys_chips}-{args.topology}_minimax_h3_{args.pass_name}"
     hsdp_shard = num_chips // 2
 
     experiments = [
         {
-            "name": f"mh3_p1_01_fsdp{num_chips}_fullac_s16k_pretrained",
+            "name": f"mh3_p2_01_fsdp{num_chips}_fullac_s16k_pretrained",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
@@ -229,14 +231,14 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": True,
             "xla_flags": base_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p1_02_fsdp{num_chips}_splash_save_ac_s16k_pretrained",
+            "name": f"mh3_p2_02_fsdp{num_chips}_splash_save_ac_s16k_pretrained",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": "SplashSaveAC (32/50 blocks, 64% attn saved)",
+            "ac_mode": "SplashSaveAC (calibrated)",
             "save_splash": True,
             "sa_block": 512,
             "quant": "BF16 + FP32 heads",
@@ -248,10 +250,10 @@ def main() -> None:
             "steps": 10,
             "load_pretrained": True,
             "xla_flags": base_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p1_03_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k",
+            "name": f"mh3_p2_03_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
@@ -267,10 +269,10 @@ def main() -> None:
             "steps": 10,
             "load_pretrained": True,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p1_04_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k_ga2",
+            "name": f"mh3_p2_04_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k_ga2",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
@@ -286,10 +288,10 @@ def main() -> None:
             "steps": 10,
             "load_pretrained": True,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p1_05_hsdp_2x{hsdp_shard}_splash_save_sa1024_xla_lhs_s16k",
+            "name": f"mh3_p2_05_hsdp_2x{hsdp_shard}_splash_save_sa1024_xla_lhs_s16k",
             "parallelism": f"HSDP 2x{hsdp_shard}",
             "dp_rep": 2,
             "dp_shard": hsdp_shard,
@@ -305,17 +307,17 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": False,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p1_06_fsdp{num_chips}_fp8_linear_quant_s16k",
+            "name": f"mh3_p2_06_fsdp{num_chips}_fp8_linear_quant_s16k",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
             "ac_mode": "SplashSaveAC",
             "save_splash": True,
             "sa_block": 1024,
-            "quant": "TpuFloat8Linear (tensorwise FP8)",
+            "quant": "TpuFloat8Linear (rowwise FP8)",
             "use_fp8": True,
             "seq_len": 16384,
             "mb_tokens": 16384,
@@ -324,10 +326,10 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": False,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p1_07_fsdp{num_chips}_splash_save_s32k_longvideo_5s_768p_16x9",
+            "name": f"mh3_p2_07_fsdp{num_chips}_splash_save_s32k_longvideo_5s_768p_16x9",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
@@ -343,7 +345,7 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": True,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": False,
+            "use_compiled_opt": True,
         },
     ]
 

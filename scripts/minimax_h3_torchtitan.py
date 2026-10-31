@@ -1137,20 +1137,6 @@ class MiniMaxH3Trainer(Trainer):
         if config.load_pretrained_weights and config.hf_checkpoint_dir:
             load_pretrained_minimax_h3_safetensors(self.model_parts[0], config.hf_checkpoint_dir)
 
-    def _chunked_optimizer_step(self, chunk_size: int = 80) -> None:
-        if self._use_compiled_opt:
-            self.optimizers.step()
-            torch.accelerator.synchronize()
-            return
-        for opt in self.optimizers.optimizers:
-            for grp in opt.param_groups:
-                all_params = list(grp["params"])
-                for start in range(0, len(all_params), chunk_size):
-                    grp["params"] = all_params[start : start + chunk_size]
-                    opt.step()
-                    torch.accelerator.synchronize()
-                grp["params"] = all_params
-
     def _clip_grad_norm(self) -> Tensor:
         if self._compiled_grad_norm is None:
             return dist_utils.clip_grad_norm_(
@@ -1215,7 +1201,7 @@ class MiniMaxH3Trainer(Trainer):
             del pred_video, pred_audio, target_video, target_audio, vid_noise, aud_noise
             with spmd.no_typecheck():
                 loss.backward()
-        return loss
+        return loss.detach()
 
     def train_step(self, data_iterator: Iterator[dict[str, Any]]) -> None:
         self.optimizers.zero_grad()
@@ -1227,13 +1213,14 @@ class MiniMaxH3Trainer(Trainer):
         for mb_idx in range(ga_steps):
             batch = next(data_iterator)
             mb_loss = self.forward_backward_step(input_dict=batch, loss_scale=loss_scale)
-            accum_loss = accum_loss + mb_loss.detach().float()
+            accum_loss = accum_loss + mb_loss.float()
             torch.accelerator.synchronize()
 
         grad_norm = self._clip_grad_norm()
         self.checkpointer.maybe_wait_for_staging()
         torch.accelerator.synchronize()
-        self._chunked_optimizer_step(chunk_size=80)
+        self.optimizers.step()
+        torch.accelerator.synchronize()
         self.lr_schedulers.step()
 
         if not self.metrics_processor.should_log(self.step):
