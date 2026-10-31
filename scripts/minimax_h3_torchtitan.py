@@ -1298,8 +1298,15 @@ def build_minimax_h3_model_spec(
                 "audio_proj_out",
             ],
         )
-        model_cfg = TpuFloat8LinearConverter(fp8_cfg).convert(model_cfg)
-        logger.info("Applied TpuFloat8LinearConverter (rowwise FP8) to MiniMaxH3Model.Config pre-build")
+        fp8_conv = TpuFloat8LinearConverter(fp8_cfg)
+        fp8_conv.torchao_config = dataclasses.replace(
+            fp8_conv.torchao_config,
+            gemm_config_output=dataclasses.replace(
+                fp8_conv.torchao_config.gemm_config_output, use_fast_accum=False
+            ),
+        )
+        model_cfg = fp8_conv.convert(model_cfg)
+        logger.info("Applied TpuFloat8LinearConverter (rowwise FP8, use_fast_accum=False) to MiniMaxH3Model.Config pre-build")
     return ModelSpec(
         name="minimax_h3",
         flavor="33B-omni",
