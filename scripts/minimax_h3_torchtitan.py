@@ -37,9 +37,14 @@ from typing import Any
 import torch
 import spmd_types as spmd
 from torch import nn, Tensor
-from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
-    checkpoint_wrapper as ptd_checkpoint_wrapper,
-)
+try:
+    from torchtitan.experiments.tpu.utils import (
+        ptd_checkpoint_wrapper_with_early_stop as ptd_checkpoint_wrapper,
+    )
+except ImportError:
+    from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
+        checkpoint_wrapper as ptd_checkpoint_wrapper,
+    )
 from torch.distributed.fsdp import (
     CPUOffloadPolicy,
     fully_shard,
@@ -759,9 +764,8 @@ def parallelize_minimax_h3(
         from torchtitan.experiments.tpu.float8_converter import TpuFloat8LinearConverter
 
         fp8_cfg = TpuFloat8LinearConverter.Config(
-            enable_fsdp_float8_all_gather=False,
-            precompute_float8_dynamic_scale_for_fsdp=False,
-            recipe_name="tensorwise",
+            model_compile_enabled=bool(compile_config.enable and "model" in compile_config.components),
+            recipe_name="rowwise",
             filter_fqns=[
                 "proj_in",
                 "audio_proj_in",
@@ -776,7 +780,7 @@ def parallelize_minimax_h3(
         )
         converter = TpuFloat8LinearConverter(fp8_cfg)
         converter.convert(model)
-        logger.info("Applied TpuFloat8LinearConverter (tensorwise FP8) to 50 MiniMaxH3TransformerBlocks")
+        logger.info("Applied TpuFloat8LinearConverter (rowwise FP8) to 50 MiniMaxH3TransformerBlocks")
 
     # 1. Replace inner SDPA with bidirectional Pallas SplashAttention (is_causal=False)
     ref_block = min(sa_block, model.l_txt)
@@ -809,24 +813,30 @@ def parallelize_minimax_h3(
         f"(sa_block={ref_block}) with bidirectional Pallas SplashAttention(is_causal=False)"
     )
 
-    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, HBM-calibrated for 95 GiB v5p / 96 GiB v7x)
+    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, calibrated with FP32 AdamW m/v residency)
     if ac_config is not None and getattr(ac_config, "mode", "full") != "none":
+        try:
+            torch._C._dynamo.eval_frame._set_lru_cache(False)
+        except Exception:
+            pass
         shard_deg = parallel_dims.dp_shard if parallel_dims.dp_shard > 0 else getattr(parallel_dims, "world_size", 16)
         if save_splash_in_ac:
             if shard_deg >= 32:
-                first_full_ac = 28 if training.max_context_length >= 32768 else 6
+                # 32 ranks: ~16.6 GiB persistent FP32 master+grad+AdamW -> >22 GiB free headroom
+                first_full_ac = 36 if training.max_context_length >= 32768 else 24
             elif shard_deg >= 16:
-                first_full_ac = 38 if training.max_context_length >= 32768 else 18
+                # 16 ranks (v5p-16 or HSDP 2x16): ~33.1 GiB persistent FP32 master+grad+AdamW -> >20 GiB headroom
+                first_full_ac = 44 if training.max_context_length >= 32768 else 32
             else:
-                # HSDP 2x8 (shard_deg=8 -> ~58 GiB persistent state): save 8 layers at 16K
-                first_full_ac = 50 if training.max_context_length >= 32768 else 42
+                # HSDP 2x8 (shard_deg=8 -> ~66.2 GiB persistent state): FullAC keeps >20 GiB headroom
+                first_full_ac = 50
         else:
             first_full_ac = 50
         splash_ctx_fn = lambda: create_selective_checkpoint_contexts(_full_ac_save_splash_policy)
         for layer_id, rblk in model.token_refiner.refiner_blocks.named_children():
             wrapped = (
                 ptd_checkpoint_wrapper(rblk, preserve_rng_state=False, context_fn=splash_ctx_fn)
-                if save_splash_in_ac
+                if save_splash_in_ac and first_full_ac < 50
                 else ptd_checkpoint_wrapper(rblk, preserve_rng_state=False)
             )
             model.token_refiner.refiner_blocks.register_module(layer_id, wrapped)
