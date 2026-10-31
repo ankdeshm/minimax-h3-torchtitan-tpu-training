@@ -1114,11 +1114,11 @@ class MiniMaxH3Trainer(Trainer):
             config.tpu_config, "compile_grad_norm", False
         )
         self._compiled_grad_norm = CompiledGradNorm() if use_compiled_gn else None
-        use_compiled_opt = (
+        self._use_compiled_opt = (
             getattr(config.compile, "optimizer_compile", None) == "separate_graph"
             or getattr(config.tpu_config, "compile_optimizer", False)
         )
-        if use_compiled_opt:
+        if self._use_compiled_opt:
             from torchtitan.experiments.tpu.compiled_optimizers.separate_graph import apply_compiled_optimizer
 
             apply_compiled_optimizer(self)
@@ -1126,6 +1126,20 @@ class MiniMaxH3Trainer(Trainer):
 
         if config.load_pretrained_weights and config.hf_checkpoint_dir:
             load_pretrained_minimax_h3_safetensors(self.model_parts[0], config.hf_checkpoint_dir)
+
+    def _chunked_optimizer_step(self, chunk_size: int = 80) -> None:
+        if self._use_compiled_opt:
+            self.optimizers.step()
+            torch.accelerator.synchronize()
+            return
+        for opt in self.optimizers.optimizers:
+            for grp in opt.param_groups:
+                all_params = list(grp["params"])
+                for start in range(0, len(all_params), chunk_size):
+                    grp["params"] = all_params[start : start + chunk_size]
+                    opt.step()
+                    torch.accelerator.synchronize()
+                grp["params"] = all_params
 
     def _clip_grad_norm(self) -> Tensor:
         if self._compiled_grad_norm is None:
@@ -1209,8 +1223,7 @@ class MiniMaxH3Trainer(Trainer):
         grad_norm = self._clip_grad_norm()
         self.checkpointer.maybe_wait_for_staging()
         torch.accelerator.synchronize()
-        self.optimizers.step()
-        torch.accelerator.synchronize()
+        self._chunked_optimizer_step(chunk_size=80)
         self.lr_schedulers.step()
 
         if not self.metrics_processor.should_log(self.step):

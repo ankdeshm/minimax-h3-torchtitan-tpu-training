@@ -188,7 +188,7 @@ def main() -> None:
         "--xla_tpu_enable_ag_backward_pipelining=true",
         "--xla_tpu_enable_ici_ag_pipelining=true",
         "--xla_tpu_overlap_compute_collective_tc=true",
-        "--xla_max_concurrent_async_all_gathers=4",
+        "--xla_max_concurrent_async_all_gathers=2",
         "--xla_latency_hiding_scheduler_rerun=2",
     ]
     if args.accel == "v5p":
@@ -229,7 +229,7 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": True,
             "xla_flags": base_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
         {
             "name": f"mh3_p1_02_fsdp{num_chips}_splash_save_ac_s16k_pretrained",
@@ -248,7 +248,7 @@ def main() -> None:
             "steps": 10,
             "load_pretrained": True,
             "xla_flags": base_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
         {
             "name": f"mh3_p1_03_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k",
@@ -267,7 +267,7 @@ def main() -> None:
             "steps": 10,
             "load_pretrained": True,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
         {
             "name": f"mh3_p1_04_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k_ga2",
@@ -286,7 +286,7 @@ def main() -> None:
             "steps": 10,
             "load_pretrained": True,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
         {
             "name": f"mh3_p1_05_hsdp_2x{hsdp_shard}_splash_save_sa1024_xla_lhs_s16k",
@@ -305,7 +305,7 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": False,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
         {
             "name": f"mh3_p1_06_fsdp{num_chips}_fp8_linear_quant_s16k",
@@ -324,7 +324,7 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": False,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
         {
             "name": f"mh3_p1_07_fsdp{num_chips}_splash_save_s32k_longvideo_5s_768p_16x9",
@@ -343,7 +343,7 @@ def main() -> None:
             "steps": 8,
             "load_pretrained": True,
             "xla_flags": lhs_xla_flags,
-            "use_compiled_opt": True,
+            "use_compiled_opt": False,
         },
     ]
 
