@@ -822,11 +822,11 @@ def parallelize_minimax_h3(
         shard_deg = parallel_dims.dp_shard if parallel_dims.dp_shard > 0 else getattr(parallel_dims, "world_size", 16)
         if save_splash_in_ac:
             if shard_deg >= 32:
-                # 32 ranks: ~16.6 GiB persistent FP32 master+grad+AdamW -> >22 GiB free headroom
-                first_full_ac = 36 if training.max_context_length >= 32768 else 24
+                # 32 ranks: ~2.5 GiB/saved block + FP32 AdamW state -> >33 GiB free headroom
+                first_full_ac = 44 if training.max_context_length >= 32768 else 36
             elif shard_deg >= 16:
-                # 16 ranks (v5p-16 or HSDP 2x16): ~33.1 GiB persistent FP32 master+grad+AdamW -> >20 GiB headroom
-                first_full_ac = 44 if training.max_context_length >= 32768 else 32
+                # 16 ranks (v5p-16 or HSDP 2x16): >28 GiB free headroom
+                first_full_ac = 47 if training.max_context_length >= 32768 else 42
             else:
                 # HSDP 2x8 (shard_deg=8 -> ~66.2 GiB persistent state): FullAC keeps >20 GiB headroom
                 first_full_ac = 50
@@ -1129,10 +1129,36 @@ class MiniMaxH3Trainer(Trainer):
             or getattr(config.tpu_config, "compile_optimizer", False)
         )
         if self._use_compiled_opt:
-            from torchtitan.experiments.tpu.compiled_optimizers.separate_graph import apply_compiled_optimizer
+            import torchtitan.experiments.tpu.compiled_optimizers.separate_graph as _sg
 
-            apply_compiled_optimizer(self)
-            logger.info("Applied separate_graph compiled AdamW optimizer to MiniMaxH3Trainer")
+            if not getattr(_sg, "_mh3_chunked_patched", False):
+                _orig_build = _sg._build_compiled_optimizer_groups
+
+                def _chunked_build(opt: torch.optim.Optimizer) -> list:
+                    orig_groups = list(opt.param_groups)
+                    expanded: list[dict] = []
+                    orig_indices: list[int] = []
+                    for idx, grp in enumerate(orig_groups):
+                        plist = list(grp["params"])
+                        for start in range(0, len(plist), 128):
+                            sub = dict(grp)
+                            sub["params"] = plist[start : start + 128]
+                            expanded.append(sub)
+                            orig_indices.append(idx)
+                    opt.param_groups = expanded
+                    try:
+                        built = _orig_build(opt)
+                    finally:
+                        opt.param_groups = orig_groups
+                    for (_fn, _p, _st, lr_ref), idx in zip(built, orig_indices):
+                        lr_ref._group_idx = idx
+                    return built
+
+                _sg._build_compiled_optimizer_groups = _chunked_build
+                _sg._mh3_chunked_patched = True
+
+            _sg.apply_compiled_optimizer(self)
+            logger.info("Applied chunked separate_graph compiled AdamW optimizer (chunk=128) to MiniMaxH3Trainer")
 
         if config.load_pretrained_weights and config.hf_checkpoint_dir:
             load_pretrained_minimax_h3_safetensors(self.model_parts[0], config.hf_checkpoint_dir)
