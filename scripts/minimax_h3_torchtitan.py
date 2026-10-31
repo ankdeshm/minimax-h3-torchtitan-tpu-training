@@ -1320,6 +1320,9 @@ def start_minimax_h3_trainer(config: MiniMaxH3Trainer.Config) -> None:
     profiler_workaround.init(config)
     workarounds.use_cpu_safe_histc_patch()
 
+    if config.debug.seed is None:
+        config.debug.seed = 42
+
     if torch.distributed.is_initialized():
         torch.distributed.barrier()
 

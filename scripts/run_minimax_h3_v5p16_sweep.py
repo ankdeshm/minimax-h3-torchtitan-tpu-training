@@ -73,6 +73,9 @@ def probe_compile_opt_args(workdir: str) -> list[str]:
     try:
         env = os.environ.copy()
         env["PYTHONPATH"] = workdir
+        env["TORCH_DEVICE_BACKEND_AUTOLOAD"] = "0"
+        env.pop("MASTER_ADDR", None)
+        env.pop("MASTER_PORT", None)
         res = subprocess.run([sys.executable, "-c", code], env=env, capture_output=True, text=True, timeout=25)
         if res.returncode == 0 and res.stdout.strip():
             flags = res.stdout.strip().split()
@@ -118,14 +121,14 @@ def write_summary_files(out_dir: Path, summary: dict) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2))
     lines = [
-        "# MiniMax-H3 (`33.14B` Omni-Modal Video+Audio DiT) — TorchTitan + TorchTPU `v5p-16` Results",
+        f"# MiniMax-H3 (`33.14B` Omni-Modal Video+Audio DiT) — TorchTitan + TorchTPU `{summary['accel']}-16` Results",
         "",
         f"- **Updated (UTC):** `{summary['updated_utc']}`",
-        f"- **Cluster / Nodepool:** `{summary['nodepool']}` (`{summary['topology']}`, `{summary['num_chips']}` TPU `{summary['accel']}` chips)",
+        f"- **Cluster / Nodepool:** `{summary['nodepool']}` (`{summary['topology']}`, `{summary['num_chips']}` TPU `{summary['accel']}` ranks)",
         f"- **Model:** `MiniMaxAI/MiniMax-H3` (`33,139,340,704` total params; `19.27B` active per-token trunk + `13.05B` modality AdaLN)",
         f"- **Checkpoint:** `{summary['checkpoint_dir']}` (`66.28 GB`, 638 tensors across 14 safetensors shards)",
         "",
-        "| # | Experiment | Parallelism | AC Policy | `sa_block` | Quantization | Seq `S` | GradAccum | Steady Step (s) | Tok/s/chip | Cluster Tok/s | Peak HBM (GiB) | TorchTitan MFU (%) | Exact Bidir-Attn MFU (%) | Loss (`step 1 -> N`) | Status |",
+        "| # | Experiment | Parallelism | AC Policy | `sa_block` | Quantization | Seq `S` | GradAccum | Steady Step (s) | Tok/s/rank | Cluster Tok/s | Peak HBM (GiB) | TorchTitan MFU (%) | Exact Bidir-Attn MFU (%) | Loss (`step 1 -> N`) | Status |",
         "|---:|---|---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|",
     ]
     for idx, exp in enumerate(summary["experiments"], 1):
@@ -169,18 +172,11 @@ def main() -> None:
     dst_mod = workdir / "minimax_h3_torchtitan.py"
     shutil.copy2(src_mod, dst_mod)
 
-    # Pre-flight import validation before launching any multi-host torchrun
-    chk_env = os.environ.copy()
-    chk_env["PYTHONPATH"] = str(workdir)
-    chk = subprocess.run(
-        [sys.executable, "-c", "import minimax_h3_torchtitan; print('IMPORT_OK', minimax_h3_torchtitan.__file__)"],
-        env=chk_env,
-        capture_output=True,
-        text=True,
-    )
-    print(f"[rank={node_rank}] Preflight import: rc={chk.returncode} out={chk.stdout.strip()} err={chk.stderr[-300:]}", flush=True)
-    if chk.returncode != 0:
-        sys.exit(chk.returncode)
+    # Syntax preflight without initializing multi-host PJRT outside torchrun
+    import py_compile
+
+    py_compile.compile(str(dst_mod), doraise=True)
+    print(f"[rank={node_rank}] Preflight syntax OK: {dst_mod}", flush=True)
 
     resolved_ip = wait_for_master_dns(master_addr)
     print(f"[rank={node_rank}] Resolved MASTER_ADDR={master_addr} -> {resolved_ip}", flush=True)
@@ -380,11 +376,11 @@ def main() -> None:
             "torchrun",
             f"--nnodes={args.nnodes}",
             f"--nproc_per_node={args.nproc_per_node}",
-            f"--node_rank={node_rank}",
-            f"--rdzv_backend=c10d",
+            "--rdzv_backend=static",
             f"--rdzv_endpoint={master_addr}:{port}",
-            f"--rdzv_id=mh3_{exp_idx}_{port}",
-            "minimax_h3_torchtitan.py",
+            f"--node_rank={node_rank}",
+            "-m",
+            "minimax_h3_torchtitan",
             "--module=minimax_h3_torchtitan",
             "--config=minimax_h3_33b_tpu",
             f"--hf_checkpoint_dir={args.checkpoint_dir}",
@@ -396,6 +392,7 @@ def main() -> None:
             f"--parallelism.data_parallel_replicate_degree={exp['dp_rep']}",
             f"--parallelism.data_parallel_shard_degree={exp['dp_shard']}",
             f"--sa_block={exp['sa_block']}",
+            "--debug.seed=42",
         ]
         if exp["save_splash"]:
             cmd.append("--save_splash_in_ac")
@@ -413,6 +410,8 @@ def main() -> None:
             cmd.extend(compiled_opt_flags)
 
         env = os.environ.copy()
+        env.pop("MASTER_ADDR", None)
+        env.pop("MASTER_PORT", None)
         env["PYTHONPATH"] = str(workdir)
         env["LIBTPU_INIT_ARGS"] = exp["xla_flags"]
         env["PJRT_DEVICE"] = "TPU"
