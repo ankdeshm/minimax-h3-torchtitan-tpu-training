@@ -49,10 +49,7 @@ from torch.distributed.tensor import DTensor
 from torch.utils.checkpoint import CheckpointPolicy, create_selective_checkpoint_contexts
 
 from torchtitan.components.checkpointer import CheckpointManager
-try:
-    from torchtitan.components.dataloader import BaseDataLoader
-except ImportError:
-    from torchtitan.components.data import BaseDataLoader
+from torchtitan.components.data.loader import BaseDataLoader
 from torchtitan.components.loss import MSELoss
 from torchtitan.components.metrics import MetricsProcessor
 from torchtitan.components.optimizer import default_adamw, LRSchedulersContainer
@@ -1247,6 +1244,7 @@ def build_minimax_h3_model_spec(
         name="minimax_h3",
         flavor="33B-omni",
         model=MiniMaxH3Model.Config(l_txt=l_txt, l_aud=l_aud),
+        max_context_length=32768,
         parallelize_fn=partial(
             parallelize_minimax_h3,
             sa_block=sa_block,
@@ -1254,7 +1252,6 @@ def build_minimax_h3_model_spec(
             use_fp8_linear=use_fp8_linear,
         ),
         pipelining_fn=None,
-        build_loss_fn=None,
         post_optimizer_build_fn=None,
         state_dict_adapter=None,
     )
