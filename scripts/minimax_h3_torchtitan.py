@@ -1077,6 +1077,9 @@ class MiniMaxH3CachedOmniDataLoader(BaseDataLoader):
     def load_state_dict(self, state_dict: dict[str, Any]) -> None:
         pass
 
+    def close(self) -> None:
+        pass
+
 
 class MiniMaxH3Trainer(Trainer):
     @dataclass(kw_only=True, slots=True)
