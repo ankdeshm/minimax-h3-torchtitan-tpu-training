@@ -1,0 +1,69 @@
+{
+  "run_timestamp": "20261031_052942",
+  "updated_utc": "2026-10-31T05:37:28.604613+00:00",
+  "accel": "v5p",
+  "topology": "2x2x4",
+  "nodepool": "tpu-v5p-16-pool",
+  "num_chips": 16,
+  "peak_bf16_tflops_per_chip": 459.0,
+  "checkpoint_dir": "/models/models/MiniMaxAI/MiniMax-H3/transformer",
+  "experiments": [
+    {
+      "name": "mh3_p1_01_fsdp16_fullac_s16k_pretrained",
+      "parallelism": "FSDP-16",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "FullAC (recompute attn)",
+      "save_splash": false,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 8,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": true,
+      "status": "rc=1",
+      "wall_s": 418.18,
+      "error": "ailed with: e0101: RuntimeProgramAllocationFailure: |   Error loading program 'tt_jit_minimax_h3_torchtitan_L516C0_forward_add': Attempting to reserve 2.08G at the bottom of memory. That was not possible. There are 987.38M free, 0B reserved, and 987.38M reservable. |   See https://openxla.org/xla/errors/error_0101 for more details |    | ============================================================",
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63243,
+          "grad_norm": 112.4342,
+          "mem_gib": 10.46,
+          "tps": 42.0,
+          "tflops": 7.85,
+          "mfu_pct": 1.71,
+          "step_s": 388.9
+        }
+      ]
+    },
+    {
+      "name": "mh3_p1_02_fsdp16_splash_save_ac_s16k_pretrained",
+      "parallelism": "FSDP-16",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "SplashSaveAC (32/50 blocks, 64% attn saved)",
+      "save_splash": true,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 10,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": true,
+      "status": "rc=1",
+      "wall_s": 39.36,
+      "error": "pu/_internal/utils/annotations.py\", line 272, in wrapper |       return fn_to_wrap(*args, **kwargs) |     File \"/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/stream/streams.py\", line 275, in record |       super().record(stream) |       ~~~~~~~~~~~~~~^^^^^^^^ |   RuntimeError: a required argument is in a failed state |    | ============================================================",
+      "steps_recorded": []
+    }
+  ]
+}
