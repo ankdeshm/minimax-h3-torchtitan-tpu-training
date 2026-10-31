@@ -193,9 +193,7 @@ def main() -> None:
         "--xla_max_concurrent_async_all_gathers=2",
         "--xla_latency_hiding_scheduler_rerun=2",
     ]
-    if args.accel == "v5p":
-        lhs_candidates.append("--xla_tpu_scoped_vmem_limit_kib=81920")
-    elif args.accel == "v7x":
+    if args.accel == "v7x":
         lhs_candidates.extend(
             [
                 "--xla_tpu_enable_sparse_core_collective_aggregator=true",
@@ -253,13 +251,13 @@ def main() -> None:
             "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p2_03_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k",
+            "name": f"mh3_p2_03_fsdp{num_chips}_splash_save_xla_lhs_bf16red_s16k",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": "SplashSaveAC",
+            "ac_mode": "SplashSaveAC + XLA LHS",
             "save_splash": True,
-            "sa_block": 1024,
+            "sa_block": 512,
             "quant": "BF16 (BF16 Reduce)",
             "use_fp8": False,
             "seq_len": 16384,
@@ -272,13 +270,13 @@ def main() -> None:
             "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p2_04_fsdp{num_chips}_splash_save_sa1024_xla_lhs_s16k_ga2",
+            "name": f"mh3_p2_04_fsdp{num_chips}_splash_save_xla_lhs_s16k_ga2",
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": "SplashSaveAC",
+            "ac_mode": "SplashSaveAC + XLA LHS",
             "save_splash": True,
-            "sa_block": 1024,
+            "sa_block": 512,
             "quant": "BF16 (BF16 Reduce)",
             "use_fp8": False,
             "seq_len": 16384,
@@ -291,13 +289,13 @@ def main() -> None:
             "use_compiled_opt": True,
         },
         {
-            "name": f"mh3_p2_05_hsdp_2x{hsdp_shard}_splash_save_sa1024_xla_lhs_s16k",
+            "name": f"mh3_p2_05_hsdp_2x{hsdp_shard}_splash_save_xla_lhs_s16k",
             "parallelism": f"HSDP 2x{hsdp_shard}",
             "dp_rep": 2,
             "dp_shard": hsdp_shard,
-            "ac_mode": "SplashSaveAC",
+            "ac_mode": "SplashSaveAC + XLA LHS",
             "save_splash": True,
-            "sa_block": 1024,
+            "sa_block": 512,
             "quant": "BF16 (BF16 Reduce)",
             "use_fp8": False,
             "seq_len": 16384,
@@ -314,9 +312,9 @@ def main() -> None:
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": "SplashSaveAC",
+            "ac_mode": "SplashSaveAC + XLA LHS",
             "save_splash": True,
-            "sa_block": 1024,
+            "sa_block": 512,
             "quant": "TpuFloat8Linear (rowwise FP8)",
             "use_fp8": True,
             "seq_len": 16384,
@@ -333,9 +331,9 @@ def main() -> None:
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": "SplashSaveAC",
+            "ac_mode": "SplashSaveAC + XLA LHS",
             "save_splash": True,
-            "sa_block": 1024,
+            "sa_block": 512,
             "quant": "BF16 (BF16 Reduce)",
             "use_fp8": False,
             "seq_len": 32768,
@@ -400,7 +398,9 @@ def main() -> None:
         else:
             cmd.append("--no-load_pretrained_weights")
         if exp["use_compiled_opt"]:
-            cmd.extend(compiled_opt_flags)
+            cmd.extend(["--use_compiled_opt", "--use_compiled_grad_norm", *compiled_opt_flags])
+        else:
+            cmd.extend(["--no-use_compiled_opt", "--no-use_compiled_grad_norm"])
 
         env = os.environ.copy()
         env.pop("MASTER_ADDR", None)
@@ -464,6 +464,8 @@ def main() -> None:
                 "ExecutionTask failed: RESOURCE_EXHAUSTED" in line
                 or "RuntimeProgramAllocationFailure" in line
                 or "START_SESSION failed" in line
+                or "RuntimeUnexpectedCoreHalt" in line
+                or "SLICE_FAILURE" in line
             ):
                 fatal_seen_at.append(time.time())
             m = STEP_RE.search(line)

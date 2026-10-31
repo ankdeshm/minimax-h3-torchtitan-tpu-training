@@ -29,6 +29,7 @@ spec:
     spec:
       serviceAccountName: default
       subdomain: minimax-h3-v5p-32-pass2-svc
+      terminationGracePeriodSeconds: 5
       restartPolicy: OnFailure
       nodeSelector:
         cloud.google.com/gke-nodepool: tpu-v5p-32-pool
@@ -54,7 +55,7 @@ spec:
         - --nodepool=tpu-v5p-32-pool
         - --checkpoint-dir=/models/models/MiniMaxAI/MiniMax-H3/transformer
         - --results-root=/models/minimax-h3-results
-        - --pass-name=pass2b
+        - --pass-name=pass2c
         env:
         - name: MASTER_ADDR
           value: "minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc.default.svc.cluster.local"

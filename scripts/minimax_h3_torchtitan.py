@@ -783,7 +783,8 @@ def parallelize_minimax_h3(
         logger.info("Applied TpuFloat8LinearConverter (rowwise FP8) to 50 MiniMaxH3TransformerBlocks")
 
     # 1. Replace inner SDPA with bidirectional Pallas SplashAttention (is_causal=False)
-    ref_block = min(sa_block, model.l_txt)
+    ref_block = min(sa_block, model.l_txt, 512)
+    compute_blk = min(sa_block, 512)
     for rblk in model.token_refiner.refiner_blocks:
         rblk.attn.inner_attention = SplashAttention(
             is_causal=False,
@@ -802,18 +803,18 @@ def parallelize_minimax_h3(
             original_module=blk.attn.inner_attention,
             block_q=sa_block,
             block_kv=sa_block,
-            block_kv_compute=sa_block,
-            block_q_dkv=sa_block,
-            block_kv_dkv=sa_block,
-            block_kv_dkv_compute=sa_block,
+            block_kv_compute=compute_blk,
+            block_q_dkv=compute_blk,
+            block_kv_dkv=compute_blk,
+            block_kv_dkv_compute=compute_blk,
             use_document_aware_block_skipping=False,
         )
     logger.info(
-        f"Patched 50 MiniMaxH3TransformerBlocks (sa_block={sa_block}) + 2 TokenRefinerBlocks "
+        f"Patched 50 MiniMaxH3TransformerBlocks (sa_block={sa_block}, compute_blk={compute_blk}) + 2 TokenRefinerBlocks "
         f"(sa_block={ref_block}) with bidirectional Pallas SplashAttention(is_causal=False)"
     )
 
-    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, calibrated with FP32 AdamW m/v residency)
+    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, calibrated from measured 5.4 GiB/saved block @ S=16k)
     if ac_config is not None and getattr(ac_config, "mode", "full") != "none":
         try:
             torch._C._dynamo.eval_frame._set_lru_cache(False)
@@ -822,23 +823,19 @@ def parallelize_minimax_h3(
         shard_deg = parallel_dims.dp_shard if parallel_dims.dp_shard > 0 else getattr(parallel_dims, "world_size", 16)
         if save_splash_in_ac:
             if shard_deg >= 32:
-                # 32 ranks: ~2.5 GiB/saved block + FP32 AdamW state -> >33 GiB free headroom
-                first_full_ac = 44 if training.max_context_length >= 32768 else 36
+                # 32 ranks: 8 saved blocks @ S=16k (~43 GiB) or 4 @ S=32k (~43 GiB) -> ~40 GiB free HBM
+                first_full_ac = 46 if training.max_context_length >= 32768 else 42
             elif shard_deg >= 16:
-                # 16 ranks (v5p-16 or HSDP 2x16): >28 GiB free headroom
-                first_full_ac = 47 if training.max_context_length >= 32768 else 42
+                # 16 ranks (v5p-16 or HSDP 2x16): 6 saved blocks @ S=16k (~32 GiB) -> ~38 GiB free HBM
+                first_full_ac = 50 if training.max_context_length >= 32768 else 44
             else:
-                # HSDP 2x8 (shard_deg=8 -> ~66.2 GiB persistent state): FullAC keeps >20 GiB headroom
+                # HSDP 2x8 (shard_deg=8 -> ~48 GiB persistent state): FullAC keeps ~35 GiB headroom
                 first_full_ac = 50
         else:
             first_full_ac = 50
         splash_ctx_fn = lambda: create_selective_checkpoint_contexts(_full_ac_save_splash_policy)
         for layer_id, rblk in model.token_refiner.refiner_blocks.named_children():
-            wrapped = (
-                ptd_checkpoint_wrapper(rblk, preserve_rng_state=False, context_fn=splash_ctx_fn)
-                if save_splash_in_ac and first_full_ac < 50
-                else ptd_checkpoint_wrapper(rblk, preserve_rng_state=False)
-            )
+            wrapped = ptd_checkpoint_wrapper(rblk, preserve_rng_state=False)
             model.token_refiner.refiner_blocks.register_module(layer_id, wrapped)
         for layer_id, blk in model.transformer_blocks.named_children():
             use_save = save_splash_in_ac and int(layer_id) >= first_full_ac
@@ -1115,17 +1112,22 @@ class MiniMaxH3Trainer(Trainer):
         sa_block: int = 512
         save_splash_in_ac: bool = True
         use_fp8_linear: bool = False
+        use_compiled_opt: bool = True
+        use_compiled_grad_norm: bool = True
         flow_shift: float = 3.0
 
     def __init__(self, config: Config):
         super().__init__(config)
         self._dtype = TORCH_DTYPE_MAP[config.training.mixed_precision_param]
-        use_compiled_gn = getattr(config.compile, "compile_grad_norm", False) or getattr(
-            config.tpu_config, "compile_grad_norm", False
+        use_compiled_gn = (
+            config.use_compiled_grad_norm
+            or getattr(config.compile, "compile_grad_norm", False)
+            or getattr(config.tpu_config, "compile_grad_norm", False)
         )
         self._compiled_grad_norm = CompiledGradNorm() if use_compiled_gn else None
         self._use_compiled_opt = (
-            getattr(config.compile, "optimizer_compile", None) == "separate_graph"
+            config.use_compiled_opt
+            or getattr(config.compile, "optimizer_compile", None) == "separate_graph"
             or getattr(config.tpu_config, "compile_optimizer", False)
         )
         if self._use_compiled_opt:
@@ -1140,9 +1142,9 @@ class MiniMaxH3Trainer(Trainer):
                     orig_indices: list[int] = []
                     for idx, grp in enumerate(orig_groups):
                         plist = list(grp["params"])
-                        for start in range(0, len(plist), 128):
+                        for start in range(0, len(plist), 64):
                             sub = dict(grp)
-                            sub["params"] = plist[start : start + 128]
+                            sub["params"] = plist[start : start + 64]
                             expanded.append(sub)
                             orig_indices.append(idx)
                     opt.param_groups = expanded
@@ -1158,7 +1160,7 @@ class MiniMaxH3Trainer(Trainer):
                 _sg._mh3_chunked_patched = True
 
             _sg.apply_compiled_optimizer(self)
-            logger.info("Applied chunked separate_graph compiled AdamW optimizer (chunk=128) to MiniMaxH3Trainer")
+            logger.info("Applied chunked separate_graph compiled AdamW optimizer (chunk=64) to MiniMaxH3Trainer")
 
         if config.load_pretrained_weights and config.hf_checkpoint_dir:
             load_pretrained_minimax_h3_safetensors(self.model_parts[0], config.hf_checkpoint_dir)
