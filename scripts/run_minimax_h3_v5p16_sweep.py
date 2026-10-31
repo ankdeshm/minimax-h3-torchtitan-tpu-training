@@ -121,7 +121,7 @@ def write_summary_files(out_dir: Path, summary: dict) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2))
     lines = [
-        f"# MiniMax-H3 (`33.14B` Omni-Modal Video+Audio DiT) — TorchTitan + TorchTPU `{summary['accel']}-16` Results",
+        f"# MiniMax-H3 (`33.14B` Omni-Modal Video+Audio DiT) — TorchTitan + TorchTPU `{summary['accel']}-{summary.get('phys_chips', summary['num_chips'])}` Results",
         "",
         f"- **Updated (UTC):** `{summary['updated_utc']}`",
         f"- **Cluster / Nodepool:** `{summary['nodepool']}` (`{summary['topology']}`, `{summary['num_chips']}` TPU `{summary['accel']}` ranks)",
@@ -356,6 +356,7 @@ def main() -> None:
         "topology": args.topology,
         "nodepool": args.nodepool,
         "num_chips": num_chips,
+        "phys_chips": phys_chips,
         "peak_bf16_tflops_per_chip": peak_tflops,
         "checkpoint_dir": args.checkpoint_dir,
         "experiments": [],
