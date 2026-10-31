@@ -1223,8 +1223,21 @@ class MiniMaxH3Trainer(Trainer):
         grad_norm = self._clip_grad_norm()
         self.checkpointer.maybe_wait_for_staging()
         torch.accelerator.synchronize()
-        self.optimizers.step()
-        torch.accelerator.synchronize()
+        if self._use_compiled_opt:
+            self.optimizers.step()
+            torch.accelerator.synchronize()
+        else:
+            for opt in self.optimizers.optimizers:
+                orig_groups = list(opt.param_groups)
+                for grp in orig_groups:
+                    plist = list(grp["params"])
+                    for start in range(0, len(plist), 64):
+                        sub = dict(grp)
+                        sub["params"] = plist[start : start + 64]
+                        opt.param_groups = [sub]
+                        opt.step()
+                        torch.accelerator.synchronize()
+                opt.param_groups = orig_groups
         self.lr_schedulers.step()
 
         if not self.metrics_processor.should_log(self.step):

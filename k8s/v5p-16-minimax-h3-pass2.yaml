@@ -55,7 +55,7 @@ spec:
         - --nodepool=tpu-v5p-16-pool
         - --checkpoint-dir=/models/models/MiniMaxAI/MiniMax-H3/transformer
         - --results-root=/models/minimax-h3-results
-        - --pass-name=pass2e
+        - --pass-name=pass2f
         env:
         - name: MASTER_ADDR
           value: "minimax-h3-v5p-16-pass2-0.minimax-h3-v5p-16-pass2-svc.default.svc.cluster.local"
