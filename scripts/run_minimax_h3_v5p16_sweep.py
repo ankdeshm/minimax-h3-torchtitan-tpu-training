@@ -202,7 +202,7 @@ def main() -> None:
     out_dir = Path(args.results_root) / f"{args.accel}-{phys_chips}-{args.topology}_minimax_h3_{args.pass_name}"
     hsdp_shard = num_chips // 2
 
-    base_reduce_dtype = "float32" if num_chips >= 32 else "bfloat16"
+    base_reduce_dtype = "float32" if (num_chips >= 32 and args.accel != "v7x") else "bfloat16"
 
     experiments = [
         {
@@ -435,13 +435,14 @@ def main() -> None:
                 now = time.time()
                 idle_s = now - last_activity[0]
                 fatal_wait_s = (now - fatal_seen_at[0]) if fatal_seen_at else 0.0
-                if fatal_wait_s > 10.0 or idle_s > 540.0:
+                if fatal_wait_s > 10.0 or idle_s > 1200.0:
                     reason = f"fatal_cpp_err({fatal_wait_s:.1f}s)" if fatal_seen_at else f"idle_timeout({idle_s:.1f}s)"
                     print(f"[rank={node_rank}] [watchdog] Killing stuck torchrun group ({reason})", flush=True)
                     try:
                         os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
                     except Exception:
                         proc.kill()
+                    subprocess.run(["pkill", "-9", "-f", "minimax_h3_torchtitan"], check=False)
                     return
 
         wd_thread = threading.Thread(target=_watchdog, daemon=True)
