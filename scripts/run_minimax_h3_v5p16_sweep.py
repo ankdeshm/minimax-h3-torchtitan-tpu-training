@@ -244,7 +244,7 @@ def main() -> None:
                 "xla_flags": base_xla_flags,
                 "use_compiled_opt": False,
             }
-            if phys_chips >= 32
+            if phys_chips >= 64
             else {
                 "name": f"mh3_p2_02_fsdp{num_chips}_fullac_sa1024_s16k_pretrained",
                 "parallelism": f"FSDP-{num_chips}",
