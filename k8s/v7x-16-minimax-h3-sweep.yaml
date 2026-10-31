@@ -56,7 +56,7 @@ spec:
         - --results-root=/models/minimax-h3-results
         env:
         - name: MASTER_ADDR
-        value: "minimax-h3-v7x-16-pass1-0.minimax-h3-v7x-16-pass1-svc.default.svc.cluster.local"
+          value: "minimax-h3-v7x-16-pass1-0.minimax-h3-v7x-16-pass1-svc.default.svc.cluster.local"
         - name: MASTER_PORT
           value: "29510"
         - name: PJRT_DEVICE
