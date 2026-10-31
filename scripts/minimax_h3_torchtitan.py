@@ -759,28 +759,7 @@ def parallelize_minimax_h3(
     save_splash_in_ac: bool = True,
     use_fp8_linear: bool = False,
 ) -> nn.Module:
-    # 0. Optional TpuFloat8LinearConverter quantization on main transformer blocks
-    if use_fp8_linear:
-        from torchtitan.experiments.tpu.float8_converter import TpuFloat8LinearConverter
-
-        fp8_cfg = TpuFloat8LinearConverter.Config(
-            model_compile_enabled=bool(compile_config.enable and "model" in compile_config.components),
-            recipe_name="rowwise",
-            filter_fqns=[
-                "proj_in",
-                "audio_proj_in",
-                "context_embedder",
-                "time_embedder",
-                "token_refiner",
-                "adaln_proj",
-                "norm_out",
-                "proj_out",
-                "audio_proj_out",
-            ],
-        )
-        converter = TpuFloat8LinearConverter(fp8_cfg)
-        converter.convert(model)
-        logger.info("Applied TpuFloat8LinearConverter (rowwise FP8) to 50 MiniMaxH3TransformerBlocks")
+    # Note: TpuFloat8LinearConverter is applied pre-build on MiniMaxH3Model.Config in build_minimax_h3_model_spec.
 
     # 1. Replace inner SDPA with bidirectional Pallas SplashAttention (is_causal=False)
     ref_block = min(sa_block, model.l_txt, 512)
@@ -814,7 +793,7 @@ def parallelize_minimax_h3(
         f"(sa_block={ref_block}) with bidirectional Pallas SplashAttention(is_causal=False)"
     )
 
-    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, calibrated from measured 5.4 GiB/saved block @ S=16k)
+    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, calibrated with PJRT executable bottom-of-HBM headroom)
     if ac_config is not None and getattr(ac_config, "mode", "full") != "none":
         try:
             torch._C._dynamo.eval_frame._set_lru_cache(False)
@@ -823,13 +802,13 @@ def parallelize_minimax_h3(
         shard_deg = parallel_dims.dp_shard if parallel_dims.dp_shard > 0 else getattr(parallel_dims, "world_size", 16)
         if save_splash_in_ac:
             if shard_deg >= 32:
-                # 32 ranks: 8 saved blocks @ S=16k (~43 GiB) or 4 @ S=32k (~43 GiB) -> ~40 GiB free HBM
-                first_full_ac = 46 if training.max_context_length >= 32768 else 42
+                # 32 ranks: 4 saved blocks @ S=16k (~21.6 GiB) leaves >40 GiB reservable for 10.79G XLA bwd executable;
+                # at S=32k use FullAC (single compiled block executable, >50 GiB free HBM)
+                first_full_ac = 50 if training.max_context_length >= 32768 else 46
             elif shard_deg >= 16:
-                # 16 ranks (v5p-16 or HSDP 2x16): 6 saved blocks @ S=16k (~32 GiB) -> ~38 GiB free HBM
-                first_full_ac = 50 if training.max_context_length >= 32768 else 44
+                # 16 ranks: 2 saved blocks @ S=16k (~10.8 GiB) in SplashSaveAC ablation; FullAC at S=32k
+                first_full_ac = 50 if training.max_context_length >= 32768 else 48
             else:
-                # HSDP 2x8 (shard_deg=8 -> ~48 GiB persistent state): FullAC keeps ~35 GiB headroom
                 first_full_ac = 50
         else:
             first_full_ac = 50
@@ -1290,10 +1269,31 @@ def build_minimax_h3_model_spec(
     l_txt: int = 512,
     l_aud: int = 256,
 ) -> ModelSpec:
+    model_cfg = MiniMaxH3Model.Config(l_txt=l_txt, l_aud=l_aud)
+    if use_fp8_linear:
+        from torchtitan.experiments.tpu.float8_converter import TpuFloat8LinearConverter
+
+        fp8_cfg = TpuFloat8LinearConverter.Config(
+            model_compile_enabled=True,
+            recipe_name="rowwise",
+            filter_fqns=[
+                "proj_in",
+                "audio_proj_in",
+                "context_embedder",
+                "time_embedder",
+                "token_refiner",
+                "adaln_proj",
+                "norm_out",
+                "proj_out",
+                "audio_proj_out",
+            ],
+        )
+        model_cfg = TpuFloat8LinearConverter(fp8_cfg).convert(model_cfg)
+        logger.info("Applied TpuFloat8LinearConverter (rowwise FP8) to MiniMaxH3Model.Config pre-build")
     return ModelSpec(
         name="minimax_h3",
         flavor="33B-omni",
-        model=MiniMaxH3Model.Config(l_txt=l_txt, l_aud=l_aud),
+        model=model_cfg,
         max_context_length=32768,
         parallelize_fn=partial(
             parallelize_minimax_h3,
@@ -1317,7 +1317,7 @@ def minimax_h3_33b_tpu() -> MiniMaxH3Trainer.Config:
         tpu_config=TPUConfig(eager_mode="DEFER_AND_FUSE"),
         metrics=MetricsProcessor.Config(log_freq=1),
         model_spec=build_minimax_h3_model_spec(sa_block=512, save_splash_in_ac=True, l_txt=l_txt, l_aud=l_aud),
-        optimizer=default_adamw(lr=5e-5, implementation="foreach"),
+        optimizer=default_adamw(lr=5e-5, implementation="fused"),
         lr_scheduler=LRSchedulersContainer.Config(warmup_steps=0, decay_ratio=0.0),
         training=TrainingConfig(
             num_tokens_per_microbatch_per_dp_rank=seq_len,
