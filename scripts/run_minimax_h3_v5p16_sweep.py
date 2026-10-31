@@ -194,16 +194,7 @@ def main() -> None:
         "--xla_latency_hiding_scheduler_rerun=2",
     ]
     if args.accel == "v7x":
-        lhs_candidates.extend(
-            [
-                "--xla_tpu_enable_sparse_core_collective_aggregator=true",
-                "--xla_tpu_enable_latency_hiding_layer_scheduler=true",
-                "--xla_tpu_use_single_sparse_core_for_reduce_scatter_offload=false",
-                "--xla_tpu_enable_sparse_core_collective_offload_nd_reduce_scatter=true",
-                "--xla_tpu_enable_sparse_core_hierarchical_reduce_scatter=true",
-                "--xla_tpu_dvfs_p_state=7",
-            ]
-        )
+        lhs_candidates.append("--xla_tpu_dvfs_p_state=7")
     lhs_xla_flags = filter_supported_xla_flags(lhs_candidates)
     compiled_opt_flags = probe_compile_opt_args(str(workdir))
 
@@ -211,8 +202,7 @@ def main() -> None:
     out_dir = Path(args.results_root) / f"{args.accel}-{phys_chips}-{args.topology}_minimax_h3_{args.pass_name}"
     hsdp_shard = num_chips // 2
 
-    use_save_opt = num_chips >= 32
-    ac_opt_label = "SplashSaveAC + XLA LHS" if use_save_opt else "FullAC + XLA LHS"
+    base_reduce_dtype = "float32" if num_chips >= 32 else "bfloat16"
 
     experiments = [
         {
@@ -228,7 +218,7 @@ def main() -> None:
             "seq_len": 16384,
             "mb_tokens": 16384,
             "grad_accum": 1,
-            "reduce_dtype": "float32",
+            "reduce_dtype": base_reduce_dtype,
             "steps": 8,
             "load_pretrained": True,
             "xla_flags": base_xla_flags,
@@ -247,7 +237,7 @@ def main() -> None:
             "seq_len": 16384,
             "mb_tokens": 16384,
             "grad_accum": 1,
-            "reduce_dtype": "float32",
+            "reduce_dtype": "bfloat16",
             "steps": 8,
             "load_pretrained": True,
             "xla_flags": base_xla_flags,
@@ -258,8 +248,8 @@ def main() -> None:
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": ac_opt_label,
-            "save_splash": use_save_opt,
+            "ac_mode": "FullAC + XLA LHS",
+            "save_splash": False,
             "sa_block": 512,
             "quant": "BF16 (BF16 Reduce)",
             "use_fp8": False,
@@ -277,8 +267,8 @@ def main() -> None:
             "parallelism": f"FSDP-{num_chips}",
             "dp_rep": 1,
             "dp_shard": -1,
-            "ac_mode": ac_opt_label,
-            "save_splash": use_save_opt,
+            "ac_mode": "FullAC + XLA LHS",
+            "save_splash": False,
             "sa_block": 512,
             "quant": "BF16 (BF16 Reduce)",
             "use_fp8": False,

@@ -802,12 +802,9 @@ def parallelize_minimax_h3(
         shard_deg = parallel_dims.dp_shard if parallel_dims.dp_shard > 0 else getattr(parallel_dims, "world_size", 16)
         if save_splash_in_ac:
             if shard_deg >= 32:
-                # 32 ranks: 4 saved blocks @ S=16k (~21.6 GiB) leaves >40 GiB reservable for 10.79G XLA bwd executable;
-                # at S=32k use FullAC (single compiled block executable, >50 GiB free HBM)
-                first_full_ac = 50 if training.max_context_length >= 32768 else 46
-            elif shard_deg >= 16:
-                # 16 ranks: 2 saved blocks @ S=16k (~10.8 GiB) in SplashSaveAC ablation; FullAC at S=32k
                 first_full_ac = 50 if training.max_context_length >= 32768 else 48
+            elif shard_deg >= 16:
+                first_full_ac = 50 if training.max_context_length >= 32768 else 49
             else:
                 first_full_ac = 50
         else:
@@ -1317,7 +1314,7 @@ def minimax_h3_33b_tpu() -> MiniMaxH3Trainer.Config:
         tpu_config=TPUConfig(eager_mode="DEFER_AND_FUSE"),
         metrics=MetricsProcessor.Config(log_freq=1),
         model_spec=build_minimax_h3_model_spec(sa_block=512, save_splash_in_ac=True, l_txt=l_txt, l_aud=l_aud),
-        optimizer=default_adamw(lr=5e-5, implementation="fused"),
+        optimizer=default_adamw(lr=5e-5, implementation="foreach"),
         lr_scheduler=LRSchedulersContainer.Config(warmup_steps=0, decay_ratio=0.0),
         training=TrainingConfig(
             num_tokens_per_microbatch_per_dp_rank=seq_len,
