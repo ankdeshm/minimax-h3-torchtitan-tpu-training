@@ -493,7 +493,7 @@ def main() -> None:
                 f"[rank=0] Saved {exp['name']} -> {out_dir / 'SUMMARY.md'} (status={rec['status']})",
                 flush=True,
             )
-        time.sleep(5.0)
+        time.sleep(8.0)
 
     print(f"[rank={node_rank}] ALL {len(experiments)} MINIMAX-H3 EXPERIMENTS COMPLETE!", flush=True)
 
