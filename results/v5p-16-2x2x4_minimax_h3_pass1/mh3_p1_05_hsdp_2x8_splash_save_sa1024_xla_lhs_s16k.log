@@ -1,0 +1,1232 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793427670.946383   28284 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793427671.837951   28284 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793427671.841148   28284 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+W1031 06:21:11.873000 28284 site-packages/torch/distributed/run.py:982] 
+W1031 06:21:11.873000 28284 site-packages/torch/distributed/run.py:982] *****************************************
+W1031 06:21:11.873000 28284 site-packages/torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1031 06:21:11.873000 28284 site-packages/torch/distributed/run.py:982] *****************************************
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793427675.224224   28354 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793427675.224444   28351 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793427675.224439   28352 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793427675.227935   28353 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793427676.127640   28351 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793427676.128619   28354 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793427676.129344   28353 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793427676.130078   28352 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793427676.130866   28351 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793427676.131914   28354 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793427676.132591   28353 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793427676.133313   28352 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 06:21:18.065000 28351 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.065000 28352 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.066000 28354 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.068000 28353 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.089000 28352 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.089000 28351 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.090000 28354 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.092000 28353 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 06:21:18.624612 135488203667392 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.627199 134552584816576 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.628396 132187852228544 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.645967 134049152096192 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.973580 135488203667392 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.974464 134552584816576 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.977511 135488203667392 manager.py:229] HF assets path  does not exist!
+I1031 06:21:18.977637 135488203667392 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 06:21:18.977697 135488203667392 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+W1031 06:21:18.977937 132187852228544 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:18.978365 134552584816576 manager.py:229] HF assets path  does not exist!
+I1031 06:21:18.978494 134552584816576 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 06:21:18.978513 135488203667392 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+I1031 06:21:18.978544 134552584816576 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+[W1031 06:21:18.660072694 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 06:21:18.660103150 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793427678.978776   28354 discovery.cc:125] DistributedWorkerConfiguration: 3 3 16 minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10003 10003 2,2,4
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+W0000 00:00:1793427678.978823   28354 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793427678.978842   28354 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+[titan] 2026-10-31 06:21:18,979 - root - INFO - Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 06:21:18.661092467 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 06:21:18.661124510 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793427678.979796   28351 discovery.cc:125] DistributedWorkerConfiguration: 0 0 16 minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10003 10000 2,2,4
+W0000 00:00:1793427678.979840   28351 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793427678.979859   28351 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 06:21:18.981866 132187852228544 manager.py:229] HF assets path  does not exist!
+I1031 06:21:18.981997 132187852228544 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 06:21:18.982047 132187852228544 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 06:21:18.982874 132187852228544 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 06:21:18.664395680 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 06:21:18.664418744 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793427678.983088   28352 discovery.cc:125] DistributedWorkerConfiguration: 1 1 16 minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10003 10001 2,2,4
+W0000 00:00:1793427678.983123   28352 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793427678.983138   28352 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 06:21:19.001295 134049152096192 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 06:21:19.005392 134049152096192 manager.py:229] HF assets path  does not exist!
+I1031 06:21:19.005531 134049152096192 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 06:21:19.005584 134049152096192 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 06:21:19.006402 134049152096192 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 06:21:19.687930793 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 06:21:19.687953673 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793427679.006623   28353 discovery.cc:125] DistributedWorkerConfiguration: 2 2 16 minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-1.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-2.minimax-h3-v5p-16-pass1-svc:10003,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10000,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10001,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10002,minimax-h3-v5p-16-pass1-3.minimax-h3-v5p-16-pass1-svc:10003 10002 2,2,4
+W0000 00:00:1793427679.006677   28353 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793427679.006698   28353 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+I0000 00:00:1793427682.770022   28351 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+[titan] 2026-10-31 06:21:22,770 - root - WARNING - ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793427682.771557   28351 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=0 devices_per_host=unset world_size=16). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793427683.119274   28352 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 06:21:23.123934 132187852228544 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793427683.129311   28352 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=1 devices_per_host=unset world_size=16). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793427683.144573   28354 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 06:21:23.145128 135488203667392 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793427683.153088   28354 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=3 devices_per_host=unset world_size=16). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793427683.199799   28353 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 06:21:23.200311 134049152096192 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793427683.201219   28353 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=2 devices_per_host=unset world_size=16). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793427684.318060   28351 process_group_tpu.cc:1269] AllGatherViaNodeLocalStore(world_topo:0:16): gathered 16 entries from 16 nodes in 1547 ms
+[titan] 2026-10-31 06:21:24,318 - root - INFO - Building device mesh with parallelism: pp=1, dp_replicate=2, dp_shard=8, cp=1, tp=1, ep=1
+I1031 06:21:24.318689 135488203667392 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=2, dp_shard=8, cp=1, tp=1, ep=1
+I1031 06:21:24.318726 134049152096192 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=2, dp_shard=8, cp=1, tp=1, ep=1
+I1031 06:21:24.318733 132187852228544 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=2, dp_shard=8, cp=1, tp=1, ep=1
+I0000 00:00:1793427684.325323   28351 process_group_tpu.cc:1269] AllGatherViaNodeLocalStore(pg_sub:0:0:16): gathered 16 entries from 16 nodes in 0 ms
+I0000 00:00:1793427684.326325   28351 process_group_tpu.cc:1269] AllGatherViaNodeLocalStore(pg_sub:1:0:16): gathered 16 entries from 16 nodes in 0 ms
+I0000 00:00:1793427684.328019   28351 process_group_tpu.cc:1269] AllGatherViaNodeLocalStore(pg_sub:2:0:16): gathered 16 entries from 16 nodes in 1 ms
+I1031 06:21:24.332417 135488203667392 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+I1031 06:21:24.332756 134049152096192 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+I1031 06:21:24.333258 132187852228544 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+[titan] 2026-10-31 06:21:24,333 - root - INFO - [GC] Initial GC collection took 0.00 seconds
+I1031 06:21:24.344034 135488203667392 trainer.py:443] Building minimax_h3 33B-omni
+I1031 06:21:24.344741 132187852228544 trainer.py:443] Building minimax_h3 33B-omni
+[titan] 2026-10-31 06:21:24,344 - root - INFO - Building minimax_h3 33B-omni
+I1031 06:21:24.344835 134049152096192 trainer.py:443] Building minimax_h3 33B-omni
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 06:21:24.442813 132187852228544 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+W1031 06:21:24.443439 132187852228544 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+[titan] 2026-10-31 06:21:24,443 - root - INFO - TPU capacity: TPU v5p with 95.00GiB memory
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 06:21:24.443903 135488203667392 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+[titan] 2026-10-31 06:21:24,444 - root - WARNING - Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+W1031 06:21:24.444526 135488203667392 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 06:21:24.445736 132187852228544 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+[titan] 2026-10-31 06:21:24,446 - root - INFO - [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 06:21:24.446750 135488203667392 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 06:21:24.446934 132187852228544 minimax_h3_torchtitan.py:807] Patched 50 MiniMaxH3TransformerBlocks (sa_block=1024) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+[titan] 2026-10-31 06:21:24,447 - root - INFO - Patched 50 MiniMaxH3TransformerBlocks (sa_block=1024) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+I1031 06:21:24.447956 135488203667392 minimax_h3_torchtitan.py:807] Patched 50 MiniMaxH3TransformerBlocks (sa_block=1024) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+I1031 06:21:24.448129 132187852228544 minimax_h3_torchtitan.py:841] Applied Activation Checkpointing (save_splash_in_ac=True, saved_main_blocks=8/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+[titan] 2026-10-31 06:21:24,448 - root - INFO - Applied Activation Checkpointing (save_splash_in_ac=True, saved_main_blocks=8/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+I1031 06:21:24.449138 135488203667392 minimax_h3_torchtitan.py:841] Applied Activation Checkpointing (save_splash_in_ac=True, saved_main_blocks=8/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 06:21:24.454057 134049152096192 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+W1031 06:21:24.454740 134049152096192 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 06:21:24.457313 134049152096192 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 06:21:24.458622 134049152096192 minimax_h3_torchtitan.py:807] Patched 50 MiniMaxH3TransformerBlocks (sa_block=1024) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+I1031 06:21:24.459876 134049152096192 minimax_h3_torchtitan.py:841] Applied Activation Checkpointing (save_splash_in_ac=True, saved_main_blocks=8/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+I1031 06:21:24.472280 132187852228544 minimax_h3_torchtitan.py:854] Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+[titan] 2026-10-31 06:21:24,472 - root - INFO - Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 06:21:24.472712 135488203667392 minimax_h3_torchtitan.py:854] Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 06:21:24.484700 134049152096192 minimax_h3_torchtitan.py:854] Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 06:21:24.928768 132187852228544 minimax_h3_torchtitan.py:893] Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.bfloat16, replicate=2, shard=8) to MiniMaxH3Model
+[titan] 2026-10-31 06:21:24,932 - root - INFO - Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.bfloat16, replicate=2, shard=8) to MiniMaxH3Model
+I1031 06:21:24.934557 135488203667392 minimax_h3_torchtitan.py:893] Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.bfloat16, replicate=2, shard=8) to MiniMaxH3Model
+I1031 06:21:24.984283 134049152096192 minimax_h3_torchtitan.py:893] Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.bfloat16, replicate=2, shard=8) to MiniMaxH3Model
+I0000 00:00:1793427685.143492   29952 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793427685.143518   29952 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 16.
+I0000 00:00:1793427685.143525   29952 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793427685.143558   31027 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793427685.147726   29954 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793427685.147748   29954 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 16.
+I0000 00:00:1793427685.147754   29954 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793427685.147795   31199 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793427685.147804   29956 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793427685.147825   29956 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 16.
+I0000 00:00:1793427685.147833   29956 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793427685.147878   31202 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793427685.207352   31213 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793427685.207389   31213 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 16.
+I0000 00:00:1793427685.207397   31213 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793427685.207435   31632 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+W1031 06:21:25.520330 132187852228544 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 06:21:25.520459 132187852228544 trainer.py:621] Peak FLOPS used for computing MFU: 4.590e+14
+I1031 06:21:25.520718 132187852228544 trainer.py:623] TPU memory usage for model: 0.00GiB(0.00%)
+I1031 06:21:25.525519 132187852228544 optimizer.py:268] Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+W1031 06:21:25.533963 135488203667392 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 06:21:25.534095 135488203667392 trainer.py:621] Peak FLOPS used for computing MFU: 4.590e+14
+I1031 06:21:25.534357 135488203667392 trainer.py:623] TPU memory usage for model: 0.00GiB(0.00%)
+I1031 06:21:25.539671 135488203667392 optimizer.py:268] Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+[titan] 2026-10-31 06:21:25,552 - root - WARNING - Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+[titan] 2026-10-31 06:21:25,552 - root - INFO - Peak FLOPS used for computing MFU: 4.590e+14
+[titan] 2026-10-31 06:21:25,553 - root - INFO - TPU memory usage for model: 0.00GiB(0.00%)
+W1031 06:21:25.554479 132187852228544 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 06:21:25.554619 132187852228544 trainer.py:745] Trainer is initialized with 16384 tokens per DP rank, 262144 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+I1031 06:21:25.554751 132187852228544 trainer.py:1140] Training starts at step 1
+[titan] 2026-10-31 06:21:25,558 - root - INFO - Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+W1031 06:21:25.569371 135488203667392 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 06:21:25.569566 135488203667392 trainer.py:745] Trainer is initialized with 16384 tokens per DP rank, 262144 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+I1031 06:21:25.569713 135488203667392 trainer.py:1140] Training starts at step 1
+[titan] 2026-10-31 06:21:25,587 - root - WARNING - initial_load_model_only=True has no effect without an initial_load_path.
+[titan] 2026-10-31 06:21:25,587 - root - INFO - Trainer is initialized with 16384 tokens per DP rank, 262144 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+[titan] 2026-10-31 06:21:25,587 - root - INFO - Training starts at step 1
+W1031 06:21:25.642466 134049152096192 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 06:21:25.642602 134049152096192 trainer.py:621] Peak FLOPS used for computing MFU: 4.590e+14
+I1031 06:21:25.642889 134049152096192 trainer.py:623] TPU memory usage for model: 0.00GiB(0.00%)
+I1031 06:21:25.648102 134049152096192 optimizer.py:268] Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+W1031 06:21:25.678573 134049152096192 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 06:21:25.678776 134049152096192 trainer.py:745] Trainer is initialized with 16384 tokens per DP rank, 262144 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+I1031 06:21:25.678916 134049152096192 trainer.py:1140] Training starts at step 1
+[rank1]:W1031 06:21:26.164000 28352 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank1]:W1031 06:21:26.164000 28352 site-packages/torch/_logging/_internal.py:1407] [0/0] Detected that context_fn is passed to torch.utils.checkpoint under torch.compile.
+[rank1]:W1031 06:21:26.164000 28352 site-packages/torch/_logging/_internal.py:1407] [0/0] Please make sure the checkpointed region does not contain in-place ops (e.g. torch.relu_).
+[rank1]:W1031 06:21:26.164000 28352 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank3]:W1031 06:21:26.185000 28354 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank3]:W1031 06:21:26.185000 28354 site-packages/torch/_logging/_internal.py:1407] [0/0] Detected that context_fn is passed to torch.utils.checkpoint under torch.compile.
+[rank3]:W1031 06:21:26.185000 28354 site-packages/torch/_logging/_internal.py:1407] [0/0] Please make sure the checkpointed region does not contain in-place ops (e.g. torch.relu_).
+[rank3]:W1031 06:21:26.185000 28354 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank0]:W1031 06:21:26.205000 28351 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank0]:W1031 06:21:26.205000 28351 site-packages/torch/_logging/_internal.py:1407] [0/0] Detected that context_fn is passed to torch.utils.checkpoint under torch.compile.
+[rank0]:W1031 06:21:26.205000 28351 site-packages/torch/_logging/_internal.py:1407] [0/0] Please make sure the checkpointed region does not contain in-place ops (e.g. torch.relu_).
+[rank0]:W1031 06:21:26.205000 28351 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank2]:W1031 06:21:26.283000 28353 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+[rank2]:W1031 06:21:26.283000 28353 site-packages/torch/_logging/_internal.py:1407] [0/0] Detected that context_fn is passed to torch.utils.checkpoint under torch.compile.
+[rank2]:W1031 06:21:26.283000 28353 site-packages/torch/_logging/_internal.py:1407] [0/0] Please make sure the checkpointed region does not contain in-place ops (e.g. torch.relu_).
+[rank2]:W1031 06:21:26.283000 28353 site-packages/torch/_logging/_internal.py:1407] [0/0] 
+I1031 06:21:26.480503 132187852228544 split_compiler.py:686] Split graph into 1 partitions
+I1031 06:21:26.499499 135488203667392 split_compiler.py:686] Split graph into 1 partitions
+[titan] 2026-10-31 06:21:26,515 - absl - INFO - Split graph into 1 partitions
+I1031 06:21:26.594107 134049152096192 split_compiler.py:686] Split graph into 1 partitions
+[titan] 2026-10-31 06:21:28,758 - absl - INFO - Split graph into 1 partitions
+I1031 06:21:28.801982 135488203667392 split_compiler.py:686] Split graph into 1 partitions
+I1031 06:21:28.808873 132187852228544 split_compiler.py:686] Split graph into 1 partitions
+I1031 06:21:28.809205 134049152096192 split_compiler.py:686] Split graph into 1 partitions
+[titan] 2026-10-31 06:21:30,031 - absl - INFO - Split graph into 1 partitions
+/torchtitan-native/minimax_h3_torchtitan.py:724: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_15_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  video_pred = self.proj_out(vid_slice.to(self.proj_out.weight.dtype))
+/usr/local/lib/python3.14/site-packages/torch/distributed/fsdp/_fully_shard/_fsdp_common.py:188: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_15_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  return x.to(dtype)
+/torchtitan-native/minimax_h3_torchtitan.py:725: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_15_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  audio_pred = self.audio_proj_out(aud_slice.to(self.audio_proj_out.weight.dtype))
+/torchtitan-native/minimax_h3_torchtitan.py:1202: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_15_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  vid_loss = torch.nn.functional.mse_loss(pred_video.float(), target_video, reduction="mean")
+/torchtitan-native/minimax_h3_torchtitan.py:1203: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_15_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  aud_loss = torch.nn.functional.mse_loss(pred_audio.float(), target_audio, reduction="mean")
+[titan] 2026-10-31 06:21:30,556 - absl - INFO - Split graph into 1 partitions
+/usr/local/lib/python3.14/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+E0000 00:00:1793427730.977749   28938 pjrt_transfer.cc:391] Async D2H ToLiteral transfer failed: FAILED_PRECONDITION: The program continuator has halted unexpectedly.
+=== Source Location Trace: ===
+external/xla+/xla/pjrt/c/pjrt_c_api_status_utils.cc:146
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1354, in start_minimax_h3_trainer
+[rank0]:     trainer.train()
+[rank0]:     ~~~~~~~~~~~~~^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+[rank0]:     result = f(*args, **kwargs)
+[rank0]:   File "/torchtitan-native/torchtitan/trainer.py", line 1155, in train
+[rank0]:     self.train_step(data_iterator)
+[rank0]:     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1219, in train_step
+[rank0]:     mb_loss = self.forward_backward_step(input_dict=batch, loss_scale=loss_scale)
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1207, in forward_backward_step
+[rank0]:     loss.backward()
+[rank0]:     ~~~~~~~~~~~~~^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_tensor.py", line 623, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         self, gradient, retain_graph, create_graph, inputs=inputs
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/autograd/__init__.py", line 395, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         tensors,
+[rank0]:         ^^^^^^^^
+[rank0]:     ...<5 lines>...
+[rank0]:         accumulate_grad=True,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/autograd/graph.py", line 1113, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:         t_outputs, *args, **kwargs
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )  # Calls into the C++ engine to run the backward pass
+[rank0]:     ^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/autograd/function.py", line 460, in apply_boxed
+[rank0]:     return self._get_user_fn()(self, *args)
+[rank0]:            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 3552, in backward
+[rank0]:     return CompiledFunction._bwd_fn(
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         flat_args,
+[rank0]:         ^^^^^^^^^^
+[rank0]:     ...<5 lines>...
+[rank0]:         CompiledFunction._double_backward,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/codegen.py:codegen(compiled_function_backward)", line 16, in _compiled_backward
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/codegen.py:codegen(compiled_function_backward)", line 10, in impl_fn
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 3608, in _backward_impl
+[rank0]:     compiled_bw = backward_compiler.get_or_compile(
+[rank0]:         saved_tensors_use_once=saved_tensors_use_once
+[rank0]:     )
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 2924, in get_or_compile
+[rank0]:     self.compiled_bw = self.bw_compiler(
+[rank0]:                        ~~~~~~~~~~~~~~~~^
+[rank0]:         copy.deepcopy(bw_module), placeholder_list
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/backends/common.py", line 114, in _wrapped_bw_compiler
+[rank0]:     disable(
+[rank0]:     ~~~~~~~~
+[rank0]:         bw_compiler_fn, reason="do not trace backward compiler function"
+[rank0]:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[rank0]:     )(*args, **kwargs),  # type: ignore[misc]
+[rank0]:     ~^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/eval_frame.py", line 1552, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/_backend.py", line 922, in _compile_graph_module
+[rank0]:     executable = compiler_instance(
+[rank0]:         graph_module, example_inputs, is_fwd, module_name=module_name
+[rank0]:     )
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 803, in __call__
+[rank0]:     executable = self._compile_graph(
+[rank0]:         graph_module,
+[rank0]:     ...<3 lines>...
+[rank0]:         module_name=module_name,
+[rank0]:     )
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 738, in _compile_graph
+[rank0]:     submod_compiler.run(*example_inputs)
+[rank0]:     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 197, in run
+[rank0]:     self.env[node] = self.run_node(node)
+[rank0]:                      ~~~~~~~~~~~~~^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 412, in run_node
+[rank0]:     compiled_submod_real = self.compile_submod(
+[rank0]:         comp_mod, new_args, kwargs, submod_name=str(n.target)
+[rank0]:     )
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 375, in compile_submod
+[rank0]:     compiled_submod_real = self.compiler_fn(
+[rank0]:         input_mod, args, module_name=full_submod_name
+[rank0]:     )
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/compiler.py", line 568, in __call__
+[rank0]:     return self._compile(
+[rank0]:            ~~~~~~~~~~~~~^
+[rank0]:         graph_module,
+[rank0]:         ^^^^^^^^^^^^^
+[rank0]:     ...<6 lines>...
+[rank0]:         module_name,
+[rank0]:         ^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/compiler.py", line 407, in _compile
+[rank0]:     exported_mlir = torch_tpu_export.fx_to_mlir(
+[rank0]:         graph_module,
+[rank0]:     ...<6 lines>...
+[rank0]:         module_name=module_name,
+[rank0]:     )
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/export/export.py", line 534, in fx_to_mlir
+[rank0]:     fx_outputs = EagerLikeFxInterpreter(module).run(*mapped_args)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 197, in run
+[rank0]:     self.env[node] = self.run_node(node)
+[rank0]:                      ~~~~~~~~~~~~~^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/export/export.py", line 207, in run_node
+[rank0]:     return dispatch_fx_node(node)
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/kernels/splash_attention.py", line 639, in splash_sdpa
+[rank0]:     result = typing.cast(torch.Tensor, result)
+[rank0]:                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 294, in run_node
+[rank0]:     return getattr(self, n.op)(n.target, args, kwargs)
+[rank0]:            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 377, in call_function
+[rank0]:     return target(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_ops.py", line 916, in __call__
+[rank0]:     return self._op(*args, **kwargs)
+[rank0]:            ~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_library/autograd.py", line 147, in autograd_impl
+[rank0]:     result = redispatch_no_grad(keyset, args, keyword_only_args)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_library/autograd.py", line 43, in redispatch_no_grad
+[rank0]:     result = op.redispatch(keyset & _C._after_autograd_keyset, *args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_ops.py", line 925, in redispatch
+[rank0]:     return pyobj_dispatcher.redispatch(keyset, *args, **kwargs)
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_library/custom_ops.py", line 442, in backend_impl
+[rank0]:     result = self._backend_fns[device_type](*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_compile.py", line 54, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/eval_frame.py", line 1552, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/_library/custom_ops.py", line 503, in wrapped_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/pallas/pallas.py", line 1251, in __call__
+[rank0]:     lowered = self.exported(*jax_args, **jax_kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/export/_export.py", line 613, in do_export
+[rank0]:     lowered = traced.lower(
+[rank0]:         lowering_platforms=actual_lowering_platforms,
+[rank0]:     ...<3 lines>...
+[rank0]:             hoist_constants_as_args=False,
+[rank0]:             export_ignore_forward_compatibility=config.export_ignore_forward_compatibility.value))
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/stages.py", line 544, in lower
+[rank0]:     lowering = _resolve_and_lower(
+[rank0]:         lo._meta_tys_flat, **lo._params, lowering_platforms=lowering_platforms,
+[rank0]:         lowering_parameters=_private_parameters, pgle_profiler=None)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1066, in _resolve_and_lower
+[rank0]:     return _pjit_lower(
+[rank0]:         jaxpr, in_shardings, out_shardings, in_layouts, out_layouts,
+[rank0]:     ...<2 lines>...
+[rank0]:         lowering_parameters=lowering_parameters,
+[rank0]:         pgle_profiler=pgle_profiler)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1239, in _pjit_lower
+[rank0]:     return pxla.lower_sharding_computation(
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         jaxpr, 'jit', name, in_shardings, out_shardings,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     ...<4 lines>...
+[rank0]:         lowering_parameters=lowering_parameters,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:         pgle_profiler=pgle_profiler)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/profiler.py", line 420, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/pxla.py", line 1141, in lower_sharding_computation
+[rank0]:     tuple_args, shape_poly_state) = _cached_lowering_to_hlo(
+[rank0]:                                     ~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         closed_jaxpr, module_name, backend,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     ...<6 lines>...
+[rank0]:         lowering_parameters=lowering_parameters,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:         abstract_mesh=abstract_mesh)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/pxla.py", line 756, in _cached_lowering_to_hlo
+[rank0]:     lowering_result = mlir.lower_jaxpr_to_module(
+[rank0]:         module_name,
+[rank0]:     ...<19 lines>...
+[rank0]:         propagated_out_mem_kinds=propagated_out_mem_kinds,
+[rank0]:         lowering_parameters=lowering_parameters)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 1444, in lower_jaxpr_to_module
+[rank0]:     lower_jaxpr_to_fun(
+[rank0]:     ~~~~~~~~~~~~~~~~~~^
+[rank0]:         ctx, module_name, jaxpr, ordered_effects,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     ...<14 lines>...
+[rank0]:         result_layouts=out_layouts,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:         propagated_out_mem_kinds=propagated_out_mem_kinds)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2042, in lower_jaxpr_to_fun
+[rank0]:     out_vals, tokens_out = jaxpr_subcomp(
+[rank0]:                            ~~~~~~~~~~~~~^
+[rank0]:         ctx, jaxpr, name_stack, tokens_in, consts_for_constvars, *args,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:         dim_var_values=dim_var_values, const_lowering=const_lowering,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:         outer_traceback=outer_traceback)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2245, in jaxpr_subcomp
+[rank0]:     out_nodes = _uncached_lowering(
+[rank0]:         eqn.primitive, eqn.ctx, eqn.effects, platform_rules, default_rule,
+[rank0]:         rule_ctx, *in_nodes,
+[rank0]:         **eqn.params)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2462, in _uncached_lowering
+[rank0]:     ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+[rank0]:                              effects, *args, **params)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2590, in lower_per_platform
+[rank0]:     output = type_cast(Sequence[IrValues], rule(ctx, *rule_args, **rule_kwargs))
+[rank0]:                                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1372, in _pjit_lowering
+[rank0]:     result = _pjit_lower_jaxpr_to_fun(
+[rank0]:         ctx, name, jaxpr, in_shardings, out_shardings,
+[rank0]:         in_layouts, out_layouts)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1339, in _pjit_lower_jaxpr_to_fun
+[rank0]:     func = mlir.lower_jaxpr_to_fun(
+[rank0]:         mod_ctx, name, jaxpr, effects,
+[rank0]:     ...<3 lines>...
+[rank0]:         use_sharding_annotations=False,
+[rank0]:         arg_layouts=in_layouts_expanded, result_layouts=out_layouts)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2037, in lower_jaxpr_to_fun
+[rank0]:     id(c): _ir_constant(c, aval=var.aval)
+[rank0]:            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 324, in _ir_constant
+[rank0]:     out = handler(val, aval)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/array.py", line 1127, in _array_mlir_constant_handler
+[rank0]:     return mlir.ir_constant(val._value)
+[rank0]:                             ^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/profiler.py", line 420, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/jax/_src/array.py", line 642, in _value
+[rank0]:     npy_value, did_copy = self._single_device_array_to_np_array_did_copy()
+[rank0]:                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+[rank0]: jax.errors.JaxRuntimeError: INTERNAL: E0200: RuntimeUnexpectedCoreHalt: Core halted unexpectedly: (launch_id=0)Assertion args: 0xc9f268a4 0x3e776c69 0x00000000 INTERNAL: Fatal error occurred during TPU execution. This indicates an infrastructure failure (hardware/network/power), a compiler bug, or a Pallas/Mosaic kernel bug. Please read https://openxla.org/xla/errors/error_0200 carefully for further details on how to triage and resolve this issue.
+
+[rank0]: Detailed error: Node 0 halted unexpectedly at tag:pc TensorCoreSequencer:1:0x40b (from TensorCoreSequencer:1:0x573): scheckeq: BarrierMegacore cookie: 1048013929 @ platforms/xla/service/jellyfish/lowering_emitter.cc:5733 HLO: as_strided.12; HLO computation: main.0_spmd; HLO module: tt_jit_execute_as_strided
+[rank0]: === Source Location Trace: ===
+[rank0]: learning/45eac/tpu/runtime/hal/internal/tpu_program_termination_validation.cc:186
+
+[rank0]: See https://openxla.org/xla/errors/error_0200 for more details. [TPU_EXECUTE_ERROR='\x08\x01']
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1364, in <module>
+[rank0]:     gmain.handle_main(start_minimax_h3_trainer)
+[rank0]:     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+[rank0]:     app.run(main, flags_parser=_parse_flags)
+[rank0]:     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+[rank0]:     _run_main(main, args)
+[rank0]:     ~~~~~~~~~^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+[rank0]:     sys.exit(main(argv))
+[rank0]:              ~~~~^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+[rank0]:     _start_trainer(config)
+[rank0]:     ~~~~~~~~~~~~~~^^^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+[rank0]:     global_start_trainer_func(config)
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1359, in start_minimax_h3_trainer
+[rank0]:     torch.distributed.barrier()
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/distributed_c10d.py", line 6607, in barrier
+[rank0]:     work = group.barrier(opts=opts)
+[rank0]: RuntimeError: failed to copy buffer from device into host buffer -- the XLA compiler failed with: the program continuator has halted unexpectedly
+E0000 00:00:1793427731.062029   28938 pjrt_transfer.cc:391] Async D2H ToLiteral transfer failed: FAILED_PRECONDITION: The program continuator has halted unexpectedly.
+=== Source Location Trace: ===
+external/xla+/xla/pjrt/c/pjrt_c_api_status_utils.cc:146
+
+Exception ignored in atexit callback <bound method _DeviceModule._shutdown_runtime of <class 'torch_tpu._internal.device._device_module.TpuDeviceModule'>>:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/device/_device_module.py", line 975, in _shutdown_runtime
+    torch.distributed.barrier()
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/distributed_c10d.py", line 6607, in barrier
+    work = group.barrier(opts=opts)
+RuntimeError: failed to copy buffer from device into host buffer -- the XLA compiler failed with: the program continuator has halted unexpectedly
+W1031 06:22:12.987000 28284 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 28352 closing signal SIGTERM
+W1031 06:22:12.987000 28284 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 28353 closing signal SIGTERM
+W1031 06:22:12.987000 28284 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 28354 closing signal SIGTERM
+https://symbolize.stripped_domain/r/?trace=7839624824f9,7839623b3d6f,7838ff617ae6,7838ff617bfd,7838ff6181ac,7838ff6184d8,7838ff61a8d3,7838fb6f259e,7838fb62f091,7838fb62eb8f,7838fb64aacc,7838fb64a9e4,7838fb88861f,78396271044b,78396271fb25,78396260d8c4,7839627230dc,78396260d8c4,783962748444,78396273ceec,78396271068c,7839627203c5,78396260d8c4,78396271044b,78396271f7bc,78396260d8c4,78396271044b,78396272bbd9,78396260d8c4,78396271044b,78396272bbd9,78396260d8c4,78396271044b&map= 
+*** SIGTERM received by PID 28352 (TID 28352) on cpu 126, si_code=0, from PID 28284; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=79eac06634f9,79eac0594d6f,79ea5d7f7ae6,79ea5d7f7bfd,79ea5d7f81ac,79ea5d7f84d8,79ea5d7fa8d3,79ea598d259e,79ea5980f091,79ea5980eb8f,79ea5982aacc,79ea5982a9e4,79ea59a6861f,79eac08f144b,79eac0900b25,79eac07ee8c4,79eac09040dc,79eac07ee8c4,79eac0929444,79eac091deec,79eac08f168c,79eac09013c5,79eac07ee8c4,79eac08f144b,79eac09007bc,79eac07ee8c4,79eac08f144b,79eac090cbd9,79eac07ee8c4,79eac08f144b,79eac090cbd9,79eac07ee8c4,79eac08f144b&map= 
+*** SIGTERM received by PID 28353 (TID 28353) on cpu 33, si_code=0, from PID 28284; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=7b39ce8e94f9,7b39ce81ad6f,7b396b96fae6,7b396b96fbfd,7b396b9701ac,7b396b9704d8,7b396b9728d3,7b3967a4a59e,7b3967987091,7b3967986b8f,7b39679a2acc,7b39679a29e4,7b3967be061f,7b39ceb7744b,7b39ceb86b25,7b39cea748c4,7b39ceb8a0dc,7b39cea748c4,7b39cebaf444,7b39ceba3eec,7b39ceb7768c,7b39ceb873c5,7b39cea748c4,7b39ceb7744b,7b39ceb867bc,7b39cea748c4,7b39ceb7744b,7b39ceb92bd9,7b39cea748c4,7b39ceb7744b,7b39ceb92bd9,7b39cea748c4,7b39ceb7744b&map= 
+*** SIGTERM received by PID 28354 (TID 28354) on cpu 121, si_code=0, from PID 28284; stack trace: ***
+PC: @     0x79eac06634f9  (unknown)  syscall
+PC: @     0x7b39ce8e94f9  (unknown)  syscall
+PC: @     0x7839624824f9  (unknown)  syscall
+    @     0x783925300137       1888  FailureSignalHandler()
+    @     0x79ea83500137       1888  FailureSignalHandler()
+    @     0x7b3991900137       1888  FailureSignalHandler()
+    @     0x79eac0594d70  (unknown)  (unknown)
+    @     0x7b39ce81ad70  (unknown)  (unknown)
+    @     0x7839623b3d70  709761296  (unknown)
+    @     0x7838ff617ae7         48  absl::lts_20260526::synchronization_internal::FutexWaiter::Wait()
+    @     0x7b396b96fae7         48  absl::lts_20260526::synchronization_internal::FutexWaiter::Wait()
+    @     0x79ea5d7f7ae7         48  absl::lts_20260526::synchronization_internal::FutexWaiter::Wait()
+    @     0x7838ff617bfe         32  AbslInternalPerThreadSemWait_lts_20260526
+    @     0x7b396b96fbfe         32  AbslInternalPerThreadSemWait_lts_20260526
+    @     0x79ea5d7f7bfe         32  AbslInternalPerThreadSemWait_lts_20260526
+    @     0x7838ff6181ad         48  absl::lts_20260526::Mutex::Block()
+    @     0x7b396b9701ad         48  absl::lts_20260526::Mutex::Block()
+    @     0x79ea5d7f81ad         48  absl::lts_20260526::Mutex::Block()
+    @     0x7838ff6184d9        128  absl::lts_20260526::Mutex::LockSlowWithDeadline()
+    @     0x7b396b9704d9        128  absl::lts_20260526::Mutex::LockSlowWithDeadline()
+    @     0x79ea5d7f84d9        128  absl::lts_20260526::Mutex::LockSlowWithDeadline()
+    @     0x7838ff61a8d4         96  absl::lts_20260526::Notification::WaitForNotificationWithTimeout()
+    @     0x7838fb6f259f        112  jax::BlockUntilReadyWithCancel()
+    @     0x79ea5d7fa8d4         96  absl::lts_20260526::Notification::WaitForNotificationWithTimeout()
+    @     0x7b396b9728d4         96  absl::lts_20260526::Notification::WaitForNotificationWithTimeout()
+    @     0x7838fb62f092        256  jax::PyHostValue::AsNumPyArray()
+    @     0x7b3967a4a59f        112  jax::BlockUntilReadyWithCancel()
+    @     0x79ea598d259f        112  jax::BlockUntilReadyWithCancel()
+    @     0x7838fb62eb90         96  jax::PyArray::SingleDeviceArrayToNumpyArrayDidCopy()
+    @     0x7b3967987092        256  jax::PyHostValue::AsNumPyArray()
+    @     0x79ea5980f092        256  jax::PyHostValue::AsNumPyArray()
+    @     0x7838fb64aacd         64  xla::ValueOrThrowWrapper<>::operator()()
+    @     0x7b3967986b90         96  jax::PyArray::SingleDeviceArrayToNumpyArrayDidCopy()
+    @     0x79ea5980eb90         96  jax::PyArray::SingleDeviceArrayToNumpyArrayDidCopy()
+    @     0x7838fb64a9e5         64  nanobind::detail::func_create<>()::{lambda()#1}::__invoke()
+    @     0x7b39679a2acd         64  xla::ValueOrThrowWrapper<>::operator()()
+    @     0x79ea5982aacd         64  xla::ValueOrThrowWrapper<>::operator()()
+    @     0x7838fb888620        144  nanobind::detail::nb_func_vectorcall_simple_1()
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396271fb26        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7b39679a29e5         64  nanobind::detail::func_create<>()::{lambda()#1}::__invoke()
+    @     0x783962748445         64  PyObject_CallOneArg
+    @     0x78396273ceed        128  _PyObject_GenericGetAttrWithDict
+    @     0x78396271068d         48  PyObject_GetAttr
+    @     0x79ea5982a9e5         64  nanobind::detail::func_create<>()::{lambda()#1}::__invoke()
+    @     0x7839627203c6        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396271f7bd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396272bbda        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396272bbda        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396271f7bd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x7b3967be0620        144  nanobind::detail::nb_func_vectorcall_simple_1()
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x7b39ceb86b26        768  _PyEval_EvalFrameDefault
+    @     0x79ea59a68620        144  nanobind::detail::nb_func_vectorcall_simple_1()
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x7b39cebaf445         64  PyObject_CallOneArg
+    @     0x79eac0900b26        768  _PyEval_EvalFrameDefault
+    @     0x783905d58288        672  jax::WeakrefLRUCacheBase::Call()
+    @     0x7b39ceba3eed        128  _PyObject_GenericGetAttrWithDict
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7768d         48  PyObject_GetAttr
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb873c6        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x79eac0929445         64  PyObject_CallOneArg
+    @     0x7b39ceb867bd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x79eac091deed        128  _PyObject_GenericGetAttrWithDict
+    @     0x7b39ceb92bda        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x7b39ceb92bda        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x7b39ceb867bd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x79eac08f168d         48  PyObject_GetAttr
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x79eac09013c6        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eac09007bd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eac090cbda        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eac090cbda        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eac09007bd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x783905d561ba        656  jax::WeakrefLRUCache::VectorCall()
+    @     0x783962710cdb         96  _PyObject_VectorcallDictTstate
+    @     0x78396281949c        160  slot_tp_call.lto_priv.0
+    @     0x78396270e11c         80  _PyObject_MakeTpCall
+    @     0x7839627251ae        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396272bbda        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x783905d58288        672  jax::WeakrefLRUCacheBase::Call()
+    @     0x783905d561ba        656  jax::WeakrefLRUCache::VectorCall()
+    @     0x783962710cdb         96  _PyObject_VectorcallDictTstate
+    @     0x78396281949c        160  slot_tp_call.lto_priv.0
+    @     0x78396270e11c         80  _PyObject_MakeTpCall
+    @     0x7839627251ae        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627545d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x78396272bbda        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x783962710c64         96  _PyObject_VectorcallDictTstate
+    @     0x7b39720b0288        672  jax::WeakrefLRUCacheBase::Call()
+    @     0x783962819409        160  slot_tp_call.lto_priv.0
+    @     0x783962754435         64  _PyObject_Call
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x7839627230dd        768  _PyEval_EvalFrameDefault
+    @     0x78396260d8c5        160  _PyEval_Vector.cold
+    @     0x78396271044c         64  PyObject_Vectorcall
+    @     0x79ea63f38288        672  jax::WeakrefLRUCacheBase::Call()
+    @     0x78395ffd5605  (unknown)  pybind11::detail::unpacking_collector<>::call()
+https://symbolize.stripped_domain/r/?trace=7839624824f9,783925300136,7839623b3d6f,7838ff617ae6,7838ff617bfd,7838ff6181ac,7838ff6184d8,7838ff61a8d3,7838fb6f259e,7838fb62f091,7838fb62eb8f,7838fb64aacc,7838fb64a9e4,7838fb88861f,78396271044b,78396271fb25,78396260d8c4,7839627230dc,78396260d8c4,783962748444,78396273ceec,78396271068c,7839627203c5,78396260d8c4,78396271044b,78396271f7bc,78396260d8c4,78396271044b,78396272bbd9,78396260d8c4,78396271044b,78396272bbd9,78396260d8c4,78396271044b,78396271f7bc,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,78396271044b,783905d58287,783905d561b9,783962710cda,78396281949b,78396270e11b,7839627251ad,78396260d8c4,7839627545d5,7839627230dc,78396260d8c4,78396271044b,78396272bbd9,78396260d8c4,78396271044b,783905d58287,783905d561b9,783962710cda,78396281949b,7839627E1031 06:22:13.060887   28352 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+    @     0x7b39720ae1ba        656  jax::WeakrefLRUCache::VectorCall()
+    @     0x7b39ceb77cdb         96  _PyObject_VectorcallDictTstate
+    @     0x7b39cec8049c        160  slot_tp_call.lto_priv.0
+    @     0x7b39ceb7511c         80  _PyObject_MakeTpCall
+    @     0x79ea63f361ba        656  jax::WeakrefLRUCache::VectorCall()
+    @     0x7b39ceb8c1ae        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x7b39ceb92bda        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x7b39720b0288        672  jax::WeakrefLRUCacheBase::Call()
+    @     0x7b39720ae1ba        656  jax::WeakrefLRUCache::VectorCall()
+    @     0x7b39ceb77cdb         96  _PyObject_VectorcallDictTstate
+    @     0x7b39cec8049c        160  slot_tp_call.lto_priv.0
+    @     0x7b39ceb7511c         80  _PyObject_MakeTpCall
+    @     0x7b39ceb8c1ae        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39cebbb5d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x7b39ceb92bda        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x79eac08f1cdb         96  _PyObject_VectorcallDictTstate
+    @     0x7b39ceb77c64         96  _PyObject_VectorcallDictTstate
+    @     0x79eac09fa49c        160  slot_tp_call.lto_priv.0
+    @     0x7b39cec80409        160  slot_tp_call.lto_priv.0
+    @     0x79eac08ef11c         80  _PyObject_MakeTpCall
+    @     0x7b39cebbb435         64  _PyObject_Call
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb8a0dd        768  _PyEval_EvalFrameDefault
+    @     0x7b39cea748c5        160  _PyEval_Vector.cold
+    @     0x7b39ceb7744c         64  PyObject_Vectorcall
+    @     0x79eac09061ae        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eac090cbda        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79ea63f38288        672  jax::WeakrefLRUCacheBase::Call()
+    @     0x79ea63f361ba        656  jax::WeakrefLRUCache::VectorCall()
+    @     0x79eac08f1cdb         96  _PyObject_VectorcallDictTstate
+    @     0x79eac09fa49c        160  slot_tp_call.lto_priv.0
+    @     0x79eac08ef11c         80  _PyObject_MakeTpCall
+    @     0x79eac09061ae        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09355d6         96  _PyVectorcall_Call.lto_priv.0
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eac090cbda        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f1c64         96  _PyObject_VectorcallDictTstate
+    @     0x7b39cc3d5605  (unknown)  pybind11::detail::unpacking_collector<>::call()
+https://symbolize.stripped_domain/r/?trace=7b39ce8e94f9,7b3991900136,7b39ce81ad6f,7b396b96fae6,7b396b96fbfd,7b396b9701ac,7b396b9704d8,7b396b9728d3,7b3967a4a59e,7b3967987091,7b3967986b8f,7b39679a2acc,7b39679a29e4,7b3967be061f,7b39ceb7744b,7b39ceb86b25,7b39cea748c4,7b39ceb8a0dc,7b39cea748c4,7b39cebaf444,7b39ceba3eec,7b39ceb7768c,7b39ceb873c5,7b39cea748c4,7b39ceb7744b,7b39ceb867bc,7b39cea748c4,7b39ceb7744b,7b39ceb92bd9,7b39cea748c4,7b39ceb7744b,7b39ceb92bd9,7b39cea748c4,7b39ceb7744b,7b39ceb867bc,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39ceb7744b,7b39720b0287,7b39720ae1b9,7b39ceb77cda,7b39cec8049b,7b39ceb7511b,7b39ceb8c1ad,7b39cea748c4,7b39cebbb5d5,7b39ceb8a0dc,7b39cea748c4,7b39ceb7744b,7b39ceb92bd9,7b39cea748c4,7b39ceb7744b,7b39720b0287,7b39720ae1b9,7b39ceb77cda,7b39cec8049b,7b39cebE1031 06:22:13.064951   28354 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+    @     0x79eac09fa409        160  slot_tp_call.lto_priv.0
+    @     0x79eac0935435         64  _PyObject_Call
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac09040dd        768  _PyEval_EvalFrameDefault
+    @     0x79eac07ee8c5        160  _PyEval_Vector.cold
+    @     0x79eac08f144c         64  PyObject_Vectorcall
+    @     0x79eabe1d5605  (unknown)  pybind11::detail::unpacking_collector<>::call()
+https://symbolize.stripped_domain/r/?trace=79eac06634f9,79ea83500136,79eac0594d6f,79ea5d7f7ae6,79ea5d7f7bfd,79ea5d7f81ac,79ea5d7f84d8,79ea5d7fa8d3,79ea598d259e,79ea5980f091,79ea5980eb8f,79ea5982aacc,79ea5982a9e4,79ea59a6861f,79eac08f144b,79eac0900b25,79eac07ee8c4,79eac09040dc,79eac07ee8c4,79eac0929444,79eac091deec,79eac08f168c,79eac09013c5,79eac07ee8c4,79eac08f144b,79eac09007bc,79eac07ee8c4,79eac08f144b,79eac090cbd9,79eac07ee8c4,79eac08f144b,79eac090cbd9,79eac07ee8c4,79eac08f144b,79eac09007bc,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac08f144b,79ea63f38287,79ea63f361b9,79eac08f1cda,79eac09fa49b,79eac08ef11b,79eac09061ad,79eac07ee8c4,79eac09355d5,79eac09040dc,79eac07ee8c4,79eac08f144b,79eac090cbd9,79eac07ee8c4,79eac08f144b,79ea63f38287,79ea63f361b9,79eac08f1cda,79eac09fa49b,79eac08E1031 06:22:13.065521   28353 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+E1031 06:22:13.471838   28354 process_state.cc:794] RAW: Raising signal 15 with default behavior
++---------------------------------------+
+| TPU Core(s) Debug Information @ 0x1x1 |
++---------------------------------------+
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-70yqcvap'}
+  warnings.warn(
++---------------------------------------+
+| TPU Core(s) Debug Information @ 1x1x1 |
++---------------------------------------+
+E1031 06:22:14.015765   28352 process_state.cc:794] RAW: Raising signal 15 with default behavior
+E1031 06:22:14.017857   28353 process_state.cc:794] RAW: Raising signal 15 with default behavior
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-as0_7czq'}
+  warnings.warn(
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-6o185vkx'}
+  warnings.warn(
+E1031 06:22:15.438000 28284 site-packages/torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 0 (pid: 28351) of binary: /usr/local/bin/python3.14
+E1031 06:22:15.439000 28284 site-packages/torch/distributed/elastic/multiprocessing/errors/error_handler.py:194] no error file defined for parent, to copy child error file (/tmp/torchelastic_4ugn283i/none_25rxzwrs/attempt_0/0/error.json)
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+    ~~~^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+        self._config,
+    ...<2 lines>...
+        health_check_server=self._health_check_server,
+    )
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+minimax_h3_torchtitan FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-31_06:22:15
+  host      : minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc.default.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 28352)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 28352
+[2]:
+  time      : 2026-10-31_06:22:15
+  host      : minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc.default.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 28353)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 28353
+[3]:
+  time      : 2026-10-31_06:22:15
+  host      : minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc.default.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 28354)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 28354
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-31_06:21:30
+  host      : minimax-h3-v5p-16-pass1-0.minimax-h3-v5p-16-pass1-svc.default.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 28351) 
+  error_file: /tmp/torchelastic_4ugn283i/none_25rxzwrs/attempt_0/0/error.json
+  traceback : Traceback (most recent call last):
+    File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+      result = f(*args, **kwargs)
+    File "/torchtitan-native/torchtitan/trainer.py", line 1155, in train
+      self.train_step(data_iterator)
+      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+    File "/torchtitan-native/minimax_h3_torchtitan.py", line 1219, in train_step
+      mb_loss = self.forward_backward_step(input_dict=batch, loss_scale=loss_scale)
+    File "/torchtitan-native/minimax_h3_torchtitan.py", line 1207, in forward_backward_step
+      loss.backward()
+      ~~~~~~~~~~~~~^^
+    File "/usr/local/lib/python3.14/site-packages/torch/_tensor.py", line 623, in backward
+      torch.autograd.backward(
+      ~~~~~~~~~~~~~~~~~~~~~~~^
+          self, gradient, retain_graph, create_graph, inputs=inputs
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/usr/local/lib/python3.14/site-packages/torch/autograd/__init__.py", line 395, in backward
+      _engine_run_backward(
+      ~~~~~~~~~~~~~~~~~~~~^
+          tensors,
+          ^^^^^^^^
+      ...<5 lines>...
+          accumulate_grad=True,
+          ^^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/usr/local/lib/python3.14/site-packages/torch/autograd/graph.py", line 1113, in _engine_run_backward
+      return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          t_outputs, *args, **kwargs
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      )  # Calls into the C++ engine to run the backward pass
+      ^
+    File "/usr/local/lib/python3.14/site-packages/torch/autograd/function.py", line 460, in apply_boxed
+      return self._get_user_fn()(self, *args)
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 3552, in backward
+      return CompiledFunction._bwd_fn(
+             ~~~~~~~~~~~~~~~~~~~~~~~~^
+          flat_args,
+          ^^^^^^^^^^
+      ...<5 lines>...
+          CompiledFunction._double_backward,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/codegen.py:codegen(compiled_function_backward)", line 16, in _compiled_backward
+    File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/codegen.py:codegen(compiled_function_backward)", line 10, in impl_fn
+    File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 3608, in _backward_impl
+      compiled_bw = backward_compiler.get_or_compile(
+          saved_tensors_use_once=saved_tensors_use_once
+      )
+    File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 2924, in get_or_compile
+      self.compiled_bw = self.bw_compiler(
+                         ~~~~~~~~~~~~~~~~^
+          copy.deepcopy(bw_module), placeholder_list
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/backends/common.py", line 114, in _wrapped_bw_compiler
+      disable(
+      ~~~~~~~~
+          bw_compiler_fn, reason="do not trace backward compiler function"
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      )(*args, **kwargs),  # type: ignore[misc]
+      ~^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/eval_frame.py", line 1552, in _fn
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/_backend.py", line 922, in _compile_graph_module
+      executable = compiler_instance(
+          graph_module, example_inputs, is_fwd, module_name=module_name
+      )
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 803, in __call__
+      executable = self._compile_graph(
+          graph_module,
+      ...<3 lines>...
+          module_name=module_name,
+      )
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 738, in _compile_graph
+      submod_compiler.run(*example_inputs)
+      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 197, in run
+      self.env[node] = self.run_node(node)
+                       ~~~~~~~~~~~~~^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 412, in run_node
+      compiled_submod_real = self.compile_submod(
+          comp_mod, new_args, kwargs, submod_name=str(n.target)
+      )
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 375, in compile_submod
+      compiled_submod_real = self.compiler_fn(
+          input_mod, args, module_name=full_submod_name
+      )
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/compiler.py", line 568, in __call__
+      return self._compile(
+             ~~~~~~~~~~~~~^
+          graph_module,
+          ^^^^^^^^^^^^^
+      ...<6 lines>...
+          module_name,
+          ^^^^^^^^^^^^
+      )
+      ^
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/compiler.py", line 407, in _compile
+      exported_mlir = torch_tpu_export.fx_to_mlir(
+          graph_module,
+      ...<6 lines>...
+          module_name=module_name,
+      )
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/export/export.py", line 534, in fx_to_mlir
+      fx_outputs = EagerLikeFxInterpreter(module).run(*mapped_args)
+    File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 197, in run
+      self.env[node] = self.run_node(node)
+                       ~~~~~~~~~~~~~^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/export/export.py", line 207, in run_node
+      return dispatch_fx_node(node)
+    File "/torchtitan-native/torchtitan/experiments/tpu/kernels/splash_attention.py", line 639, in splash_sdpa
+      result = typing.cast(torch.Tensor, result)
+                 ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 294, in run_node
+      return getattr(self, n.op)(n.target, args, kwargs)
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 377, in call_function
+      return target(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch/_ops.py", line 916, in __call__
+      return self._op(*args, **kwargs)
+             ~~~~~~~~^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/_library/autograd.py", line 147, in autograd_impl
+      result = redispatch_no_grad(keyset, args, keyword_only_args)
+    File "/usr/local/lib/python3.14/site-packages/torch/_library/autograd.py", line 43, in redispatch_no_grad
+      result = op.redispatch(keyset & _C._after_autograd_keyset, *args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch/_ops.py", line 925, in redispatch
+      return pyobj_dispatcher.redispatch(keyset, *args, **kwargs)
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/_library/custom_ops.py", line 442, in backend_impl
+      result = self._backend_fns[device_type](*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch/_compile.py", line 54, in inner
+      return disable_fn(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/eval_frame.py", line 1552, in _fn
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch/_library/custom_ops.py", line 503, in wrapped_fn
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/pallas/pallas.py", line 1251, in __call__
+      lowered = self.exported(*jax_args, **jax_kwargs)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/export/_export.py", line 613, in do_export
+      lowered = traced.lower(
+          lowering_platforms=actual_lowering_platforms,
+      ...<3 lines>...
+              hoist_constants_as_args=False,
+              export_ignore_forward_compatibility=config.export_ignore_forward_compatibility.value))
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/stages.py", line 544, in lower
+      lowering = _resolve_and_lower(
+          lo._meta_tys_flat, **lo._params, lowering_platforms=lowering_platforms,
+          lowering_parameters=_private_parameters, pgle_profiler=None)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1066, in _resolve_and_lower
+      return _pjit_lower(
+          jaxpr, in_shardings, out_shardings, in_layouts, out_layouts,
+      ...<2 lines>...
+          lowering_parameters=lowering_parameters,
+          pgle_profiler=pgle_profiler)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1239, in _pjit_lower
+      return pxla.lower_sharding_computation(
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+          jaxpr, 'jit', name, in_shardings, out_shardings,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      ...<4 lines>...
+          lowering_parameters=lowering_parameters,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          pgle_profiler=pgle_profiler)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/profiler.py", line 420, in wrapper
+      return func(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/pxla.py", line 1141, in lower_sharding_computation
+      tuple_args, shape_poly_state) = _cached_lowering_to_hlo(
+                                      ~~~~~~~~~~~~~~~~~~~~~~~^
+          closed_jaxpr, module_name, backend,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      ...<6 lines>...
+          lowering_parameters=lowering_parameters,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          abstract_mesh=abstract_mesh)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/pxla.py", line 756, in _cached_lowering_to_hlo
+      lowering_result = mlir.lower_jaxpr_to_module(
+          module_name,
+      ...<19 lines>...
+          propagated_out_mem_kinds=propagated_out_mem_kinds,
+          lowering_parameters=lowering_parameters)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 1444, in lower_jaxpr_to_module
+      lower_jaxpr_to_fun(
+      ~~~~~~~~~~~~~~~~~~^
+          ctx, module_name, jaxpr, ordered_effects,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      ...<14 lines>...
+          result_layouts=out_layouts,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          propagated_out_mem_kinds=propagated_out_mem_kinds)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2042, in lower_jaxpr_to_fun
+      out_vals, tokens_out = jaxpr_subcomp(
+                             ~~~~~~~~~~~~~^
+          ctx, jaxpr, name_stack, tokens_in, consts_for_constvars, *args,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          dim_var_values=dim_var_values, const_lowering=const_lowering,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          outer_traceback=outer_traceback)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2245, in jaxpr_subcomp
+      out_nodes = _uncached_lowering(
+          eqn.primitive, eqn.ctx, eqn.effects, platform_rules, default_rule,
+          rule_ctx, *in_nodes,
+          **eqn.params)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2462, in _uncached_lowering
+      ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+                               effects, *args, **params)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2590, in lower_per_platform
+      output = type_cast(Sequence[IrValues], rule(ctx, *rule_args, **rule_kwargs))
+                                             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1372, in _pjit_lowering
+      result = _pjit_lower_jaxpr_to_fun(
+          ctx, name, jaxpr, in_shardings, out_shardings,
+          in_layouts, out_layouts)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1339, in _pjit_lower_jaxpr_to_fun
+      func = mlir.lower_jaxpr_to_fun(
+          mod_ctx, name, jaxpr, effects,
+      ...<3 lines>...
+          use_sharding_annotations=False,
+          arg_layouts=in_layouts_expanded, result_layouts=out_layouts)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2037, in lower_jaxpr_to_fun
+      id(c): _ir_constant(c, aval=var.aval)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 324, in _ir_constant
+      out = handler(val, aval)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/array.py", line 1127, in _array_mlir_constant_handler
+      return mlir.ir_constant(val._value)
+                              ^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/profiler.py", line 420, in wrapper
+      return func(*args, **kwargs)
+    File "/usr/local/lib/python3.14/site-packages/jax/_src/array.py", line 642, in _value
+      npy_value, did_copy = self._single_device_array_to_np_array_did_copy()
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  jax.errors.JaxRuntimeError: INTERNAL: E0200: RuntimeUnexpectedCoreHalt: Core halted unexpectedly: (launch_id=0)Assertion args: 0xc9f268a4 0x3e776c69 0x00000000 INTERNAL: Fatal error occurred during TPU execution. This indicates an infrastructure failure (hardware/network/power), a compiler bug, or a Pallas/Mosaic kernel bug. Please read https://openxla.org/xla/errors/error_0200 carefully for further details on how to triage and resolve this issue.
+  
+  Detailed error: Node 0 halted unexpectedly at tag:pc TensorCoreSequencer:1:0x40b (from TensorCoreSequencer:1:0x573): scheckeq: BarrierMegacore cookie: 1048013929 @ platforms/xla/service/jellyfish/lowering_emitter.cc:5733 HLO: as_strided.12; HLO computation: main.0_spmd; HLO module: tt_jit_execute_as_strided
+  === Source Location Trace: ===
+  learning/45eac/tpu/runtime/hal/internal/tpu_program_termination_validation.cc:186
+  
+  See https://openxla.org/xla/errors/error_0200 for more details. [TPU_EXECUTE_ERROR='\x08\x01']
+  
+============================================================
