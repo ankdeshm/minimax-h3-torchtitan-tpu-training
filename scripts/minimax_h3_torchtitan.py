@@ -809,28 +809,39 @@ def parallelize_minimax_h3(
         f"(sa_block={ref_block}) with bidirectional Pallas SplashAttention(is_causal=False)"
     )
 
-    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`)
+    # 2. Activation Checkpointing (`SplashSaveAC` vs `FullAC`, HBM-calibrated for 95 GiB v5p / 96 GiB v7x)
     if ac_config is not None and getattr(ac_config, "mode", "full") != "none":
-        ctx_fn = (
-            (lambda: create_selective_checkpoint_contexts(_full_ac_save_splash_policy))
-            if save_splash_in_ac
-            else None
-        )
+        shard_deg = parallel_dims.dp_shard if parallel_dims.dp_shard > 0 else getattr(parallel_dims, "world_size", 16)
+        if save_splash_in_ac:
+            if shard_deg >= 32:
+                first_full_ac = 28 if training.max_context_length >= 32768 else 6
+            elif shard_deg >= 16:
+                first_full_ac = 38 if training.max_context_length >= 32768 else 18
+            else:
+                # HSDP 2x8 (shard_deg=8 -> ~58 GiB persistent state): save 8 layers at 16K
+                first_full_ac = 50 if training.max_context_length >= 32768 else 42
+        else:
+            first_full_ac = 50
+        splash_ctx_fn = lambda: create_selective_checkpoint_contexts(_full_ac_save_splash_policy)
         for layer_id, rblk in model.token_refiner.refiner_blocks.named_children():
             wrapped = (
-                ptd_checkpoint_wrapper(rblk, preserve_rng_state=False, context_fn=ctx_fn)
-                if ctx_fn is not None
+                ptd_checkpoint_wrapper(rblk, preserve_rng_state=False, context_fn=splash_ctx_fn)
+                if save_splash_in_ac
                 else ptd_checkpoint_wrapper(rblk, preserve_rng_state=False)
             )
             model.token_refiner.refiner_blocks.register_module(layer_id, wrapped)
         for layer_id, blk in model.transformer_blocks.named_children():
+            use_save = save_splash_in_ac and int(layer_id) >= first_full_ac
             wrapped = (
-                ptd_checkpoint_wrapper(blk, preserve_rng_state=False, context_fn=ctx_fn)
-                if ctx_fn is not None
+                ptd_checkpoint_wrapper(blk, preserve_rng_state=False, context_fn=splash_ctx_fn)
+                if use_save
                 else ptd_checkpoint_wrapper(blk, preserve_rng_state=False)
             )
             model.transformer_blocks.register_module(layer_id, wrapped)
-        logger.info(f"Applied Activation Checkpointing (save_splash_in_ac={save_splash_in_ac}) to 52 blocks")
+        logger.info(
+            f"Applied Activation Checkpointing (save_splash_in_ac={save_splash_in_ac}, "
+            f"saved_main_blocks={50 - first_full_ac}/50) to 52 blocks"
+        )
 
     # 3. Per-block torch.compile(backend="tpu", fullgraph=True)
     if compile_config.enable and "model" in compile_config.components:
