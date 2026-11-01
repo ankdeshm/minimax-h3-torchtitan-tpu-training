@@ -1,0 +1,12 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793461793.901733      73 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793461794.793000      73 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793461794.796249      73 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+W1031 15:49:54.828000 73 site-packages/torch/distributed/run.py:982] 
+W1031 15:49:54.828000 73 site-packages/torch/distributed/run.py:982] *****************************************
+W1031 15:49:54.828000 73 site-packages/torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1031 15:49:54.828000 73 site-packages/torch/distributed/run.py:982] *****************************************

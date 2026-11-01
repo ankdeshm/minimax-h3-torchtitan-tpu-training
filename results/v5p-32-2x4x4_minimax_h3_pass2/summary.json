@@ -1,0 +1,159 @@
+{
+  "run_timestamp": "20261031_092452",
+  "updated_utc": "2026-10-31T09:36:02.947766+00:00",
+  "accel": "v5p",
+  "topology": "2x4x4",
+  "nodepool": "tpu-v5p-32-pool",
+  "num_chips": 32,
+  "phys_chips": 32,
+  "peak_bf16_tflops_per_chip": 459.0,
+  "checkpoint_dir": "/models/models/MiniMaxAI/MiniMax-H3/transformer",
+  "experiments": [
+    {
+      "name": "mh3_p2_01_fsdp32_fullac_s16k_pretrained",
+      "parallelism": "FSDP-32",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "FullAC (recompute attn)",
+      "save_splash": false,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 8,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": true,
+      "status": "ok",
+      "wall_s": 590.56,
+      "steady_step_s": 24.552,
+      "steady_tps_per_chip": 667.4,
+      "cluster_tps": 21356.8,
+      "peak_mem_gib": 10.46,
+      "torchtitan_mfu_pct": 27.08,
+      "exact_bidir_tflops_per_chip": 124.29,
+      "exact_bidir_mfu_pct": 27.08,
+      "loss_first": 3.63202,
+      "loss_last": 3.87707,
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63202,
+          "grad_norm": 219.0323,
+          "mem_gib": 10.46,
+          "tps": 42.0,
+          "tflops": 7.81,
+          "mfu_pct": 1.7,
+          "step_s": 390.78
+        },
+        {
+          "step": 2,
+          "loss": 4.14708,
+          "grad_norm": 2254.8936,
+          "mem_gib": 10.46,
+          "tps": 603.0,
+          "tflops": 112.21,
+          "mfu_pct": 24.45,
+          "step_s": 27.19
+        },
+        {
+          "step": 3,
+          "loss": 3.78387,
+          "grad_norm": 296.8477,
+          "mem_gib": 10.46,
+          "tps": 653.0,
+          "tflops": 121.64,
+          "mfu_pct": 26.5,
+          "step_s": 25.08
+        },
+        {
+          "step": 4,
+          "loss": 4.59442,
+          "grad_norm": 1309.0703,
+          "mem_gib": 10.46,
+          "tps": 671.0,
+          "tflops": 124.9,
+          "mfu_pct": 27.21,
+          "step_s": 24.43
+        },
+        {
+          "step": 5,
+          "loss": 2.52417,
+          "grad_norm": 565.6293,
+          "mem_gib": 10.46,
+          "tps": 668.0,
+          "tflops": 124.41,
+          "mfu_pct": 27.1,
+          "step_s": 24.53
+        },
+        {
+          "step": 6,
+          "loss": 4.33667,
+          "grad_norm": 2540.2537,
+          "mem_gib": 10.46,
+          "tps": 665.0,
+          "tflops": 123.91,
+          "mfu_pct": 27.0,
+          "step_s": 24.62
+        },
+        {
+          "step": 7,
+          "loss": 4.87292,
+          "grad_norm": 6082.1426,
+          "mem_gib": 10.46,
+          "tps": 665.0,
+          "tflops": 123.79,
+          "mfu_pct": 26.97,
+          "step_s": 24.65
+        },
+        {
+          "step": 8,
+          "loss": 3.87707,
+          "grad_norm": 4232.5454,
+          "mem_gib": 10.46,
+          "tps": 668.0,
+          "tflops": 124.4,
+          "mfu_pct": 27.1,
+          "step_s": 24.53
+        }
+      ]
+    },
+    {
+      "name": "mh3_p2_02_fsdp32_splash_save_ac_s16k_pretrained",
+      "parallelism": "FSDP-32",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "SplashSaveAC (calibrated)",
+      "save_splash": true,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 10,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": true,
+      "status": "rc=1",
+      "wall_s": 71.54,
+      "error": " |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^ |     File \"/usr/local/lib/python3.14/site-packages/torch/accelerator/__init__.py\", line 272, in synchronize |       torch._C._accelerator_synchronizeDevice(device_index) |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^ |   RuntimeError: a required argument is in a failed state |    | ============================================================",
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63202,
+          "grad_norm": 219.4485,
+          "mem_gib": 10.79,
+          "tps": 382.0,
+          "tflops": 71.06,
+          "mfu_pct": 15.48,
+          "step_s": 42.94
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466698.809923   76572 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793466699.463883   76572 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466699.466227   76572 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+W1031 17:11:39.490000 76572 site-packages/torch/distributed/run.py:982] 
+W1031 17:11:39.490000 76572 site-packages/torch/distributed/run.py:982] *****************************************
+W1031 17:11:39.490000 76572 site-packages/torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1031 17:11:39.490000 76572 site-packages/torch/distributed/run.py:982] *****************************************
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466702.061448   76644 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466702.068945   76643 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466702.096459   76645 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466702.102361   76646 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466702.209443   76642 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793466702.209445   76641 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793466702.209445   76640 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793466702.212354   76639 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793466702.734360   76644 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.736788   76644 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.738992   76643 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.741331   76643 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.764126   76645 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.766444   76645 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.771588   76646 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.773937   76646 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.886953   76641 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+I0000 00:00:1793466702.886961   76642 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+
+Registered Python module for 'tpu'.
+Registered Python module for 'tpu'.Device type: tpu, Device index: default
+
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.889355   76641 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.889365   76642 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.889480   76640 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.891853   76640 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793466702.896471   76639 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793466702.898863   76639 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 17:11:44.219000 76644 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.220000 76643 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.238000 76644 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.239000 76643 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.240000 76646 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.245000 76645 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.257000 76646 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.263000 76645 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 17:11:44.375000 76642 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.375000 76641 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.381000 76640 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.392000 76639 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.394000 76642 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.394000 76641 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.398000 76640 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.409000 76639 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 17:11:44.655929 132135735457728 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.656240 139102372624320 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.672449 137580615854016 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.678572 134005992249280 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.805990 132266932565952 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.806737 136892542293952 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.811961 133196084459456 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.825227 134165943449536 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.954371 132135735457728 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.957185 132135735457728 manager.py:229] HF assets path  does not exist!
+I1031 17:11:44.957275 132135735457728 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:44.957310 132135735457728 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+W1031 17:11:44.958068 139102372624320 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 17:11:44.958548 132135735457728 float8_converter.py:53] TPU float8 training active with recipe rowwise
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:44.960941 139102372624320 manager.py:229] HF assets path  does not exist!
+I1031 17:11:44.961037 139102372624320 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:44.961073 139102372624320 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 17:11:44.962301 139102372624320 float8_converter.py:53] TPU float8 training active with recipe rowwise
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:44.973609 137580615854016 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:44.976428 137580615854016 manager.py:229] HF assets path  does not exist!
+I1031 17:11:44.976523 137580615854016 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:44.976560 137580615854016 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 17:11:44.977805 137580615854016 float8_converter.py:53] TPU float8 training active with recipe rowwise
+W1031 17:11:44.977862 134005992249280 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:44.981029 134005992249280 manager.py:229] HF assets path  does not exist!
+I1031 17:11:44.981135 134005992249280 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:44.981176 134005992249280 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 17:11:44.982580 134005992249280 float8_converter.py:53] TPU float8 training active with recipe rowwise
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:45.104621 132266932565952 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:45.106249 136892542293952 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:45.107445 132266932565952 manager.py:229] HF assets path  does not exist!
+I1031 17:11:45.107542 132266932565952 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:45.107577 132266932565952 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 17:11:45.108819 132266932565952 float8_converter.py:53] TPU float8 training active with recipe rowwise
+W1031 17:11:45.109063 136892542293952 manager.py:229] HF assets path  does not exist!
+I1031 17:11:45.109157 136892542293952 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:45.109199 136892542293952 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+I1031 17:11:45.110416 136892542293952 float8_converter.py:53] TPU float8 training active with recipe rowwise
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:45.114739 133196084459456 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:45.117544 133196084459456 manager.py:229] HF assets path  does not exist!
+I1031 17:11:45.117639 133196084459456 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:45.117676 133196084459456 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 17:11:45.118925 133196084459456 float8_converter.py:53] TPU float8 training active with recipe rowwise
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:45.125934 134165943449536 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 17:11:45.128766 134165943449536 manager.py:229] HF assets path  does not exist!
+I1031 17:11:45.128879 134165943449536 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 17:11:45.128927 134165943449536 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+[titan] 2026-10-31 17:11:45,130 - root - INFO - TPU float8 training active with recipe rowwise
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1406, in <module>
+    gmain.handle_main(start_minimax_h3_trainer)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+    app.run(main, flags_parser=_parse_flags)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+    _run_main(main, args)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+    sys.exit(main(argv))
+             ~~~~^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+    _start_trainer(config)
+    ~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+    global_start_trainer_func(config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1370, in start_minimax_h3_trainer
+    config.model_spec = build_minimax_h3_model_spec(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sa_block=config.sa_block,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        l_aud=config.l_aud,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/torchtitan-native/minimax_h3_torchtitan.py", line 1302, in build_minimax_h3_model_spec
+    fp8_conv.torchao_config = dataclasses.replace(
+                              ^^^^^^^^^^^
+NameError: name 'dataclasses' is not defined. Did you mean: 'dataclass'? Or did you forget to import 'dataclasses'?
+W1031 17:11:46.159000 76572 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 76639 closing signal SIGTERM
+W1031 17:11:46.160000 76572 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 76640 closing signal SIGTERM
+W1031 17:11:46.160000 76572 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 76641 closing signal SIGTERM
+W1031 17:11:46.160000 76572 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 76642 closing signal SIGTERM
+E1031 17:11:46.223000 76572 site-packages/torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 4 (pid: 76643) of binary: /usr/local/bin/python3.14
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+    ~~~^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+        self._config,
+    ...<2 lines>...
+        health_check_server=self._health_check_server,
+    )
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+minimax_h3_torchtitan FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 76644) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 76645) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 76646) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : -15 (pid: 76639)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 76639
+[5]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 76640)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 76640
+[6]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 76641)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 76641
+[7]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 76642)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 76642
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-31_17:11:46
+  host      : minimax-h3-v7x-16-pass2-0.minimax-h3-v7x-16-pass2-svc.default.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 76643) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

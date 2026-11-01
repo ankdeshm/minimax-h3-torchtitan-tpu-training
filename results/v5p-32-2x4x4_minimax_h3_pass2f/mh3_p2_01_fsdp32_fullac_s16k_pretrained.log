@@ -1,0 +1,615 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793464390.083288      73 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793464390.967940      73 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793464390.971153      73 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+W1031 16:33:11.003000 73 site-packages/torch/distributed/run.py:982] 
+W1031 16:33:11.003000 73 site-packages/torch/distributed/run.py:982] *****************************************
+W1031 16:33:11.003000 73 site-packages/torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1031 16:33:11.003000 73 site-packages/torch/distributed/run.py:982] *****************************************
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793464394.076702     142 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793464394.085111     140 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793464394.194132     141 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793464394.202870     143 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793464394.977221     140 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793464394.980393     140 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793464394.984313     142 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793464394.987538     142 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793464395.076220     141 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793464395.079369     141 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793464395.095085     143 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793464395.098271     143 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 16:33:16.870000 142 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:16.887000 140 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:16.895000 142 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:16.910000 140 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 16:33:16.970000 141 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:16.994000 141 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:17.004000 143 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:17.027000 143 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 16:33:17.484416 135663198902208 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.486787 133779905062848 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.520344 135717467760576 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.557165 139325750122432 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.819857 135663198902208 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.823815 135663198902208 manager.py:229] HF assets path  does not exist!
+I1031 16:33:17.823960 135663198902208 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 16:33:17.824012 135663198902208 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 16:33:17.824856 135663198902208 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 16:33:17.625624553 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 16:33:17.625651044 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793464397.825111     142 discovery.cc:125] DistributedWorkerConfiguration: 2 2 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10002 2,4,4
+W0000 00:00:1793464397.825157     142 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793464397.825169     142 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 16:33:17.856950 133779905062848 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.860929 133779905062848 manager.py:229] HF assets path  does not exist!
+I1031 16:33:17.861046 133779905062848 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 16:33:17.861095 133779905062848 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+[titan] 2026-10-31 16:33:17,862 - root - INFO - Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 16:33:17.662836515 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 16:33:17.662861601 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793464397.862321     140 discovery.cc:125] DistributedWorkerConfiguration: 0 0 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10000 2,4,4
+W0000 00:00:1793464397.862371     140 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793464397.862382     140 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 16:33:17.876248 135717467760576 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:17.880130 135717467760576 manager.py:229] HF assets path  does not exist!
+I1031 16:33:17.880245 135717467760576 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 16:33:17.880294 135717467760576 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 16:33:17.881105 135717467760576 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 16:33:17.681824786 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 16:33:17.681842914 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793464397.881301     141 discovery.cc:125] DistributedWorkerConfiguration: 1 1 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10001 2,4,4
+W0000 00:00:1793464397.881335     141 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793464397.881344     141 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 16:33:18.057542 139325750122432 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 16:33:18.061550 139325750122432 manager.py:229] HF assets path  does not exist!
+I1031 16:33:18.061693 139325750122432 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 16:33:18.061744 139325750122432 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 16:33:18.062603 139325750122432 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 16:33:18.863349443 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 16:33:18.863370789 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793464398.062829     143 discovery.cc:125] DistributedWorkerConfiguration: 3 3 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10003 2,4,4
+W0000 00:00:1793464398.062866     143 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793464398.062874     143 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+I0000 00:00:1793464402.126225     143 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 16:33:22.130592 139325750122432 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793464402.139848     143 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=3 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793464402.219249     142 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 16:33:22.227991 135663198902208 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793464402.237147     142 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=2 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793464402.294173     141 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 16:33:22.298839 135717467760576 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793464402.303660     141 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=1 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793464402.323968     140 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+[titan] 2026-10-31 16:33:22,324 - root - WARNING - ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793464402.325172     140 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=0 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793464403.190485     140 process_group_tpu.cc:1269] AllGatherViaNodeLocalStore(world_topo:0:32): gathered 32 entries from 32 nodes in 866 ms
+[titan] 2026-10-31 16:33:23,190 - root - INFO - Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 16:33:23.191193 135717467760576 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 16:33:23.191239 139325750122432 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 16:33:23.191289 135663198902208 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+[titan] 2026-10-31 16:33:23,201 - root - INFO - [GC] Initial GC collection took 0.00 seconds
+I1031 16:33:23.202290 135717467760576 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+I1031 16:33:23.202499 135663198902208 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+I1031 16:33:23.202539 139325750122432 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+[titan] 2026-10-31 16:33:23,213 - root - INFO - Building minimax_h3 33B-omni
+I1031 16:33:23.213532 139325750122432 trainer.py:443] Building minimax_h3 33B-omni
+I1031 16:33:23.213782 135717467760576 trainer.py:443] Building minimax_h3 33B-omni
+I1031 16:33:23.213982 135663198902208 trainer.py:443] Building minimax_h3 33B-omni
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+[titan] 2026-10-31 16:33:23,311 - root - INFO - TPU capacity: TPU v5p with 95.00GiB memory
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 16:33:23.311654 139325750122432 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+[titan] 2026-10-31 16:33:23,311 - root - WARNING - Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+W1031 16:33:23.312385 139325750122432 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 16:33:23.312920 135717467760576 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+W1031 16:33:23.313514 135717467760576 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 16:33:23.313639 135663198902208 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+[titan] 2026-10-31 16:33:23,313 - root - INFO - [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+W1031 16:33:23.314244 135663198902208 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 16:33:23.314644 139325750122432 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+[titan] 2026-10-31 16:33:23,315 - root - INFO - Patched 50 MiniMaxH3TransformerBlocks (sa_block=512, compute_blk=512) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+I1031 16:33:23.315764 135717467760576 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 16:33:23.315845 139325750122432 minimax_h3_torchtitan.py:791] Patched 50 MiniMaxH3TransformerBlocks (sa_block=512, compute_blk=512) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+[titan] 2026-10-31 16:33:23,316 - root - INFO - Applied Activation Checkpointing (save_splash_in_ac=False, saved_main_blocks=0/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+I1031 16:33:23.316507 135663198902208 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 16:33:23.316960 135717467760576 minimax_h3_torchtitan.py:791] Patched 50 MiniMaxH3TransformerBlocks (sa_block=512, compute_blk=512) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+I1031 16:33:23.317040 139325750122432 minimax_h3_torchtitan.py:824] Applied Activation Checkpointing (save_splash_in_ac=False, saved_main_blocks=0/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+I1031 16:33:23.317749 135663198902208 minimax_h3_torchtitan.py:791] Patched 50 MiniMaxH3TransformerBlocks (sa_block=512, compute_blk=512) + 2 TokenRefinerBlocks (sa_block=512) with bidirectional Pallas SplashAttention(is_causal=False)
+I1031 16:33:23.318181 135717467760576 minimax_h3_torchtitan.py:824] Applied Activation Checkpointing (save_splash_in_ac=False, saved_main_blocks=0/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+I1031 16:33:23.318972 135663198902208 minimax_h3_torchtitan.py:824] Applied Activation Checkpointing (save_splash_in_ac=False, saved_main_blocks=0/50) to 52 blocks
+/torchtitan-native/torchtitan/experiments/tpu/spmd_utils.py:20: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> spmd_safe is experimental and subject to change: torch.tpu.distributed.spmd_safe is experimental and subject to change.
+  mod.forward = spmd_safe(orig_forward)
+[titan] 2026-10-31 16:33:23,339 - root - INFO - Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 16:33:23.340437 139325750122432 minimax_h3_torchtitan.py:837] Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 16:33:23.341289 135717467760576 minimax_h3_torchtitan.py:837] Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 16:33:23.342927 135663198902208 minimax_h3_torchtitan.py:837] Compiled 52 blocks with torch.compile(backend='tpu', fullgraph=True)
+I1031 16:33:23.550794 139325750122432 minimax_h3_torchtitan.py:876] Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.float32, replicate=1, shard=32) to MiniMaxH3Model
+[titan] 2026-10-31 16:33:23,551 - root - INFO - Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.float32, replicate=1, shard=32) to MiniMaxH3Model
+I1031 16:33:23.552333 135717467760576 minimax_h3_torchtitan.py:876] Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.float32, replicate=1, shard=32) to MiniMaxH3Model
+I1031 16:33:23.557655 135663198902208 minimax_h3_torchtitan.py:876] Applied FSDP2 fully_shard (param=torch.bfloat16, reduce=torch.float32, replicate=1, shard=32) to MiniMaxH3Model
+I0000 00:00:1793464403.704834    1803 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793464403.704883    1803 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793464403.704891    1803 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793464403.704952    2895 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793464403.712146    1805 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793464403.712167    1805 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793464403.712175    1805 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793464403.712207    1807 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793464403.712202    3281 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793464403.712231    1807 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793464403.712237    1807 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793464403.712265    3284 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793464403.720441    1910 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793464403.720492    1910 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793464403.720499    1910 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793464403.720539    3470 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+W1031 16:33:24.091783 135717467760576 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 16:33:24.091925 135717467760576 trainer.py:621] Peak FLOPS used for computing MFU: 4.590e+14
+I1031 16:33:24.092194 135717467760576 trainer.py:623] TPU memory usage for model: 0.00GiB(0.00%)
+I1031 16:33:24.097280 135717467760576 optimizer.py:268] Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+W1031 16:33:24.125916 135717467760576 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 16:33:24.126072 135717467760576 trainer.py:745] Trainer is initialized with 16384 tokens per DP rank, 524288 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+W1031 16:33:24.183822 139325750122432 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 16:33:24.183946 139325750122432 trainer.py:621] Peak FLOPS used for computing MFU: 4.590e+14
+I1031 16:33:24.184181 139325750122432 trainer.py:623] TPU memory usage for model: 0.00GiB(0.00%)
+I1031 16:33:24.188943 139325750122432 optimizer.py:268] Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+[titan] 2026-10-31 16:33:24,197 - root - WARNING - Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+[titan] 2026-10-31 16:33:24,197 - root - INFO - Peak FLOPS used for computing MFU: 4.590e+14
+[titan] 2026-10-31 16:33:24,198 - root - INFO - TPU memory usage for model: 0.00GiB(0.00%)
+W1031 16:33:24.199759 135663198902208 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 16:33:24.199890 135663198902208 trainer.py:621] Peak FLOPS used for computing MFU: 4.590e+14
+I1031 16:33:24.200129 135663198902208 trainer.py:623] TPU memory usage for model: 0.00GiB(0.00%)
+[titan] 2026-10-31 16:33:24,203 - root - INFO - Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+I1031 16:33:24.205209 135663198902208 optimizer.py:268] Optimizer AdamW (model_part=0): 638 params [.*] {'fused': False, 'foreach': True, 'lr': 5e-05, 'betas': (0.9, 0.95), 'eps': 1e-08, 'weight_decay': 0.1}
+W1031 16:33:24.217848 139325750122432 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 16:33:24.217977 139325750122432 trainer.py:745] Trainer is initialized with 16384 tokens per DP rank, 524288 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+[titan] 2026-10-31 16:33:24,237 - root - WARNING - initial_load_model_only=True has no effect without an initial_load_path.
+[titan] 2026-10-31 16:33:24,237 - root - INFO - Trainer is initialized with 16384 tokens per DP rank, 524288 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+W1031 16:33:24.238813 135663198902208 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+I1031 16:33:24.238988 135663198902208 trainer.py:745] Trainer is initialized with 16384 tokens per DP rank, 524288 tokens per train step, gradient accumulation steps 1, maximum context length 16384, total steps 8 (warmup 0)
+[titan] 2026-10-31 16:33:47,269 - root - INFO - [MiniMax-H3] Loaded 4/14 safetensors shards (196/638 tensors in 23.0s)
+I1031 16:33:47.336368 135717467760576 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 4/14 safetensors shards (196/638 tensors in 23.2s)
+I1031 16:33:47.362533 139325750122432 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 4/14 safetensors shards (196/638 tensors in 23.1s)
+I1031 16:33:47.366549 135663198902208 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 4/14 safetensors shards (196/638 tensors in 23.1s)
+[titan] 2026-10-31 16:34:08,646 - root - INFO - [MiniMax-H3] Loaded 8/14 safetensors shards (374/638 tensors in 44.4s)
+I1031 16:34:08.647936 135663198902208 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 8/14 safetensors shards (374/638 tensors in 44.4s)
+I1031 16:34:08.649211 139325750122432 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 8/14 safetensors shards (374/638 tensors in 44.4s)
+I1031 16:34:08.655013 135717467760576 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 8/14 safetensors shards (374/638 tensors in 44.5s)
+I1031 16:34:31.366780 135663198902208 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 12/14 safetensors shards (549/638 tensors in 67.1s)
+I1031 16:34:31.371229 139325750122432 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 12/14 safetensors shards (549/638 tensors in 67.1s)
+[titan] 2026-10-31 16:34:31,376 - root - INFO - [MiniMax-H3] Loaded 12/14 safetensors shards (549/638 tensors in 67.1s)
+I1031 16:34:31.377300 135717467760576 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 12/14 safetensors shards (549/638 tensors in 67.2s)
+[titan] 2026-10-31 16:34:41,808 - root - INFO - [MiniMax-H3] Loaded 14/14 safetensors shards (638/638 tensors in 77.6s)
+[titan] 2026-10-31 16:34:41,808 - root - INFO - Training starts at step 1
+I1031 16:34:41.813842 135663198902208 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 14/14 safetensors shards (638/638 tensors in 77.6s)
+I1031 16:34:41.814184 135663198902208 trainer.py:1140] Training starts at step 1
+I1031 16:34:41.816729 139325750122432 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 14/14 safetensors shards (638/638 tensors in 77.6s)
+I1031 16:34:41.817052 139325750122432 trainer.py:1140] Training starts at step 1
+I1031 16:34:41.826794 135717467760576 minimax_h3_torchtitan.py:945] [MiniMax-H3] Loaded 14/14 safetensors shards (638/638 tensors in 77.7s)
+I1031 16:34:41.827211 135717467760576 trainer.py:1140] Training starts at step 1
+I1031 16:34:43.393196 135717467760576 split_compiler.py:686] Split graph into 1 partitions
+I1031 16:34:43.439725 135663198902208 split_compiler.py:686] Split graph into 1 partitions
+I1031 16:34:43.442003 139325750122432 split_compiler.py:686] Split graph into 1 partitions
+[titan] 2026-10-31 16:34:43,528 - absl - INFO - Split graph into 1 partitions
+I1031 16:34:46.136988 139325750122432 split_compiler.py:686] Split graph into 1 partitions
+[titan] 2026-10-31 16:34:46,149 - absl - INFO - Split graph into 1 partitions
+I1031 16:34:46.174753 135717467760576 split_compiler.py:686] Split graph into 1 partitions
+I1031 16:34:46.214090 135663198902208 split_compiler.py:686] Split graph into 1 partitions
++---------------------------------------+
+| TPU Core(s) Debug Information @ 1x2x0 |
++---------------------------------------+
++---------------------------------------+
+| TPU Core(s) Debug Information @ 1x3x0 |
++---------------------------------------+
++---------------------------------------+
+| TPU Core(s) Debug Information @ 0x3x0 |
++---------------------------------------+
++---------------------------------------+
+| TPU Core(s) Debug Information @ 0x2x0 |
++---------------------------------------+
+ > TC0    ::                            IDs : Chip ID:0x00000005, Core Index:0x00000000, Chip Bounds:0x00401002
+ > TC0    ::                         Run ID : 0x52
+ > TC0    ::                Overlay Address : 0x00000168
+ > TC0    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC0    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC0    ::                     Run Status : 0xa
+ > TC0    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x598046888}
+ > TC0    ::                Scalar error PC : n/a
+ > TC0    ::                Vector error PC : n/a
+ > TC0    ::       SyncFlag Remote Overflow : n/a
+ > TC0    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC1    ::                            IDs : Chip ID:0x00000005, Core Index:0x00000001, Chip Bounds:0x00401002
+ > TC1    ::                         Run ID : 0x52
+ > TC1    ::                Overlay Address : 0x00000168
+ > TC1    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC1    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC1    ::                     Run Status : 0xa
+ > TC1    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x5a07ea232}
+ > TC1    ::                Scalar error PC : n/a
+ > TC1    ::                Vector error PC : n/a
+ > TC1    ::       SyncFlag Remote Overflow : n/a
+ > TC1    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC0    ::                            IDs : Chip ID:0x00000007, Core Index:0x00000000, Chip Bounds:0x00401002
+ > TC0    ::                         Run ID : 0x52
+ > TC0    ::                Overlay Address : 0x00000168
+ > TC0    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC0    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC0    ::                     Run Status : 0xa
+ > TC0    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x589fa43de}
+ > TC0    ::                Scalar error PC : n/a
+ > TC0    ::                Vector error PC : n/a
+ > TC0    ::       SyncFlag Remote Overflow : n/a
+ > TC0    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC1    ::                            IDs : Chip ID:0x00000007, Core Index:0x00000001, Chip Bounds:0x00401002
+ > TC1    ::                         Run ID : 0x52
+ > TC1    ::                Overlay Address : 0x00000168
+ > TC1    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC1    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC1    ::                     Run Status : 0xa
+ > TC1    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x59101fe97}
+ > TC1    ::                Scalar error PC : n/a
+ > TC1    ::                Vector error PC : n/a
+ > TC1    ::       SyncFlag Remote Overflow : n/a
+ > TC1    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC0    ::                            IDs : Chip ID:0x00000004, Core Index:0x00000000, Chip Bounds:0x00401002
+ > TC0    ::                            IDs : Chip ID:0x00000006, Core Index:0x00000000, Chip Bounds:0x00401002
+ > TC0    ::                         Run ID : 0x52
+ > TC0    ::                Overlay Address : 0x00000168
+ > TC0    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC0    ::                         Run ID : 0x52
+ > TC0    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC0    ::                Overlay Address : 0x00000168
+ > TC0    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC0    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC0    ::                     Run Status : 0xa
+ > TC0    ::                     Run Status : 0xa
+ > TC0    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x58a92e9e0}
+ > TC0    ::                Scalar error PC : n/a
+ > TC0    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x58a54c013}
+ > TC0    ::                Vector error PC : n/a
+ > TC0    ::       SyncFlag Remote Overflow : n/a
+ > TC0    ::                Scalar error PC : n/a
+ > TC0    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC0    ::                Vector error PC : n/a
+ > TC0    ::       SyncFlag Remote Overflow : n/a
+ > TC0    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC1    ::                            IDs : Chip ID:0x00000004, Core Index:0x00000001, Chip Bounds:0x00401002
+ > TC1    ::                         Run ID : 0x52
+ > TC1    ::                Overlay Address : 0x00000168
+ > TC1    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC1    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC1    ::                     Run Status : 0xa
+ > TC1    ::                            IDs : Chip ID:0x00000006, Core Index:0x00000001, Chip Bounds:0x00401002
+ > TC1    ::                         Run ID : 0x52
+ > TC1    ::                Overlay Address : 0x00000168
+ > TC1    ::            Program fingerprint : 09f557f8768ad98b20ba51847f7f982d22c76412eb08c54be7bd503d6791f62e
+ > TC1    ::             Scalar PC location : tag:pc 1:0x21c, overlay location: 1:0xb4, no HLO mapping
+ > TC1    ::                     Run Status : 0xa
+ > TC1    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x591a26328}
+ > TC1    ::                Scalar error PC : n/a
+ > TC1    ::                Vector error PC : n/a
+ > TC1    ::       SyncFlag Remote Overflow : n/a
+ > TC1    ::                   Vwait Active : {sflag:0x32, value:0x0, done:0x0, cmp:ge, target:0x1, wait_cycles:0x5915de15f}
+ > TC1    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > TC1    ::                Scalar error PC : n/a
+ > TC1    ::                Vector error PC : n/a
+ > TC1    ::       SyncFlag Remote Overflow : n/a
+ > TC1    ::            Non-zero sync flags : 505:0x51, 506:0x520, 507:0x230
+ > SC0    ::                            IDs : Chip ID:0x00000005, Core Index:0x00000000, Chip Bounds:0x00401002
+ > SC0    ::                         Run ID : 0x0
+ > SC0    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC0    ::                 scs_swait_info : n/a
+ > SC0    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC0    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC0    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC0    ::             stream_descriptors : n/a
+ > SC1    ::                            IDs : Chip ID:0x00000005, Core Index:0x00000001, Chip Bounds:0x00401002
+ > SC1    ::                         Run ID : 0x0
+ > SC1    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC1    ::                 scs_swait_info : n/a
+ > SC1    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC1    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC1    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC1    ::             stream_descriptors : n/a
+ > SC2    ::                            IDs : Chip ID:0x00000005, Core Index:0x00000002, Chip Bounds:0x00401002
+ > SC2    ::                         Run ID : 0x0
+ > SC2    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC2    ::                 scs_swait_info : n/a
+ > SC2    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC2    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC2    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC2    ::             stream_descriptors : n/a
+ > SC3    ::                            IDs : Chip ID:0x00000005, Core Index:0x00000003, Chip Bounds:0x00401002
+ > SC3    ::                         Run ID : 0x0
+ > SC3    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC3    ::                 scs_swait_info : n/a
+ > SC3    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC3    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC3    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC3    ::             stream_descriptors : n/a
+ > SC0    ::                            IDs : Chip ID:0x00000007, Core Index:0x00000000, Chip Bounds:0x00401002
+ > SC0    ::                         Run ID : 0x0
+ > SC0    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC0    ::                 scs_swait_info : n/a
+ > SC0    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC0    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC0    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC0    ::             stream_descriptors : n/a
+ > SC1    ::                            IDs : Chip ID:0x00000007, Core Index:0x00000001, Chip Bounds:0x00401002
+ > SC1    ::                         Run ID : 0x0
+ > SC1    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC1    ::                 scs_swait_info : n/a
+ > SC1    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC0    ::                            IDs : Chip ID:0x00000006, Core Index:0x00000000, Chip Bounds:0x00401002
+ > SC0    ::                         Run ID : 0x0
+ > SC0    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC0    ::                 scs_swait_info : n/a
+ > SC0    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC1    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC1    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC1    ::             stream_descriptors : n/a
+ > SC0    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC0    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC0    ::             stream_descriptors : n/a
+ > SC2    ::                            IDs : Chip ID:0x00000007, Core Index:0x00000002, Chip Bounds:0x00401002
+ > SC2    ::                         Run ID : 0x0
+ > SC2    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC2    ::                 scs_swait_info : n/a
+ > SC2    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC1    ::                            IDs : Chip ID:0x00000006, Core Index:0x00000001, Chip Bounds:0x00401002
+ > SC1    ::                         Run ID : 0x0
+ > SC1    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC1    ::                 scs_swait_info : n/a
+ > SC1    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC0    ::                            IDs : Chip ID:0x00000004, Core Index:0x00000000, Chip Bounds:0x00401002
+ > SC0    ::                         Run ID : 0x0
+ > SC0    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC0    ::                 scs_swait_info : n/a
+ > SC2    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC0    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC2    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC1    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC1    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC2    ::             stream_descriptors : n/a
+ > SC0    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC0    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC1    ::             stream_descriptors : n/a
+ > SC0    ::             stream_descriptors : n/a
+ > SC3    ::                            IDs : Chip ID:0x00000007, Core Index:0x00000003, Chip Bounds:0x00401002
+ > SC3    ::                         Run ID : 0x0
+ > SC3    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC3    ::                 scs_swait_info : n/a
+ > SC2    ::                            IDs : Chip ID:0x00000006, Core Index:0x00000002, Chip Bounds:0x00401002
+ > SC2    ::                         Run ID : 0x0
+ > SC3    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC2    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC2    ::                 scs_swait_info : n/a
+ > SC1    ::                            IDs : Chip ID:0x00000004, Core Index:0x00000001, Chip Bounds:0x00401002
+ > SC1    ::                         Run ID : 0x0
+ > SC2    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC1    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC1    ::                 scs_swait_info : n/a
+ > SC1    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC3    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC3    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC2    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC2    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC1    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC1    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC3    ::             stream_descriptors : n/a
+ > SC2    ::             stream_descriptors : n/a
+ > SC1    ::             stream_descriptors : n/a
+ > SC3    ::                            IDs : Chip ID:0x00000006, Core Index:0x00000003, Chip Bounds:0x00401002
+ > SC3    ::                         Run ID : 0x0
+ > SC3    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC3    ::                 scs_swait_info : n/a
+ > SC2    ::                            IDs : Chip ID:0x00000004, Core Index:0x00000002, Chip Bounds:0x00401002
+ > SC2    ::                         Run ID : 0x0
+ > SC2    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC2    ::                 scs_swait_info : n/a
+ > SC3    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC2    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC3    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC2    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC2    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC3    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC2    ::             stream_descriptors : n/a
+ > SC3    ::             stream_descriptors : n/a
+ > SC3    ::                            IDs : Chip ID:0x00000004, Core Index:0x00000003, Chip Bounds:0x00401002
+ > SC3    ::                         Run ID : 0x0
+ > SC3    ::               scs_general_info : {run_status:0xa, tracemark:0x0, tag:0x0, pc:0x5, hlo:pc:0x5, Compiler metadata not available.}
+ > SC3    ::                 scs_swait_info : n/a
+ > SC3    ::                scs_core_status : {dma_desc_flushed:0x1, dma_retired:0x1, msgs_flushed:0x1, rmf_empty:0x1, spmem_committed:0x1, spmem_retired:0x1, tile_task_retired:{#00:0x1, #01:0x1, #02:0x1, #03:0x1, #04:0x1, #05:0x1, #06:0x1, #07:0x1, #08:0x1, #09:0x1, #10:0x1, #11:0x1, #12:0x1, #13:0x1, #14:0x1, #15:0x1}}
+ > SC3    ::             tiles_general_info : {#00:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #01:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #02:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #03:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #04:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #05:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #06:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #07:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #08:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #09:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #10:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #11:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #12:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #13:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #14:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}, #15:{run_status:0x2, tracemark:0x0, tag:0x0, pc:0x0}}
+ > SC3    ::               tiles_swait_info : {#00:n/a, #01:n/a, #02:n/a, #03:n/a, #04:n/a, #05:n/a, #06:n/a, #07:n/a, #08:n/a, #09:n/a, #10:n/a, #11:n/a, #12:n/a, #13:n/a, #14:n/a, #15:n/a}
+ > SC3    ::             stream_descriptors : n/a
+F1031 16:35:58.640777    3750 tpu_system_state.cc:57] Terminating the libtpu controller process because an anomalous TPUworker process is detected: SLICE_FAILURE_SW_INJECT_ERROR. This most likely indicates the slice setup is erroneous, or another process's TPUs have errors. See the reporting process's tpu_driver logs for details. 
+*** Check failure stack trace: ***
+    @     0x79abd2f9ef94  absl::log_internal::LogMessage::SendToLog()
+    @     0x79abd2f9ef58  absl::log_internal::LogMessage::Flush()
+    @     0x79abd3233ef7  xla::(anonymous namespace)::DefaultSliceFailedCallback()
+    @     0x79abd327c4aa  accel_ssw::deepsea::slice_builder::SliceBuilderHelper::HandleSliceFailed()
+    @     0x79abd1a3d56d  accel_ssw::deepsea::slice_builder::Master::FailSlice()
+    @     0x79abd1a438a2  absl::internal_any_invocable::LocalInvoker<>()
+    @     0x79abd2dc7eee  ThreadPool::RunWorker()
+    @     0x79abd2dc7d72  ThreadPool::ThreadPoolWorker::Run()
+    @     0x79abd2dc362f  Thread::ThreadBody()
+    @     0x79ac0ffec8bb  (unknown)
+https://symbolize.stripped_domain/r/?trace=79abd2f9ef93,79abd2f9ef57,79abd3233ef6,79abd327c4a9,79abd1a3d56c,79abd1a438a1,79abd2dc7eed,79abd2dc7d71,79abd2dc362e,79ac0ffec8ba&map= 
+Fatal Python error: Aborted
+
+Thread 0x000079a74bcf16c0 [pt_autograd_0] (most recent call first):
+  <no Python frame>
+
+Thread 0x000079a74c5f26c0 [tqdm_monitor] (most recent call first):
+  File "/usr/local/lib/python3.14/threading.py", line 376 in wait
+  File "/usr/local/lib/python3.14/threading.py", line 671 in wait
+  File "/usr/local/lib/python3.14/site-packages/tqdm/_monitor.py", line 69 in run
+  File "/usr/local/lib/python3.14/threading.py", line 1083 in _bootstrap_inner
+  File "/usr/local/lib/python3.14/threading.py", line 1045 in _bootstrap
+
+Thread 0x000079ac0fb827c0 [minimax_h3_torc] (most recent call first):
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/array.py", line 642 in _value
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/profiler.py", line 420 in wrapper
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/array.py", line 1127 in _array_mlir_constant_handler
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 324 in _ir_constant
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2037 in lower_jaxpr_to_fun
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1339 in _pjit_lower_jaxpr_to_fun
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1372 in _pjit_lowering
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2590 in lower_per_platform
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2462 in _uncached_lowering
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2245 in jaxpr_subcomp
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 2042 in lower_jaxpr_to_fun
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/mlir.py", line 1444 in lower_jaxpr_to_module
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/pxla.py", line 756 in _cached_lowering_to_hlo
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/interpreters/pxla.py", line 1141 in lower_sharding_computation
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/profiler.py", line 420 in wrapper
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1239 in _pjit_lower
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/pjit.py", line 1066 in _resolve_and_lower
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/stages.py", line 544 in lower
+  File "/usr/local/lib/python3.14/site-packages/jax/_src/export/_export.py", line 613 in do_export
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/pallas/pallas.py", line 1251 in __call__
+  File "/usr/local/lib/python3.14/site-packages/torch/_library/custom_ops.py", line 503 in wrapped_fn
+  File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/eval_frame.py", line 1552 in _fn
+  File "/usr/local/lib/python3.14/site-packages/torch/_compile.py", line 54 in inner
+  File "/usr/local/lib/python3.14/site-packages/torch/_library/custom_ops.py", line 442 in backend_impl
+  File "/usr/local/lib/python3.14/site-packages/torch/_ops.py", line 925 in redispatch
+  File "/usr/local/lib/python3.14/site-packages/torch/_library/autograd.py", line 43 in redispatch_no_grad
+  File "/usr/local/lib/python3.14/site-packages/torch/_library/autograd.py", line 147 in autograd_impl
+  File "/usr/local/lib/python3.14/site-packages/torch/_ops.py", line 916 in __call__
+  File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 377 in call_function
+  File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 294 in run_node
+  File "/torchtitan-native/torchtitan/experiments/tpu/kernels/splash_attention.py", line 639 in splash_sdpa
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/export/export.py", line 207 in run_node
+  File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 197 in run
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/export/export.py", line 534 in fx_to_mlir
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/compiler.py", line 407 in _compile
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/compiler.py", line 568 in __call__
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 375 in compile_submod
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 412 in run_node
+  File "/usr/local/lib/python3.14/site-packages/torch/fx/interpreter.py", line 197 in run
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 738 in _compile_graph
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/split_compiler.py", line 803 in __call__
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/_backend.py", line 922 in _compile_graph_module
+  File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/schemas.py", line 1504 in __call__
+  File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/graph_compile.py", line 2900 in _aot_stage2b_compile_forward_or_inference
+  File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/graph_compile.py", line 2356 in _aot_stage2b_fw_compile
+  File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/graph_compile.py", line 2568 in aot_stage2_autograd
+  File "/usr/local/lib/python3.14/site-packages/torch/_functorch/_aot_autograd/graph_compile.py", line 367 in aot_stage2_compile
+  File "/usr/local/lib/python3.14/site-packages/torch/_functorch/aot_autograd.py", line 1250 in aot_module_simplified
+  File "/usr/local/lib/python3.14/site-packages/torch/_dynamo/backends/common.py", line 156 in __call__
+  File "/usr/local/lib/python3.14/site-packages/torch_tpu/_internal/compile/_backend.py", line 812 in __call__
+
+Current thread's C stack trace (most recent call first):
+  Binary file "/usr/local/bin/../lib/libpython3.14.so.1.0", at _Py_DumpStack+0x4c [0x79ac102bee4b]
+  Binary file "/usr/local/bin/../lib/libpython3.14.so.1.0", at +0x17146a [0x79ac102c746a]
+  Binary file "/lib/x86_64-linux-gnu/libc.so.6", at +0x3fd70 [0x79ac0ff99d70]
+  Binary file "/lib/x86_64-linux-gnu/libc.so.6", at +0x9469c [0x79ac0ffee69c]
+  Binary file "/lib/x86_64-linux-gnu/libc.so.6", at gsignal+0x12 [0x79ac0ff99c42]
+  Binary file "/lib/x86_64-linux-gnu/libc.so.6", at abort+0x22 [0x79ac0ff824ac]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b687eec [0x79abd3287eec]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b39eff9 [0x79abd2f9eff9]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b39ef58 [0x79abd2f9ef58]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b633ef7 [0x79abd3233ef7]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b67c4aa [0x79abd327c4aa]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x19e3d56d [0x79abd1a3d56d]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x19e438a2 [0x79abd1a438a2]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b1c7eee [0x79abd2dc7eee]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b1c7d72 [0x79abd2dc7d72]
+  Binary file "/usr/local/lib/python3.14/site-packages/libtpu/libtpu.so", at +0x1b1c362f [0x79abd2dc362f]
+  Binary file "/lib/x86_64-linux-gnu/libc.so.6", at +0x928bb [0x79ac0ffec8bb]
+  Binary file "/lib/x86_64-linux-gnu/libc.so.6", at +0x110538 [0x79ac1006a538]
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, torch._C, torch._C._dynamo.autograd_compiler, torch._C._dynamo.eval_frame, torch._C._dynamo.guards, torch._C._dynamo.utils, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, cuda.bindings._internal.utils, cuda.bindings._internal.driver, cuda.bindings.cydriver, cuda.bindings.driver, cuda.bindings._internal.runtime_ptds, cuda.bindings._internal.runtime, cuda.bindings.cyruntime, cuda.bindings.runtime, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, markupsafe._speedups, zmq.backend.cython._zmq, psutil._psutil_linux, jaxlib.cpu_feature_guard, google._upb._message, uvloop.loop, msgpack._cmsgpack, simplejson._speedups, pyarrow.lib, _cyutility, pandas._libs._cyutility, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.properties, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pyarrow._compute, pandas._libs.ops, pandas._libs.groupby, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.indexing, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs._ujson, pandas._libs.parsers, pandas._libs.testing, pyarrow._acero, pyarrow._fs, pyarrow._csv, pyarrow._json, pyarrow._substrait, pyarrow._dataset, pyarrow._dataset_orc, pyarrow._parquet, pyarrow._azurefs, pyarrow._hdfs, pyarrow._gcsfs, pyarrow._s3fs, pyarrow._parquet_encryption, pyarrow._dataset_parquet_encryption, pyarrow._dataset_parquet, yaml._yaml, charset_normalizer.md, charset_normalizer.cd, requests.packages.charset_normalizer.md, requests.packages.chardet.md, requests.packages.charset_normalizer.cd, requests.packages.chardet.cd, multidict._multidict, yarl._quoting_c, propcache._helpers_c, aiohttp._http_writer, aiohttp._http_parser, aiohttp._websocket.mask, aiohttp._websocket.reader_c, frozenlist._frozenlist, xxhash._xxhash, cuda.bindings._internal.nvrtc, cuda.bindings.cynvrtc, cuda.bindings.nvrtc (total: 116)
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-fgtn4dq9'}
+  warnings.warn(
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-55m41ipr'}
+  warnings.warn(
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-_wkhaugs'}
+  warnings.warn(
+/usr/local/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-l_hkkuuz'}
+  warnings.warn(

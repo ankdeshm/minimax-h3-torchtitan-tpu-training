@@ -1,0 +1,125 @@
+{
+  "run_timestamp": "20261031_161135",
+  "updated_utc": "2026-10-31T16:21:50.394553+00:00",
+  "accel": "v5p",
+  "topology": "2x4x4",
+  "nodepool": "tpu-v5p-32-pool",
+  "num_chips": 32,
+  "phys_chips": 32,
+  "peak_bf16_tflops_per_chip": 459.0,
+  "checkpoint_dir": "/models/models/MiniMaxAI/MiniMax-H3/transformer",
+  "experiments": [
+    {
+      "name": "mh3_p2_01_fsdp32_fullac_s16k_pretrained",
+      "parallelism": "FSDP-32",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "FullAC (recompute attn)",
+      "save_splash": false,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 8,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": false,
+      "status": "ok",
+      "wall_s": 614.49,
+      "steady_step_s": 24.188,
+      "steady_tps_per_chip": 677.2,
+      "cluster_tps": 21670.4,
+      "peak_mem_gib": 10.46,
+      "torchtitan_mfu_pct": 27.48,
+      "exact_bidir_tflops_per_chip": 126.12,
+      "exact_bidir_mfu_pct": 27.48,
+      "loss_first": 3.63202,
+      "loss_last": 3.89156,
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63202,
+          "grad_norm": 219.0323,
+          "mem_gib": 10.46,
+          "tps": 40.0,
+          "tflops": 7.5,
+          "mfu_pct": 1.63,
+          "step_s": 406.71
+        },
+        {
+          "step": 2,
+          "loss": 4.14708,
+          "grad_norm": 2254.8936,
+          "mem_gib": 10.46,
+          "tps": 608.0,
+          "tflops": 113.16,
+          "mfu_pct": 24.65,
+          "step_s": 26.96
+        },
+        {
+          "step": 3,
+          "loss": 3.78387,
+          "grad_norm": 296.8477,
+          "mem_gib": 10.46,
+          "tps": 658.0,
+          "tflops": 122.49,
+          "mfu_pct": 26.69,
+          "step_s": 24.91
+        },
+        {
+          "step": 4,
+          "loss": 4.59442,
+          "grad_norm": 1309.0703,
+          "mem_gib": 10.46,
+          "tps": 676.0,
+          "tflops": 125.93,
+          "mfu_pct": 27.44,
+          "step_s": 24.23
+        },
+        {
+          "step": 5,
+          "loss": 2.52414,
+          "grad_norm": 564.0345,
+          "mem_gib": 10.46,
+          "tps": 677.0,
+          "tflops": 126.11,
+          "mfu_pct": 27.47,
+          "step_s": 24.2
+        },
+        {
+          "step": 6,
+          "loss": 4.33637,
+          "grad_norm": 2386.5649,
+          "mem_gib": 10.46,
+          "tps": 680.0,
+          "tflops": 126.7,
+          "mfu_pct": 27.6,
+          "step_s": 24.08
+        },
+        {
+          "step": 7,
+          "loss": 4.89973,
+          "grad_norm": 5643.8188,
+          "mem_gib": 10.46,
+          "tps": 675.0,
+          "tflops": 125.74,
+          "mfu_pct": 27.39,
+          "step_s": 24.27
+        },
+        {
+          "step": 8,
+          "loss": 3.89156,
+          "grad_norm": 3467.4316,
+          "mem_gib": 10.46,
+          "tps": 678.0,
+          "tflops": 126.3,
+          "mfu_pct": 27.52,
+          "step_s": 24.16
+        }
+      ]
+    }
+  ]
+}

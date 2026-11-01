@@ -1,0 +1,81 @@
+{
+  "run_timestamp": "20261031_161107",
+  "updated_utc": "2026-10-31T16:30:19.736855+00:00",
+  "accel": "v7x",
+  "topology": "2x2x4",
+  "nodepool": "tpu-v7x-16-pool",
+  "num_chips": 32,
+  "phys_chips": 16,
+  "peak_bf16_tflops_per_chip": 1153.5,
+  "checkpoint_dir": "/models/models/MiniMaxAI/MiniMax-H3/transformer",
+  "experiments": [
+    {
+      "name": "mh3_p2_01_fsdp32_fullac_s16k_pretrained",
+      "parallelism": "FSDP-32",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "FullAC (recompute attn)",
+      "save_splash": false,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 8,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": false,
+      "status": "rc=1",
+      "wall_s": 392.54,
+      "error": " |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^ |     File \"/usr/local/lib/python3.14/site-packages/torch/accelerator/__init__.py\", line 272, in synchronize |       torch._C._accelerator_synchronizeDevice(device_index) |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^ |   RuntimeError: a required argument is in a failed state |    | ============================================================",
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63394,
+          "grad_norm": 184.1103,
+          "mem_gib": 12.48,
+          "tps": 45.0,
+          "tflops": 8.29,
+          "mfu_pct": 0.72,
+          "step_s": 367.86
+        }
+      ]
+    },
+    {
+      "name": "mh3_p2_02_fsdp32_splash_save_ac_s16k_pretrained",
+      "parallelism": "FSDP-32",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "SplashSaveAC (calibrated)",
+      "save_splash": true,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "bfloat16",
+      "steps": 8,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": false,
+      "status": "rc=-9",
+      "wall_s": 750.36,
+      "error": "lation cache evicted. | I0000 00:00:1793464215.946486   16935 compilation_cache.cc:203] CompilationCache final stats: num_cache_reqs=2119 | num_cache_hits=1944 {91.7%} | num_compilations=11 | peak_compilation_memory_bytes=unknown |  | +-----------+ | | Anomalies | | +-----------+ | --------- | Anomalies | --------- | +-----------+ | | Anomalies | | +-----------+ | --------- | Anomalies | ---------",
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63394,
+          "grad_norm": 184.2729,
+          "mem_gib": 12.48,
+          "tps": 23.0,
+          "tflops": 4.2,
+          "mfu_pct": 0.36,
+          "step_s": 727.27
+        }
+      ]
+    }
+  ]
+}

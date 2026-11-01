@@ -1,0 +1,65 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793469149.368287    7255 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793469150.257529    7255 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793469150.260731    7255 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+W1031 17:52:30.292000 7255 site-packages/torch/distributed/run.py:982] 
+W1031 17:52:30.292000 7255 site-packages/torch/distributed/run.py:982] *****************************************
+W1031 17:52:30.292000 7255 site-packages/torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1031 17:52:30.292000 7255 site-packages/torch/distributed/run.py:982] *****************************************
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+    ~~~^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+        self._config,
+    ...<2 lines>...
+        health_check_server=self._health_check_server,
+    )
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 377, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/agent/server/api.py", line 744, in run
+    result = self._invoke_run(role)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/agent/server/api.py", line 915, in _invoke_run
+    self._initialize_workers(self._worker_group)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/agent/server/api.py", line 712, in _initialize_workers
+    self._rendezvous(worker_group)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/agent/server/api.py", line 527, in _rendezvous
+    rdzv_info = spec.rdzv_handler.next_rendezvous()
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 67, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+                  ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.master_addr,
+        ^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        multi_tenant=True,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+torch.distributed.DistStoreError: Timed out after 901 seconds waiting for clients. 2/8 clients joined.

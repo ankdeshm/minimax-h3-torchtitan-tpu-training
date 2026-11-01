@@ -1,0 +1,628 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793444654.362934   36808 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793444655.255670   36808 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793444655.258906   36808 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+W1031 11:04:15.290000 36808 site-packages/torch/distributed/run.py:982] 
+W1031 11:04:15.290000 36808 site-packages/torch/distributed/run.py:982] *****************************************
+W1031 11:04:15.290000 36808 site-packages/torch/distributed/run.py:982] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1031 11:04:15.290000 36808 site-packages/torch/distributed/run.py:982] *****************************************
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793444658.810752   36878 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793444658.841657   36876 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793444658.841662   36877 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793444658.841657   36875 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.14/site-packages/libtpu/libtpu.so
+I0000 00:00:1793444659.697591   36878 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793444659.700744   36878 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793444659.736822   36876 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793444659.737283   36877 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+I0000 00:00:1793444659.737292   36875 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Registered Python module for 'tpu'.
+Initializing TPU distributed runtime
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1793444659.740031   36876 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793444659.740441   36875 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+I0000 00:00:1793444659.740448   36877 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 11:04:21.542000 36878 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:21.566000 36878 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+WARNING:torchao:Failed to load /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+W1031 11:04:21.663000 36877 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:21.664000 36876 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:21.664000 36875 site-packages/torch/utils/_pytree.py:646] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:21.687000 36877 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:21.687000 36876 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:21.687000 36875 site-packages/torch/utils/_pytree.py:646] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1031 11:04:22.094867 134581687924672 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.220732 137845811939264 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.221472 137440197298112 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.222815 139180298373056 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.417345 134581687924672 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.421303 134581687924672 manager.py:229] HF assets path  does not exist!
+I1031 11:04:22.421424 134581687924672 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 11:04:22.421473 134581687924672 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 11:04:22.422288 134581687924672 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 11:04:22.410266455 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 11:04:22.410301787 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793444662.422545   36878 discovery.cc:125] DistributedWorkerConfiguration: 3 3 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10003 2,4,4
+W0000 00:00:1793444662.422595   36878 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793444662.422609   36878 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 11:04:22.732202 137845811939264 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.734339 137440197298112 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.734879 139180298373056 base.py:654] initial_load_model_only=True has no effect without an initial_load_path.
+W1031 11:04:22.736135 137845811939264 manager.py:229] HF assets path  does not exist!
+I1031 11:04:22.736269 137845811939264 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 11:04:22.736322 137845811939264 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+I1031 11:04:22.737156 137845811939264 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 11:04:22.725158731 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 11:04:22.725186174 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793444662.737427   36877 discovery.cc:125] DistributedWorkerConfiguration: 2 2 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10002 2,4,4
+W0000 00:00:1793444662.737471   36877 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793444662.737482   36877 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+W1031 11:04:22.738318 137440197298112 manager.py:229] HF assets path  does not exist!
+I1031 11:04:22.738452 137440197298112 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 11:04:22.738506 137440197298112 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+W1031 11:04:22.738861 139180298373056 manager.py:229] HF assets path  does not exist!
+I1031 11:04:22.738986 139180298373056 distributed_utils.py:21] Platform: Cloud. Initializing via cloud_distributed_utils.
+I1031 11:04:22.739035 139180298373056 cloud_distributed_utils.py:293] Trying to initialize distributed TPU training on GKE.
+/torchtitan-native/torchtitan/experiments/tpu/gmain.py:45: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> set_eager_mode is experimental and subject to change: Context manager for setting the eager mode.
+  with execution_mode.set_eager_mode(eager_mode_enum):
+[titan] 2026-10-31 11:04:22,739 - root - INFO - Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 11:04:22.727474910 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 11:04:22.727497681 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793444662.739737   36875 discovery.cc:125] DistributedWorkerConfiguration: 0 0 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10000 2,4,4
+W0000 00:00:1793444662.739773   36875 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793444662.739784   36875 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+I1031 11:04:22.739850 139180298373056 workarounds.py:634] Monkey-patched torch.histc to support int dtypes on CPU
+[W1031 11:04:22.727787060 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_SLICEBUILDER_ADDRESSES environment variable is an experimental feature and may change or be removed without notice. (function operator())
+[W1031 11:04:22.727804443 env_vars.h:405] Warning: <TorchTpu/ApiStage/ExperimentalApi/> the TORCH_TPU_TOPOLOGY environment variable is an experimental feature and may change or be removed without notice. (function operator())
+I0000 00:00:1793444662.740044   36876 discovery.cc:125] DistributedWorkerConfiguration: 1 1 32 minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-1.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-2.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-3.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-4.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-5.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-6.minimax-h3-v5p-32-pass2-svc:10003,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10000,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10001,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10002,minimax-h3-v5p-32-pass2-7.minimax-h3-v5p-32-pass2-svc:10003 10001 2,4,4
+W0000 00:00:1793444662.740080   36876 environment.cc:70] libtpu_init_args contains --xla_tpu_use_enhanced_launch_barrier=true, this can cause distributed hangs. Rewriting environment variable to false.
+I0000 00:00:1793444662.740089   36876 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+I0000 00:00:1793444666.872799   36877 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 11:04:26.878238 137845811939264 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793444666.888480   36877 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=2 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793444666.918933   36876 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 11:04:26.919397 139180298373056 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793444666.924537   36876 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=1 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793444666.982732   36878 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+W1031 11:04:26.987456 134581687924672 utils.py:517] ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793444666.993884   36878 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=3 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793444667.086473   36875 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+/torchtitan-native/torchtitan/trainer.py:357: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> Stream is experimental and subject to change: Stream() is experimental and may change or be removed without notice.
+  device_module.Stream(device=self.device)
+[titan] 2026-10-31 11:04:27,087 - root - WARNING - ENV[TORCH_NCCL_ASYNC_ERROR_HANDLING] = 1 will be overridden to 3 based on job config
+W0000 00:00:1793444667.087890   36875 process_group_tpu.cc:1299] Node-local store disabled: LOCAL_RANK or TORCH_TPU_DEVICES_PER_HOST is unset (local_rank=0 devices_per_host=unset world_size=32). Every rank will publish to the world store individually, which is slower at scale.
+I0000 00:00:1793444667.977210   36875 process_group_tpu.cc:1269] AllGatherViaNodeLocalStore(world_topo:0:32): gathered 32 entries from 32 nodes in 889 ms
+[titan] 2026-10-31 11:04:27,977 - root - INFO - Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 11:04:27.978041 134581687924672 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 11:04:27.978180 139180298373056 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 11:04:27.978156 137845811939264 parallel_dims.py:255] Building device mesh with parallelism: pp=1, dp_replicate=1, dp_shard=32, cp=1, tp=1, ep=1
+I1031 11:04:27.989453 134581687924672 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+I1031 11:04:27.990265 139180298373056 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+[titan] 2026-10-31 11:04:27,997 - root - INFO - [GC] Initial GC collection took 0.00 seconds
+I1031 11:04:27.997929 137845811939264 utils.py:304] [GC] Initial GC collection took 0.00 seconds
+I1031 11:04:28.000804 134581687924672 trainer.py:443] Building minimax_h3 33B-omni
+I1031 11:04:28.001892 139180298373056 trainer.py:443] Building minimax_h3 33B-omni
+[titan] 2026-10-31 11:04:28,013 - root - INFO - Building minimax_h3 33B-omni
+I1031 11:04:28.014097 137845811939264 trainer.py:443] Building minimax_h3 33B-omni
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 11:04:28.100415 134581687924672 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+W1031 11:04:28.101049 134581687924672 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 11:04:28.102258 139180298373056 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+W1031 11:04:28.102844 139180298373056 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 11:04:28.103302 134581687924672 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 11:04:28.104626 134581687924672 float8_converter.py:53] TPU float8 training active with recipe rowwise
+I1031 11:04:28.105108 139180298373056 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 11:04:28.106459 139180298373056 float8_converter.py:53] TPU float8 training active with recipe rowwise
+I0000 00:00:1793444668.139284   38532 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793444668.139314   38532 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793444668.139322   38532 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793444668.139370   39349 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793444668.139895   38534 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793444668.139916   38534 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793444668.139923   38534 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793444668.139968   39365 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+I1031 11:04:28.212035 137845811939264 metrics.py:99] TPU capacity: TPU v5p with 95.00GiB memory
+/torchtitan-native/torchtitan/components/metrics.py:44: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_name is experimental and subject to change: get_device_name() is experimental and subject to change without notice.
+  self.device_name = device_module.get_device_name(self.device)
+W1031 11:04:28.212791 137845811939264 utils.py:322] Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+/torchtitan-native/torchtitan/components/metrics.py:46: UserWarning: <TorchTpu/ApiStage/ExperimentalApi/> get_device_properties is experimental and subject to change: get_device_properties() is experimental and subject to change without notice.
+  self.device_capacity = device_module.get_device_properties(
+[titan] 2026-10-31 11:04:28,213 - root - INFO - TPU capacity: TPU v5p with 95.00GiB memory
+[titan] 2026-10-31 11:04:28,214 - root - WARNING - Error running lspci: [Errno 2] No such file or directory: 'lspci', fallback to use device_name
+I1031 11:04:28.216706 137845811939264 trainer.py:477] [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+[titan] 2026-10-31 11:04:28,218 - root - INFO - [34mModel minimax_h3 33B-omni [31msize: 33,122,992,896 total parameters[39m
+I1031 11:04:28.218505 137845811939264 float8_converter.py:53] TPU float8 training active with recipe rowwise
+[titan] 2026-10-31 11:04:28,219 - root - INFO - TPU float8 training active with recipe rowwise
+/usr/local/lib/python3.14/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+I0000 00:00:1793444668.252320   39374 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793444668.252359   39374 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793444668.252366   39374 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793444668.252413   40163 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+I0000 00:00:1793444668.253907   39376 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1793444668.253930   39376 tier2_compilation_cache.cc:84] Tier-2 compilation cache is enabled with name 'default' for world size 32.
+I0000 00:00:1793444668.253936   39376 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+I0000 00:00:1793444668.253981   40207 compilation_cache_utils.cc:99] Tier-2 cache uses TorchTPU binary fingerprint: 089b6fae7e012d19
+  based on TorchTPU binary version 5 and PjRt version:
+TFRT TPU v5
+Built on Oct 7 2026 00:47:01 (1791359221) cl/994787025
+C API version: 0.116
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1389, in <module>
+[rank3]:     gmain.handle_main(start_minimax_h3_trainer)
+[rank3]:     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+[rank3]:     app.run(main, flags_parser=_parse_flags)
+[rank3]:     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+[rank3]:     _run_main(main, args)
+[rank3]:     ~~~~~~~~~^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+[rank3]:     sys.exit(main(argv))
+[rank3]:              ~~~~^^^^^^
+[rank3]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+[rank3]:     _start_trainer(config)
+[rank3]:     ~~~~~~~~~~~~~~^^^^^^^^
+[rank3]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+[rank3]:     global_start_trainer_func(config)
+[rank3]:     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+[rank3]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1378, in start_minimax_h3_trainer
+[rank3]:     trainer = MiniMaxH3Trainer(config)
+[rank3]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1120, in __init__
+[rank3]:     super().__init__(config)
+[rank3]:     ~~~~~~~~~~~~~~~~^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+[rank3]:     result = f(*args, **kwargs)
+[rank3]:   File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+[rank3]:     model = model_spec.parallelize_fn(
+[rank3]:         model,
+[rank3]:     ...<5 lines>...
+[rank3]:         dump_folder=config.dump_folder,
+[rank3]:     )
+[rank3]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+[rank3]:     converter.convert(model)
+[rank3]:     ~~~~~~~~~~~~~~~~~^^^^^^^
+[rank3]:   File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+[rank3]:     for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+[rank3]:                                             ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+[rank3]:     raise AttributeError(
+[rank3]:         f"'{type(self).__name__}' object has no attribute '{name}'"
+[rank3]:     )
+[rank3]: AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1389, in <module>
+[rank1]:     gmain.handle_main(start_minimax_h3_trainer)
+[rank1]:     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+[rank1]:     app.run(main, flags_parser=_parse_flags)
+[rank1]:     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+[rank1]:     _run_main(main, args)
+[rank1]:     ~~~~~~~~~^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+[rank1]:     sys.exit(main(argv))
+[rank1]:              ~~~~^^^^^^
+[rank1]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+[rank1]:     _start_trainer(config)
+[rank1]:     ~~~~~~~~~~~~~~^^^^^^^^
+[rank1]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+[rank1]:     global_start_trainer_func(config)
+[rank1]:     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+[rank1]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1378, in start_minimax_h3_trainer
+[rank1]:     trainer = MiniMaxH3Trainer(config)
+[rank1]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1120, in __init__
+[rank1]:     super().__init__(config)
+[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+[rank1]:     result = f(*args, **kwargs)
+[rank1]:   File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+[rank1]:     model = model_spec.parallelize_fn(
+[rank1]:         model,
+[rank1]:     ...<5 lines>...
+[rank1]:         dump_folder=config.dump_folder,
+[rank1]:     )
+[rank1]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+[rank1]:     converter.convert(model)
+[rank1]:     ~~~~~~~~~~~~~~~~~^^^^^^^
+[rank1]:   File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+[rank1]:     for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+[rank1]:                                             ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+[rank1]:     raise AttributeError(
+[rank1]:         f"'{type(self).__name__}' object has no attribute '{name}'"
+[rank1]:     )
+[rank1]: AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1389, in <module>
+[rank0]:     gmain.handle_main(start_minimax_h3_trainer)
+[rank0]:     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+[rank0]:     app.run(main, flags_parser=_parse_flags)
+[rank0]:     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+[rank0]:     _run_main(main, args)
+[rank0]:     ~~~~~~~~~^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+[rank0]:     sys.exit(main(argv))
+[rank0]:              ~~~~^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+[rank0]:     _start_trainer(config)
+[rank0]:     ~~~~~~~~~~~~~~^^^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+[rank0]:     global_start_trainer_func(config)
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1378, in start_minimax_h3_trainer
+[rank0]:     trainer = MiniMaxH3Trainer(config)
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1120, in __init__
+[rank0]:     super().__init__(config)
+[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+[rank0]:     result = f(*args, **kwargs)
+[rank0]:   File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+[rank0]:     model = model_spec.parallelize_fn(
+[rank0]:         model,
+[rank0]:     ...<5 lines>...
+[rank0]:         dump_folder=config.dump_folder,
+[rank0]:     )
+[rank0]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+[rank0]:     converter.convert(model)
+[rank0]:     ~~~~~~~~~~~~~~~~~^^^^^^^
+[rank0]:   File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+[rank0]:     for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+[rank0]:                                             ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+[rank0]:     raise AttributeError(
+[rank0]:         f"'{type(self).__name__}' object has no attribute '{name}'"
+[rank0]:     )
+[rank0]: AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 203, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1389, in <module>
+[rank2]:     gmain.handle_main(start_minimax_h3_trainer)
+[rank2]:     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 131, in handle_main
+[rank2]:     app.run(main, flags_parser=_parse_flags)
+[rank2]:     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 410, in run
+[rank2]:     _run_main(main, args)
+[rank2]:     ~~~~~~~~~^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.14/site-packages/absl/app.py", line 355, in _run_main
+[rank2]:     sys.exit(main(argv))
+[rank2]:              ~~~~^^^^^^
+[rank2]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 120, in main
+[rank2]:     _start_trainer(config)
+[rank2]:     ~~~~~~~~~~~~~~^^^^^^^^
+[rank2]:   File "/torchtitan-native/torchtitan/experiments/tpu/gmain.py", line 46, in _start_trainer
+[rank2]:     global_start_trainer_func(config)
+[rank2]:     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+[rank2]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1378, in start_minimax_h3_trainer
+[rank2]:     trainer = MiniMaxH3Trainer(config)
+[rank2]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 1120, in __init__
+[rank2]:     super().__init__(config)
+[rank2]:     ~~~~~~~~~~~~~~~~^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+[rank2]:     result = f(*args, **kwargs)
+[rank2]:   File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+[rank2]:     model = model_spec.parallelize_fn(
+[rank2]:         model,
+[rank2]:     ...<5 lines>...
+[rank2]:         dump_folder=config.dump_folder,
+[rank2]:     )
+[rank2]:   File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+[rank2]:     converter.convert(model)
+[rank2]:     ~~~~~~~~~~~~~~~~~^^^^^^^
+[rank2]:   File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+[rank2]:     for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+[rank2]:                                             ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+[rank2]:     raise AttributeError(
+[rank2]:         f"'{type(self).__name__}' object has no attribute '{name}'"
+[rank2]:     )
+[rank2]: AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+I0000 00:00:1793444669.286779   36878 compilation_cache.cc:356] Compilation cache evicted.
+I0000 00:00:1793444669.286810   36878 compilation_cache.cc:203] CompilationCache final stats: num_cache_reqs=2
+num_cache_hits=0 {0.0%}
+num_compilations=0
+peak_compilation_memory_bytes=unknown
+
+I0000 00:00:1793444669.287679   36876 compilation_cache.cc:356] Compilation cache evicted.
+I0000 00:00:1793444669.287702   36876 compilation_cache.cc:203] CompilationCache final stats: num_cache_reqs=2
+num_cache_hits=0 {0.0%}
+num_compilations=0
+peak_compilation_memory_bytes=unknown
+
+I0000 00:00:1793444669.288212   36875 compilation_cache.cc:356] Compilation cache evicted.
+I0000 00:00:1793444669.288261   36875 compilation_cache.cc:203] CompilationCache final stats: num_cache_reqs=2
+num_cache_hits=0 {0.0%}
+num_compilations=0
+peak_compilation_memory_bytes=unknown
+
+I0000 00:00:1793444669.288406   36877 compilation_cache.cc:356] Compilation cache evicted.
+I0000 00:00:1793444669.288429   36877 compilation_cache.cc:203] CompilationCache final stats: num_cache_reqs=2
+num_cache_hits=0 {0.0%}
+num_compilations=0
+peak_compilation_memory_bytes=unknown
+
+W1031 11:04:31.032000 36808 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 36875 closing signal SIGTERM
+W1031 11:04:31.033000 36808 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 36876 closing signal SIGTERM
+W1031 11:04:31.033000 36808 site-packages/torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 36877 closing signal SIGTERM
+https://symbolize.stripped_domain/r/?trace=7d004addcab2,7d004a64bd6f,7d004ade1248,7d004ade1608,7d004465be89,7d004465d8d9,7d00446503c8,7d00445c4802,7d004450df22,7d004a64e230&map= 
+*** SIGTERM received by PID 36875 (TID 36875) on cpu 52, si_code=0, from PID 36808; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=7d5ebb1dd8d4,7d5ebae8fd6f,7d5ebb1dcea2,7d5ebb22fe81,7d5ebb1df616,7d5ebb1dc8b0,7d5ebb245dc2,7d5ebb245739,7d5ebb1dc8b0,7d5ebb1e979a,7d5ebb25e7d0,7d5ebb20970e,7d5ebb2b9878,7d5ebb28c28f,7d5ebb28605b,7d5ebae79ca7&map= 
+*** SIGTERM received by PID 36877 (TID 36877) on cpu 108, si_code=0, from PID 36808; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=7e9570b4c923,7e95707ffd6f,7e9570b4c8b0,7e9570b88564,7e9570b4c8b0,7e9570b58cdc,7e9570b4c8b0,7e9570b87cd1,7e9570b87acd,7e9570b4c8b0,7e9570b87d9f,7e9570b87acd,7e9570b4c8b0,7e9570b5979a,7e9570bce7d0,7e9570b7970e,7e9570c29878,7e9570bfc28f,7e9570bf605b,7e95707e9ca7&map= 
+*** SIGTERM received by PID 36876 (TID 36876) on cpu 112, si_code=0, from PID 36808; stack trace: ***
+PC: @     0x7d004addcab2  (unknown)  tcmalloc::CentralFreeList::InsertRange()
+    @     0x7d000d700137       1888  FailureSignalHandler()
+    @     0x7d004a64bd70  1467452128  (unknown)
+    @     0x7d004ade1249         80  tcmalloc::ThreadCache::ReleaseToCentralCache()
+    @     0x7d004ade1609         48  tcmalloc::ThreadCache::ListTooLong()
+    @     0x7d004465be8a         64  dnnl::impl::graph::utils::pm::pb_op_t::~pb_op_t()
+    @     0x7d004465d8da         64  dnnl::impl::graph::utils::pm::pb_graph_t::~pb_graph_t()
+PC: @     0x7e9570b4c923  (unknown)  list_dealloc.lto_priv.0
+PC: @     0x7d5ebb1dd8d4  (unknown)  unicodekeys_lookup_unicode.lto_priv.0
+    @     0x7d00446503c9         32  dnnl::impl::graph::utils::any_t::vtable_t<>::~vtable_t()
+    @     0x7d00445c4803         64  dnnl::impl::graph::dnnl_impl::pattern::pattern_matcher_pass_t::~pattern_matcher_pass_t()
+    @     0x7d004450df23         64  dnnl::impl::graph::pass::pass_registry_t::~pass_registry_t()
+    @     0x7d004a64e231  (unknown)  (unknown)
+    @     0x7e9533900137       1888  FailureSignalHandler()
+    @     0x7d5e7df00137       1888  FailureSignalHandler()
+https://symbolize.stripped_domain/r/?trace=7d004addcab2,7d000d700136,7d004a64bd6f,7d004ade1248,7d004ade1608,7d004465be89,7d004465d8d9,7d00446503c8,7d00445c4802,7d004450df22,7d004a64e230&map= 
+E1031 11:04:31.074701   36875 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+    @     0x7d5ebae8fd70  (unknown)  (unknown)
+    @     0x7e95707ffd70  (unknown)  (unknown)
+    @     0x7d5ebb1dcea3        144  _Py_dict_lookup
+    @     0x7e9570b4c8b1         64  _Py_Dealloc
+    @     0x7e9570b88565         32  cell_dealloc.lto_priv.0
+    @     0x7e9570b4c8b1         64  _Py_Dealloc
+    @     0x7d5ebb22fe82         96  _PyDict_Pop_KnownHash
+    @     0x7d5ebb1df617         64  unicode_dealloc.lto_priv.0
+    @     0x7e9570b58cdd         48  tuple_dealloc.lto_priv.0
+    @     0x7e9570b4c8b1         64  _Py_Dealloc
+    @     0x7d5ebb1dc8b1         64  _Py_Dealloc
+    @     0x7e9570b87cd2         32  func_clear.lto_priv.0
+    @     0x7e9570b87ace         32  func_dealloc.lto_priv.0
+    @     0x7d5ebb245dc3         48  PyObject_ClearManagedDict
+    @     0x7e9570b4c8b1         64  _Py_Dealloc
+    @     0x7e9570b87da0         32  func_clear.lto_priv.0
+    @     0x7e9570b87ace         32  func_dealloc.lto_priv.0
+    @     0x7d5ebb24573a         80  subtype_dealloc.lto_priv.0
+    @     0x7e9570b4c8b1         64  _Py_Dealloc
+    @     0x7d5ebb1dc8b1         64  _Py_Dealloc
+    @     0x7d5ebb1e979b         48  dictkeys_decref.part.0.isra.0
+    @     0x7e9570b5979b         48  dictkeys_decref.part.0.isra.0
+    @     0x7d5ebb25e7d1         32  type_clear.lto_priv.0
+    @     0x7e9570bce7d1         32  type_clear.lto_priv.0
+    @     0x7d5ebb20970f        336  gc_collect_main.lto_priv.0
+    @     0x7e9570b7970f        336  gc_collect_main.lto_priv.0
+    @     0x7d5ebb2b9879         96  _Py_Finalize.constprop.0
+    @     0x7e9570c29879         96  _Py_Finalize.constprop.0
+    @     0x7e9570bfc290        336  Py_RunMain
+    @     0x7d5ebb28c290        336  Py_RunMain
+    @     0x7e9570bf605c         64  Py_BytesMain
+    @     0x7d5ebb28605c         64  Py_BytesMain
+    @     0x7d5ebae79ca8  (unknown)  (unknown)
+    @     0x7e95707e9ca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7d5ebb1dd8d4,7d5e7df00136,7d5ebae8fd6f,7d5ebb1dcea2,7d5ebb22fe81,7d5ebb1df616,7d5ebb1dc8b0,7d5ebb245dc2,7d5ebb245739,7d5ebb1dc8b0,7d5ebb1e979a,7d5ebb25e7d0,7d5ebb20970e,7d5ebb2b9878,7d5ebb28c28f,7d5ebb28605b,7d5ebae79ca7&map= 
+https://symbolize.stripped_domain/r/?trace=7e9570b4c923,7e9533900136,7e95707ffd6f,7e9570b4c8b0,7e9570b88564,7e9570b4c8b0,7e9570b58cdc,7e9570b4c8b0,7e9570b87cd1,7e9570b87acd,7e9570b4c8b0,7e9570b87d9f,7e9570b87acd,7e9570b4c8b0,7e9570b5979a,7e9570bce7d0,7e9570b7970e,7e9570c29878,7e9570bfc28f,7e9570bf605b,7e95707e9ca7&map= 
+E1031 11:04:31.077368   36876 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+E1031 11:04:31.077368   36877 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+E1031 11:04:31.344094   36876 process_state.cc:794] RAW: Raising signal 15 with default behavior
+E1031 11:04:31.358363   36877 process_state.cc:794] RAW: Raising signal 15 with default behavior
+E1031 11:04:31.534682   36875 process_state.cc:794] RAW: Raising signal 15 with default behavior
+E1031 11:04:32.859000 36808 site-packages/torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 3 (pid: 36878) of binary: /usr/local/bin/python3.14
+E1031 11:04:32.860000 36808 site-packages/torch/distributed/elastic/multiprocessing/errors/error_handler.py:194] no error file defined for parent, to copy child error file (/tmp/torchelastic_0qwpraqu/none_cwgm6kto/attempt_0/3/error.json)
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1138, in main
+    run(args)
+    ~~~^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/run.py", line 1129, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 197, in __call__
+    return launch_agent(
+        self._config,
+    ...<2 lines>...
+        health_check_server=self._health_check_server,
+    )
+  File "/usr/local/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+minimax_h3_torchtitan FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-31_11:04:28
+  host      : minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc.default.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : -15 (pid: 36875)  (SIGTERM)
+  error_file: /tmp/torchelastic_0qwpraqu/none_cwgm6kto/attempt_0/0/error.json
+  traceback : Traceback (most recent call last):
+    File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+      result = f(*args, **kwargs)
+    File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+      model = model_spec.parallelize_fn(
+          model,
+      ...<5 lines>...
+          dump_folder=config.dump_folder,
+      )
+    File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+      converter.convert(model)
+      ~~~~~~~~~~~~~~~~~^^^^^^^
+    File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+      for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+                                              ^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+      raise AttributeError(
+          f"'{type(self).__name__}' object has no attribute '{name}'"
+      )
+  AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+  
+[2]:
+  time      : 2026-10-31_11:04:28
+  host      : minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc.default.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 36876)  (SIGTERM)
+  error_file: /tmp/torchelastic_0qwpraqu/none_cwgm6kto/attempt_0/1/error.json
+  traceback : Traceback (most recent call last):
+    File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+      result = f(*args, **kwargs)
+    File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+      model = model_spec.parallelize_fn(
+          model,
+      ...<5 lines>...
+          dump_folder=config.dump_folder,
+      )
+    File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+      converter.convert(model)
+      ~~~~~~~~~~~~~~~~~^^^^^^^
+    File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+      for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+                                              ^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+      raise AttributeError(
+          f"'{type(self).__name__}' object has no attribute '{name}'"
+      )
+  AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+  
+[3]:
+  time      : 2026-10-31_11:04:28
+  host      : minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc.default.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 36877)  (SIGTERM)
+  error_file: /tmp/torchelastic_0qwpraqu/none_cwgm6kto/attempt_0/2/error.json
+  traceback : Traceback (most recent call last):
+    File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+      result = f(*args, **kwargs)
+    File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+      model = model_spec.parallelize_fn(
+          model,
+      ...<5 lines>...
+          dump_folder=config.dump_folder,
+      )
+    File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+      converter.convert(model)
+      ~~~~~~~~~~~~~~~~~^^^^^^^
+    File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+      for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+                                              ^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+      raise AttributeError(
+          f"'{type(self).__name__}' object has no attribute '{name}'"
+      )
+  AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+  
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-31_11:04:28
+  host      : minimax-h3-v5p-32-pass2-0.minimax-h3-v5p-32-pass2-svc.default.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 36878) 
+  error_file: /tmp/torchelastic_0qwpraqu/none_cwgm6kto/attempt_0/3/error.json
+  traceback : Traceback (most recent call last):
+    File "/usr/local/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 384, in wrapper
+      result = f(*args, **kwargs)
+    File "/torchtitan-native/torchtitan/trainer.py", line 568, in __init__
+      model = model_spec.parallelize_fn(
+          model,
+      ...<5 lines>...
+          dump_folder=config.dump_folder,
+      )
+    File "/torchtitan-native/minimax_h3_torchtitan.py", line 782, in parallelize_minimax_h3
+      converter.convert(model)
+      ~~~~~~~~~~~~~~~~~^^^^^^^
+    File "/torchtitan-native/torchtitan/components/quantization/float8.py", line 156, in convert
+      for fqn, linear_config, parent, attr in model_config.traverse(Linear.Config):
+                                              ^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1976, in __getattr__
+      raise AttributeError(
+          f"'{type(self).__name__}' object has no attribute '{name}'"
+      )
+  AttributeError: 'MiniMaxH3Model' object has no attribute 'traverse'
+  
+============================================================

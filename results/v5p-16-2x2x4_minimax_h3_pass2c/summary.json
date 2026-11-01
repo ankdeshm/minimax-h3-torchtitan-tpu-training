@@ -1,0 +1,81 @@
+{
+  "run_timestamp": "20261031_102018",
+  "updated_utc": "2026-10-31T10:28:54.496932+00:00",
+  "accel": "v5p",
+  "topology": "2x2x4",
+  "nodepool": "tpu-v5p-16-pool",
+  "num_chips": 16,
+  "phys_chips": 16,
+  "peak_bf16_tflops_per_chip": 459.0,
+  "checkpoint_dir": "/models/models/MiniMaxAI/MiniMax-H3/transformer",
+  "experiments": [
+    {
+      "name": "mh3_p2_01_fsdp16_fullac_s16k_pretrained",
+      "parallelism": "FSDP-16",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "FullAC (recompute attn)",
+      "save_splash": false,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 8,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": true,
+      "status": "rc=1",
+      "wall_s": 431.7,
+      "error": "ailed with: e0101: RuntimeProgramAllocationFailure: |   Error loading program 'tt_jit_minimax_h3_torchtitan_L521C0_forward_add': Attempting to reserve 2.08G at the bottom of memory. That was not possible. There are 987.07M free, 0B reserved, and 987.07M reservable. |   See https://openxla.org/xla/errors/error_0101 for more details |    | ============================================================",
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63243,
+          "grad_norm": 112.4343,
+          "mem_gib": 10.46,
+          "tps": 41.0,
+          "tflops": 7.66,
+          "mfu_pct": 1.67,
+          "step_s": 398.55
+        }
+      ]
+    },
+    {
+      "name": "mh3_p2_02_fsdp16_splash_save_ac_s16k_pretrained",
+      "parallelism": "FSDP-16",
+      "dp_rep": 1,
+      "dp_shard": -1,
+      "ac_mode": "SplashSaveAC (calibrated)",
+      "save_splash": true,
+      "sa_block": 512,
+      "quant": "BF16 + FP32 heads",
+      "use_fp8": false,
+      "seq_len": 16384,
+      "mb_tokens": 16384,
+      "grad_accum": 1,
+      "reduce_dtype": "float32",
+      "steps": 10,
+      "load_pretrained": true,
+      "xla_flags": "",
+      "use_compiled_opt": true,
+      "status": "rc=1",
+      "wall_s": 75.73,
+      "error": "er failed with: e0101: RuntimeProgramAllocationFailure: |   Error loading program 'tt_jit_minimax_h3_torchtitan_L521C0_forward_add': Attempting to reserve 2.08G at the bottom of memory. That was not possible. There are 1.21G free, 0B reserved, and 1.21G reservable. |   See https://openxla.org/xla/errors/error_0101 for more details |    | ============================================================",
+      "steps_recorded": [
+        {
+          "step": 1,
+          "loss": 3.63243,
+          "grad_norm": 112.2972,
+          "mem_gib": 10.79,
+          "tps": 351.0,
+          "tflops": 65.33,
+          "mfu_pct": 14.23,
+          "step_s": 46.7
+        }
+      ]
+    }
+  ]
+}
