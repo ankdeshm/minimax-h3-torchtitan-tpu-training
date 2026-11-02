@@ -1,0 +1,9 @@
+# `results/` Guide — `MiniMax-H3` TorchTitan TPU Training
+
+| Result Folder | Slice & Topology | Key Outcome | Proof Files |
+|---|---|---|---|
+| [`v5p-32-2x4x4_minimax_h3_pass2e`](./v5p-32-2x4x4_minimax_h3_pass2e/) | **`v5p-32` (`2x4x4`, `32` chips)** | **#1 Peak MFU: `27.48%` MFU (`677.2` tok/s/rk, `24.188s/step`, `10.46 GiB` HBM)** | [`SUMMARY.md`](./v5p-32-2x4x4_minimax_h3_pass2e/SUMMARY.md) · [`summary.json`](./v5p-32-2x4x4_minimax_h3_pass2e/summary.json) · [`log`](./v5p-32-2x4x4_minimax_h3_pass2e/mh3_p2_01_fsdp32_fullac_s16k_pretrained.log) |
+| [`v5p-32-2x4x4_minimax_h3_pass2c`](./v5p-32-2x4x4_minimax_h3_pass2c/) | **`v5p-32` (`2x4x4`, `32` chips)** | **`26.72%` MFU (`658.4` tok/s/rk) + verified loss convergence `3.6320 -> 3.2877`** | [`SUMMARY.md`](./v5p-32-2x4x4_minimax_h3_pass2c/SUMMARY.md) · [`summary.json`](./v5p-32-2x4x4_minimax_h3_pass2c/summary.json) · [`log`](./v5p-32-2x4x4_minimax_h3_pass2c/mh3_p2_01_fsdp32_fullac_s16k_pretrained.log) |
+| [`v5p-32-2x4x4_minimax_h3_pass2`](./v5p-32-2x4x4_minimax_h3_pass2/) | **`v5p-32` (`2x4x4`, `32` chips)** | **`27.08%` MFU (`667.4` tok/s/rk, `24.552s/step`)** | [`SUMMARY.md`](./v5p-32-2x4x4_minimax_h3_pass2/SUMMARY.md) · [`summary.json`](./v5p-32-2x4x4_minimax_h3_pass2/summary.json) |
+| [`v5p-32-2x4x4_minimax_h3_pass2b`](./v5p-32-2x4x4_minimax_h3_pass2b/) | `v5p-32` (`2x4x4`, `32` chips) | `26.71%` MFU (`24.888s/step`) + `SplashSaveAC` HBM calibration logs | [`SUMMARY.md`](./v5p-32-2x4x4_minimax_h3_pass2b/SUMMARY.md) · [`summary.json`](./v5p-32-2x4x4_minimax_h3_pass2b/summary.json) |
+| [`v5p-16-2x2x4_minimax_h3_pass2f`](./v5p-16-2x2x4_minimax_h3_pass2f/) | `v5p-16` (`2x2x4`, `16` chips) | Diagnostic proof of `FSDP-16` XLA `RuntimeProgramAllocationFailure` on `95 GiB` `v5p` | [`SUMMARY.md`](./v5p-16-2x2x4_minimax_h3_pass2f/SUMMARY.md) · [`summary.json`](./v5p-16-2x2x4_minimax_h3_pass2f/summary.json) |
